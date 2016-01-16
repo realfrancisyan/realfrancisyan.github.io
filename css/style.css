@@ -51,7 +51,7 @@ ul, li{
 }
 
 .name_background {
-	background-image: url(../img/name.svg);
+	background-image: url(../img/name.png);
 	background-repeat: no-repeat;
 	background-position: center top;
 }
@@ -76,7 +76,7 @@ ul, li{
 	font-size: 68px;
 	line-height: 72px;
 	letter-spacing: 3px;
-	margin-top: 26px;
+	margin-top: 30px;
 	font-weight: lighter;
 }
 

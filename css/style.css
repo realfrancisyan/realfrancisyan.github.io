@@ -109,7 +109,7 @@ ul, li{
 }
 
 .portfolio {
-	margin-top: 100px;
+	margin-top: 140px;
 	display: inline-block;
 }
 
@@ -133,6 +133,12 @@ ul, li{
 .portfolio p a {
 	color: #08B68F;
 	font-style: italic;
+}
+
+@media (max-width: 1366px) {
+	.header {
+		height: 160px;
+	}
 }
 
 @media (max-width: 920px) {

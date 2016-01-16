@@ -1,0 +1,127 @@
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+	color: #fff;
+}
+
+ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	background: url("../img/header.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 230px;
+}
+
+.introduction {
+	background: #B9F6F1; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #B9F6F1 , #61C298); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #B9F6F1 , #61C298); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height: 794px;
+}
+
+.name_background {
+	background-image: url(../img/name.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+
+.introduction-body {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.column-left {
+	width: 172px;
+	float: left;
+	margin-right: 20px;
+}
+
+.column-left h1, ul{
+	margin: 0;
+}
+
+.column-left h1{
+	font-family: "OstrichSansRounded-Medium", sans-serif;
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: 3px;
+	margin-top: 26px;
+	font-weight: lighter;
+}
+
+.column-right {
+	width: 608px;
+	float: right;
+}
+
+.column-right p {
+	font-family: "Roboto", sans-serif;
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 300;
+}
+
+.social-links li{
+	float: left;
+	font-size: 28px;
+	margin-right: 40px;
+	font-weight: 300;
+}
+
+.social-links li a {
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 5px; 
+}
+
+.portfolio {
+	margin-top: 100px;
+}
+
+.portfolio h1 {
+	font-family: "OstrichSansRounded-Medium", sans-serif;
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: 3px;
+	font-weight: lighter;
+	margin-bottom: 0px;
+}
+
+.portfolio p {
+	font-family: "Roboto", sans-serif;
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.portfolio p a {
+	color: #08B68F;
+	font-style: italic;
+}
+
+@media (max-width: 414px) {
+	header {
+		height: 100px;
+	}
+
+	
+}

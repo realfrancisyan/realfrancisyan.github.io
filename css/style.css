@@ -11,6 +11,19 @@
 
 }
 
+#nprogress .bar {
+	background: #5DC397;
+}
+
+#nprogress .peg {
+	box-shadow: 0 0 10px #5DC397, 0 0 5px #5DC397;
+}
+
+#nprogress .spinner-icon {
+	border-top-color: #5DC397;
+	border-left-color: #5DC397;
+}
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
@@ -93,6 +106,7 @@ ul, li{
 }
 
 .social-links li{
+	font-family: "Roboto", sans-serif;
 	float: left;
 	font-size: 28px;
 	margin-right: 40px;
@@ -100,6 +114,7 @@ ul, li{
 }
 
 .social-links li a {
+	font-family: "Roboto", sans-serif;
 	color: #fff;
 	text-decoration: none;
 	border-bottom: 2px solid #fff;

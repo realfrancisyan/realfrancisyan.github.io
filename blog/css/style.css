@@ -94,6 +94,20 @@ ul, li {
   width: 202px;
 }
 
+.subtitle {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.subtitle h2 {
+  font-family: "ostrich_sans_roundedmedium", sans-serif;
+  font-size: 56px;
+  line-height: 56px;
+  font-weight: lighter;
+  letter-spacing: 3.73px;
+  margin: 0;
+}
+
 .header h2 a, footer h2 a {
   text-decoration: none;
   color: #fff;
@@ -135,7 +149,7 @@ ul, li {
   text-decoration: none;
 }
 
-.post_content p, .post_content p a {
+.post_content p, .post_content p a, .list-items li {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
@@ -238,6 +252,24 @@ footer {
   color: #000;
 }
 
+.list-items {
+  margin: 0;
+}
+
+.list-items li {
+  list-style-type: circle;
+  margin-top: 10px;
+}
+
+.list-items li:first-child {
+  margin-top: 0px;
+}
+
+.list-items li a {
+  color: #424242;
+}
+
+
 @media (max-width: 1200px) {
     .post_image {
       width: 100vw;
@@ -273,6 +305,12 @@ footer {
     width: 159px;
   }
 
+.subtitle h2 {
+  font-size: 42px;
+  line-height: 42px;
+  letter-spacing: 2.22px;
+}
+
   .blog_post {
     margin-top: 50px;
     max-width: 320px;
@@ -292,7 +330,7 @@ footer {
     letter-spacing: 3px;
   }
 
-  .post_content p, .post_content p a {
+  .post_content p, .post_content p a, .list-items li {
     font-size: 18px;
     line-height: 27px;
     margin-top: 30px;
@@ -351,6 +389,15 @@ footer {
   .foot_note span {
     font-size: 10px;
     line-height: 10px;
+  }
+  .list-items li {
+    list-style-type: circle;
+    margin-top: 6px;
+  }
+
+  .subtitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 
 }

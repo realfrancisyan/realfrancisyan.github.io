@@ -274,6 +274,19 @@ footer {
     margin-top: 50px; 
 }
 
+.image-left img {
+    margin:0 40px 20px -50px;
+    width:50%;
+    float:left;
+}
+    
+#icon-size {
+    width:40%;
+}
+
+.post_content p span {
+  background-color: #C4E4D7;
+}
 
 @media (max-width: 1200px) {
     .post_image {
@@ -286,6 +299,17 @@ footer {
     .blog_post, .page_nav, .footer_width {
       max-width: 560px;
     }
+
+.image-left img {
+    margin:0 0 30px 0;
+    width:100%;
+    float:none;
+}
+    
+#icon-size {
+    width:50;
+    margin:0 auto;
+}
 }
 
 @media (max-width: 560px) {

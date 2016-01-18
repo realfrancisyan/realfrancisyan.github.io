@@ -135,6 +135,16 @@ ul, li{
 	font-style: italic;
 }
 
+.image-left img {
+    margin:0 40px 20px -50px;
+    width:50%;
+    float:left;
+}
+    
+#icon-size {
+        width:40%;
+    }
+
 @media (max-width: 1366px) {
 	.header {
 		height: 160px;

@@ -225,19 +225,6 @@ footer {
   width: 100%;
 }
 
-.foot_note {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.foot_note span {
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 300;
-  color: #000;
-}
-
 @media (max-width: 1200px) {
     .post_image {
       width: 100vw;
@@ -346,11 +333,6 @@ footer {
 
   .post_image img {
     width: 100%;
-  }
-
-  .foot_note span {
-    font-size: 10px;
-    line-height: 10px;
   }
 
 }

@@ -15,28 +15,47 @@
 		<section class="blog clearfix">
 			<div class="blog_post">
 				<div class="post_date">
-					<span>October 18, 2015</span>
+					<span>October 11, 2015</span>
 				</div>
 				<div class="post_title">
-					<h1>Hue</h1>
-				</div>
-				<div class="post_image">
-					<div sytle="vertical-align: baseline; box-sizing: border-box;">
-						<img src="img/hue.jpg">
-					</div>
+					<h1>Embed Medium Posts in Your Awesome Tumblr Sites</h1>
 				</div>
 				<div class="post_content">
-					<p>Cautiously designed by Russian designer Vladimir Kudinov, Hue is a set of Apple-style gradients that can be used for various projects, both personally and commercially. If you are a huge fan of full-page background images, then Hue is the right thing that suits you. Showcasing your hardware or an application within MacBook mockups could not be much easier, for these background gradients can intuitively be modified and match the style of your products. Use properly, and your pages will certainly capture your audiences’ eyeballs.</p>
+					<p>Due to some blog services stripping script tags and thus preventing Medium embeds from functioning, Tumblr is currently not available for users to embed Medium stories directly in posts using its editor. But after several tries I accidentally worked out a way that could make it functional with just a few steps.</p>
+					<div class="post_image">
+						<div sytle="vertical-align: baseline; box-sizing: border-box;">
+							<img src="img/macbook.jpg">
+						</div>
+					</div>
 
-					<p>The following video reflects how Hue is used. (Source: <a href="https://www.youtube.com/watch?time_continue=10&v=cknyJLN78g0">Youtube</a>)</p>
+					<div class="subtitle">
+						<h2>Add Necessary Scripts to Your Theme</h2>
+					</div>
 
-					<div class='embed-container'><iframe src='https://www.youtube.com/embed/cknyJLN78g0' frameborder='0' allowfullscreen></iframe></div>
+					<div class='embed-container'><iframe src='https://www.youtube.com/embed/yjuJWZlSv6I' frameborder='0' allowfullscreen></iframe></div>
 
-					<p>Hue is a Sketch file and is available for download for free.</p>
-					<p>Original Source:</p>
-					<ul class="list-items">
-						<li style="margin-top:10px;"><a href="https://www.behance.net/gallery/30067997/Hue-Free-Promo-Backdrops-and-Gradients" target="_blank">Hue: Free Promo Backdrops and Gradients</a></li>
-					</ul>
+					<p>Tumblr provides us great benefits to edit HTML and CSS code which enable us to create complex layouts. As a result, we can intuitively add the following single line of code to our themes to meet the requirement of Medium embeds.</p>
+
+					<p style="text-align:center;">&lt;script async src="https://static.medium.com/embed.js"&gt;&lt;/script&gt;</p>
+
+					<div class="subtitle">
+						<h2>Embed Story</h2>
+					</div>
+
+					<div class="post_image">
+						<div sytle="vertical-align: baseline; box-sizing: border-box;">
+							<img src="img/story.jpg">
+						</div>
+					</div>
+
+					<p>You are now free to embed Medium posts to your awesome blog. Please note that it is not necessary to insert the script that has already been added to your theme. All you need to do is to copy the line of code that starts with the “a” tag, such as:</p>
+
+					<p style="text-align:center;">&lt;a class="m-story" data-collapsed="true" ...&gt;&lt;/a&gt;</p>
+
+					<p>Then paste it directly into your Tumblr editor and see what it looks like. Here is an example of a Medium post by one of my favourite designers:</p>
+
+					<script async src="https://static.medium.com/embed.js"></script>
+					<center style="margin-top: 30px;"><a class="m-story" data-collapsed="true" href="https://medium.com/@mengto/designing-for-offline-reading-83833a9919fc">Designing for Offline Reading</a></center>
 				</div>
 				<div id="disqus_thread"></div>
 				<script>
@@ -52,13 +71,13 @@
 				<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
 			</div>
 		</section>
-		<!--	
+			<!--	
 		<section class="navigation">
 			<div class="page_nav">
 				<ul class="nav_column_left">
-					<li><a href="page/2">&#60; Previous entries</a></li>
+					<li><a href="page/2">&#60; Previous</a></li>
 				</ul>
-			
+
 				<ul class="nav_column_right">
 					<li><a href="">Newer entries &#62;</a></li>
 				</ul>

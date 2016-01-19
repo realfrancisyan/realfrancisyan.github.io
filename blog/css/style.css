@@ -334,11 +334,11 @@ footer {
     width: 159px;
   }
 
-.subtitle h2 {
-  font-size: 42px;
-  line-height: 42px;
-  letter-spacing: 2.22px;
-}
+  .subtitle h2 {
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 2.22px;
+  }
 
   .blog_post {
     margin-top: 50px;

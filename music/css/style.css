@@ -66,6 +66,16 @@ footer {
 	height: 960px;
 }
 
+.fav_artists {
+	width: 266px;
+	height: 56px;
+}
+
+.artists li {
+	float: left;
+	padding-bottom: 30px;
+}
+
 @media (max-width: 920px) {
 	.spotify_playlist {
 		width: 560px;

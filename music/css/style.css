@@ -78,6 +78,10 @@ footer {
 		width: 174px;
 	}
 
+	.post_title h1 {
+		padding-top: 50px;
+	}
+
 	.post_title h1 img {
 		padding-left: 20px;
 		width: 48px;

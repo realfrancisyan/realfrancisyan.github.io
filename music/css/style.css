@@ -96,6 +96,12 @@ footer {
 		width: 260px;
 		height: 312px;
 	}
+	.post_title h1 img {
+		padding-left: 10px;
+		width: 40px;
+		position: relative;
+		bottom: -4px;
+	}
 }
 
 

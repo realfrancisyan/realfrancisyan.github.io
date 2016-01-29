@@ -44,3 +44,9 @@
 		width: 160px;
 	}
 }
+
+@media (max-width: 320px) {
+	.apps ul li ul li ul li p {
+		width: 144px;
+	}
+}

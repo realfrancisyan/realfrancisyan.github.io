@@ -1,5 +1,22 @@
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
+
 .header h2, .footer_width h2 {
 	width: 221px;
+}
+
+.header h2 a, footer h2 a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .header h2 span, .header h2 span a, footer h2 span, footer h2 span a {
@@ -7,13 +24,14 @@
 }
 
 .header {
-  background: -prefix-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head.jpg);
-  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head.jpg);
+  background: -prefix-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head_1.jpg);
+  background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head_1.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  border-bottom: 0;
 }
 
 footer {
@@ -24,6 +42,7 @@ footer {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
+  border-top: 0;
 }
 
 .blog {

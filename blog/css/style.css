@@ -10,11 +10,11 @@ SVG Icons - svgicons.sparkk.fr
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: #fff;
+  fill: #000;
 }
 
 .svg-icon circle {
-  stroke: #fff;
+  stroke: #000;
   stroke-width: 1;
 }
 
@@ -72,10 +72,21 @@ ul, li {
   list-style: none;
 }
 
-.header, footer {
-  background: -prefix-linear-gradient(bottom, rgba(106,213,167,0.3), rgba(106,213,167,0.3)), url(../img/pattern.png);
-  background: linear-gradient(to bottom, rgba(106,213,167,0.3), rgba(106,213,167,0.3)), url(../img/pattern.png);
+.header {
+  background: url(../img/test.jpg) center center;
+  border-bottom: 1px solid #F1F1F1;
+  /* border-bottom: 10px solid #F1F1F1; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 	height: 230px;
+  position: relative;
+}
+
+footer {
+  border-top: 1px solid #F1F1F1;
+  height: 230px;
   position: relative;
 }
 
@@ -110,11 +121,11 @@ ul, li {
 
 .header h2 a, footer h2 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .header h2 span, .header h2 span a, footer h2 span, footer h2 span a {
-  color: #018F70;
+  color: #EE2941;
 }
 
 .blog_post {
@@ -166,7 +177,7 @@ ul, li {
 
 .continue_reading span a {
   text-decoration: none;
-  color: #018F70;
+  color: #424242;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 2px;
@@ -285,7 +296,7 @@ footer {
 }
 
 .post_content p span {
-  background-color: #C4E4D7;
+  background-color: #CACACA;
 }
 
 @media (max-width: 1200px) {
@@ -300,16 +311,16 @@ footer {
       max-width: 560px;
     }
 
-.image-left img {
-    margin:0 0 30px 0;
-    width:100%;
-    float:none;
-}
-    
-#icon-size {
-    width:50;
-    margin:0 auto;
-}
+    .image-left img {
+        margin:0 0 30px 0;
+        width:100%;
+        float:none;
+    }
+        
+    #icon-size {
+        width:50;
+        margin:0 auto;
+    }
 }
 
 @media (max-width: 560px) {

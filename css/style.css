@@ -134,6 +134,10 @@ footer {
 		width: 165px;
 	}
 
+	.post_title h1 {
+		padding-top: 50px;
+	}
+
 	.social-links li{
 		margin-right: 20px;
 	    font-size: 18px;

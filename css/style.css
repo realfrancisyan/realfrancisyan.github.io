@@ -156,4 +156,8 @@ footer {
 		position: relative;
 		top: 3px;
 	}
+
+	.extra_padding {
+		padding-bottom: 100px;
+	}
 }

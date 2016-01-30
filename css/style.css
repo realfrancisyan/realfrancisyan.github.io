@@ -16,8 +16,8 @@
 }
 
 .header {
-  background: -prefix-linear-gradient(bottom, rgba(176,208,239,1), rgba(209,232,255,1));
-  background: linear-gradient(to bottom, rgba(176,208,239,1), rgba(209,232,255,1));
+  background: -prefix-linear-gradient(bottom, rgba(136,185,234,1), rgba(209,232,255,1));
+  background: linear-gradient(to bottom, rgba(136,185,234,1), rgba(209,232,255,1));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

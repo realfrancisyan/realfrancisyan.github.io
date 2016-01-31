@@ -339,6 +339,10 @@ footer {
     width:40%;
 }
 
+.navigation a:before {
+  background-color: #717171;
+}
+
 .post_content p span {
   background-color: #CACACA;
 }

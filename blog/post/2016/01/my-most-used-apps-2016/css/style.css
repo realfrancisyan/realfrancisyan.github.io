@@ -24,9 +24,6 @@
 	color: #424242;
 	font-family: "Roboto", sans-serif;
 }
-.apps ul li ul li ul li p a:hover {
-	text-decoration: underline;
-}
 
 .apps ul li ul li ul li p:first-child {
 	padding-top: 6px;

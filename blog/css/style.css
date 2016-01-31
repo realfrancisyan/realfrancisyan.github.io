@@ -311,6 +311,10 @@ footer {
   margin: 0;
 }
 
+.list-items a:before {
+  background-color: transparent;
+}
+
 .list-items li {
   list-style-type: circle;
   margin-top: 10px;

@@ -9,6 +9,9 @@
   stroke-width: 1;
 }
 
+a:before {
+	background-color: transparent;
+}
 
 .header h2, .footer_width h2 {
 	width: 221px;
@@ -23,26 +26,48 @@
 	color: #50E3C2;
 }
 
+.header h2 span a:hover, footer h2 span a:hover {
+  color: #50E3C2;
+}
+
+.header h2 a:hover, footer h2 a:hover {
+  color: #fff;
+}
+
+.header h2 span a:before, footer h2 span a:before {
+  background-color: #50E3C2;
+}
+
+.column_right a:before {
+	background-color: #fff;
+}
+
 .header {
+  /*
   background: -prefix-linear-gradient(bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head_1.jpg);
   background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/head_1.jpg);
+  */
+  background: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  border-bottom: 0;
+  border-bottom: 1px solid #6d6d6d;
 }
 
 footer {
+  /*
   background: -prefix-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/bottom.jpg);
   background: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1)), url(../img/bottom.jpg);
+  */
+  background: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  border-top: 0;
+  border-top: 1px solid #6d6d6d;
 }
 
 .blog {

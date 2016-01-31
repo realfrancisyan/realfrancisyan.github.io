@@ -10,9 +10,22 @@
 	color: #0076E8;
 }
 
+.header h2 span a:hover, footer h2 span a:hover {
+  color: #0076E8;
+}
+
+.header h2 span a:before, footer h2 span a:before {
+  background-color: #0076E8;
+}
+
 .post_content p a {
 	font-style: italic;
 	color: #0076E8;
+	text-decoration: none;
+}
+
+.post_content p a:before {
+	background-color: #0076E8;
 }
 
 .header {

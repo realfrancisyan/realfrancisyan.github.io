@@ -18,6 +18,21 @@ SVG Icons - svgicons.sparkk.fr
   stroke-width: 1;
 }
 
+.continue_right, .continue_left, .continue_to_read {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 3px;
+}
+
+.continue_to_read {
+  top: 5px;
+}
+
+.continue_right circle, .continue_left circle {
+  stroke: #424242;
+}
+
 /* ----- Youtube ----- */
 
 .embed-container { 
@@ -169,6 +184,10 @@ footer {
 }
 
 .header h2 a:before, footer h2 a:before {
+  background-color: transparent;
+}
+
+.post_title h1 a:before {
   background-color: transparent;
 }
 
@@ -380,6 +399,12 @@ footer {
   .svg-icon {
     width: 42px;
     height: 42px;
+  }
+
+  .continue_right, .continue_left, .continue_to_read {
+    width: 18px;
+    height: 18px;
+    top: 3px;
   }
 
   .embed-container { 

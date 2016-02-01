@@ -209,6 +209,10 @@ footer {
 	.home_latest_posts p, .home_latest_posts p a {
 		text-align: center;
 	}
+
+	.footer_pattern {
+		height: 180px;
+	}
 }
 
 @media (max-width: 560px) {
@@ -246,6 +250,10 @@ footer {
 	.home_latest_posts .first_post, .home_latest_posts .second_post {
 		width: 320px;
 		height: 168px;
+	}
+
+	.footer_pattern {
+		height: 100px;
 	}
 }
 

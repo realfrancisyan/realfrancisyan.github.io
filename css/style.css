@@ -127,6 +127,43 @@ footer {
 	margin-top: 0px;
 }
 
+.home_latest_posts .first_post {
+	background: url(../blog/post/2016/01/my-most-used-apps-2016/img/app_store.jpg);
+}
+
+.home_latest_posts .second_post {
+	background: url(../blog/post/2015/10/learning-to-use-sketch/img/sketchdesign.jpg);
+}
+
+.home_latest_posts .first_post, .home_latest_posts .second_post {
+	width: 380px;
+	height: 200px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  	background-position: center;
+}
+
+.home_latest_posts li {
+	float: left;
+}
+
+.home_latest_posts li:first-child {
+	padding-right: 40px;
+}
+
+.home_latest_posts p, .home_latest_posts p a {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-style: normal;
+	color: #424242;
+}
+
+.home_latest_posts p a:before {
+	background-color: #424242;
+}
+
 @media (max-width: 920px) {
 	.post_title h1 {
 		text-align: left;
@@ -142,6 +179,16 @@ footer {
 
 	.social-links li {
 		float: left;
+	}
+}
+
+@media (max-width: 920px) {
+	.home_latest_posts .first_post, .home_latest_posts .second_post {
+		width: 560px;
+		height: 294px;
+	}
+	.home_latest_posts p, .home_latest_posts p a {
+		text-align: center;
 	}
 }
 
@@ -175,5 +222,10 @@ footer {
 
 	.extra_padding {
 		padding-bottom: 100px;
+	}
+
+	.home_latest_posts .first_post, .home_latest_posts .second_post {
+		width: 320px;
+		height: 168px;
 	}
 }

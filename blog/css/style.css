@@ -29,8 +29,12 @@ SVG Icons - svgicons.sparkk.fr
   top: 5px;
 }
 
-.continue_right circle, .continue_left circle {
-  stroke: #424242;
+.continue_right path, .continue_right polygon, .continue_right rect, .continue_left path, .continue_left polygon, .continue_left rect {
+  fill: #424242;
+}
+
+.continue_button_color path, .continue_button_color polygon, .continue_button_color rect {
+  fill: #717171;
 }
 
 /* ----- Youtube ----- */

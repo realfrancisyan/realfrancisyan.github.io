@@ -46,9 +46,14 @@ html, body {
   border-bottom: 0;
 }
 
-.blog, footer {
+.blog {
 	border-top: 1px solid #C0D5E9;
 	background-color: #E0F0FF;
+}
+
+footer {
+	background-color: #E0F0FF;
+	border-top: 0;
 }
 
 .blog_post, .post_title, .post_title h1 {
@@ -166,6 +171,16 @@ footer {
 
 .home_latest_posts p a:before {
 	background-color: #424242;
+}
+
+.footer_pattern {
+	background: #E0F0FF url(../img/pattern.png);
+	height: 272px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  	background-position: center;
 }
 
 @media (max-width: 920px) {

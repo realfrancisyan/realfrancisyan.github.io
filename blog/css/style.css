@@ -404,7 +404,11 @@ footer {
   .continue_right, .continue_left, .continue_to_read {
     width: 18px;
     height: 18px;
-    top: 3px;
+    top: 4px;
+  }
+
+  .continue_to_read {
+    top: 4px;
   }
 
   .embed-container { 

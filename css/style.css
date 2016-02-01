@@ -229,3 +229,10 @@ footer {
 		height: 168px;
 	}
 }
+
+@media (max-width: 320px) {
+	.home_latest_posts .first_post, .home_latest_posts .second_post {
+		width: 260px;
+		height: 137px;
+	}
+}

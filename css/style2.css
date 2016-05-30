@@ -17,27 +17,27 @@ a:hover{color:#000;}
 }
 
 /* header */
-header {
+header, .header {
   background: url(../images/header_bg.png) no-repeat center center;
   height: 600px;
 }
 
-header .header_info {
+header .header_info, .header .header_info {
   overflow: hidden;
 }
 
-header h1 {
+header h1, .header h1 {
   float: left;
   height: 60px;
   margin-top: 40px;
 }
 
-header h1 img {
+header h1 img, .header h1 img {
   float: left;
   margin-top: 10px;
 }
 
-header h1 span {
+header h1 span, .header h1 span {
   float: left;
   margin-left: 10px;
   font-size: 24px;
@@ -60,16 +60,16 @@ header h1 span {
   color: #fff;
 }
 
-header h2 {
+header h2, .header h2 {
   font-size: 48px;
   color: #fff;
 }
 
-header h2:nth-of-type(1) {
+header h2:nth-of-type(1), .header h2:nth-of-type(1) {
   margin-top: 140px;
 }
 
-header h2:nth-of-type(2) {
+header h2:nth-of-type(2), .header h2:nth-of-type(2) {
   margin-top: 50px;
 }
 
@@ -309,11 +309,11 @@ header h2:nth-of-type(2) {
 }
 
 /* footer */
-footer {
+footer, .footer {
   margin: 50px 0;
 }
 
-footer .canvas_in {
+footer .canvas_in, .footer .canvas_in {
   overflow: hidden;
 }
 
@@ -335,12 +335,12 @@ footer .canvas_in {
 }
 
 /* link_animation */
-.header_nav a, footer a {
+.header_nav a, footer a, .footer a {
   position: relative;
   text-decoration: none;
 }
 
-.header_nav a:before, footer a:before {
+.header_nav a:before, footer a:before, .footer a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -359,7 +359,7 @@ footer .canvas_in {
   background-color: #fff;
 }
 
-.header_nav a:hover:before, footer a:hover:before {
+.header_nav a:hover:before, footer a:hover:before, .footer a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);

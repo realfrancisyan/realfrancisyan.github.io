@@ -1,0 +1,928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <title>Vmall</title>
+  <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
+  <script>
+  	window.onload=function(){
+  		var oclose=document.getElementById("close");
+  		var oheader_banner=document.getElementById("header_banner");
+
+  		oclose.onclick=function(){
+  			oheader_banner.style.display="none";
+  		}
+  	}
+  </script>
+</head>
+<body>
+  <div class="header_banner" id="header_banner">
+    <div class="canvas_in header_canvas">
+    	<div class="close" id="close"></div>
+    </div>
+  </div>
+
+  <div class="header_nav">
+	<div class="canvas_in">
+	  	<div class="header_nav_left">
+	  		<ul>
+	  			<li class="one first"><span><a href="#">华为官网</a></span></li>
+	  			<li class="one"><span><a href="#">荣耀官网</a></span></li>
+	  			<li class="one two"><span><a href="#">软件应用</a></span></li>
+	  			<li class="one"><span><a href="#">花粉俱乐部</a></span></li>
+	  			<li class="one last"><span><a href="#">Select Region</a></span></li>
+	  		</ul>
+	  	</div>
+	  	<div class="header_nav_right">
+	  		<ul>
+	  			<li class="one"><span><a class="color_black" href="#">登录</a>&nbsp;&nbsp;&nbsp;<a class="color_black" href="#">注册</a></span></li>
+	  			<li class="one"><span><a href="#">我的订单</a></span></li>
+	  			<li class="one"><span><a href="#">V码(优购码)</a></span></li>
+	  			<li class="one"><span><a href="#">手机版</a></span></li>
+	  			<li class="one two last"><span><a href="#">网站导航</a></span></li>
+	  		</ul>
+	  	</div>
+	</div>
+  </div>
+
+  <div class="header">
+  	<div class="canvas_in">
+  		<h1><a href="#"><img src="images/newLogo.png" alt="" /></a></h1>
+  		<div class="search">
+  			<div class="search_left">
+  				<input type="text" name="" id="txt" />
+  				<input type="submit" id="btn" value="搜索" />
+  				<p>
+  					热门搜索：
+  					<a href="#">5C</a>
+  					<a href="#">HUAWEI</a>
+  					<a href="#">P9</a>
+  					<a href="#">5X</a>
+  					<a href="#">荣耀7</a>
+  					<a href="#">Mate 8</a>
+  				</p>
+  			</div>
+  			<div class="search_right">
+  				<div class="mycart">
+  					<ul>
+  						<li class="one two three"><span><a href="#">我的商城</a></span></li>
+  						<li class="one three my_cart_last"><span><a href="#">我的购物车</a></span></li>
+  					</ul>
+  				</div>
+  			</div>
+  		</div>
+  		<span class="qrcode01">
+  			<img src="images/qrcode_vmall_app01.png" alt="" />
+  			<span>扫码下载客户端</span>
+  		</span>
+  	</div>
+  </div>
+
+  <div class="main_nav">
+  	<div class="canvas_in">
+  		<h2><a href="#">全部商品</a></h2>
+  		<ul>
+  			<li><a href="#">首页</a></li>
+  			<li><a href="#">华为专区</a></li>
+  			<li><a href="#">荣耀专区</a></li>
+  			<li><a href="#">荣耀 V8</a></li>
+  			<li><a href="#">HUAWEI P9 Plus</a></li>
+  			<li><a href="#">荣耀畅玩 5C</a></li>
+  			<li class="main_nav_last">
+  				<a href="#"><span>精彩频道</span></a>
+  			</li>
+  		</ul>
+  	</div>
+  </div>
+
+
+  <div class="main_content">
+  	  	<div class="canvas_in">
+	  		<div class="product_list">
+	  			<ul>
+	  				<li>
+	  					<h3><a href="#">手机</a></h3>
+	  					<a href="#">荣耀</a>
+	  					<a href="#">畅玩</a>
+	  					<a href="#">华为 Mate/P系列</a>
+
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">平板 & 穿戴</a></h3>
+	  					<a href="#">平板电脑</a>
+	  					<a href="#">手环</a>
+	  					<a href="#">手表</a>
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">智能家居</a></h3>
+	  					<a href="#">电力猫</a>
+	  					<a href="#">路由器</a>
+	  					<a href="#">电视盒子</a>
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">必备配件</a></h3>
+	  					<a href="#">入耳式耳机</a>
+	  					<a href="#">保护壳</a>
+	  					<a href="#">保护套</a>
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">基础配件</a></h3>
+	  					<a href="#">音箱</a>
+	  					<a href="#">表带</a>
+	  					<a href="#">电池/充电器</a>
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">潮流配件</a></h3>
+	  					<a href="#">支架</a>
+	  					<a href="#">自拍杆/器</a>
+	  					<a href="#">智能开关/插座</a>
+	  				</li>
+	  				<li>
+	  					<h3><a href="#">应用市场</a></h3>
+	  					<a href="#">手机游戏</a>
+	  					<a href="#">手机应用</a>
+	  				</li>
+	  			</ul>
+	  		</div>
+	  		<div class="slide_list">
+	  			<ul>
+	  				<li><a href="#">1</a></li>
+	  				<li><a href="#">2</a></li>
+	  				<li><a href="#">3</a></li>
+	  				<li><a href="#">4</a></li>
+	  				<li><a href="#">5</a></li>
+	  				<li><a href="#">6</a></li>
+	  			</ul>
+	  		</div>
+  		</div>
+  </div>
+
+  <div class="product_links">
+    <div class="canvas_in">
+      <div class="product_left">
+        <div class="product_01">
+          <div class="product_01_left">
+            <span class="new_hot">
+              <img src="images/1460244941377.png" alt="" />
+            </span>
+            <span class="product_img">
+              <img src="images/1462884243508.png" alt="" />
+            </span> 
+          </div>
+          <div class="product_01_right">
+            <h2>荣耀V8</h2>
+            <p>如有异见，不如一见！<br /><span>火爆预约中</span></p>
+            <h3>¥ 2499</h3>
+            <a href="#">立即抢购 </a>
+          </div>
+        </div>
+        <div class="product_01 product_02">
+          <div class="product_01_left">
+            <span class="new_hot">
+              <img src="images/1460244941377.png" alt="" />
+            </span>
+            <span class="product_img">
+              <img src="images/1462884243508.png" alt="" />
+            </span> 
+          </div>
+          <div class="product_01_right">
+            <h2>HUAWEI P9</h2>
+            <p>瞬间，定格视界的角度<br /><span>火爆热卖中</span></p>
+            <h3>¥ 3688</h3>
+            <a href="#">立即抢购 </a>
+          </div>
+        </div>
+      </div>
+      <div class="product_right photo">
+        <a href="#" class="featured_img"><img src="images/20160507124334787.jpg" alt="" /></a>
+      </div>
+
+      <div class="product_left">
+        <div class="product_01">
+          <div class="product_01_left">
+            <span class="new_hot">
+              <img src="images/1460244941377.png" alt="" />
+            </span>
+            <span class="product_img">
+              <img src="images/1462884243508.png" alt="" />
+            </span> 
+          </div>
+          <div class="product_01_right">
+            <h2>荣耀V8</h2>
+            <p>如有异见，不如一见！<br /><span>火爆预约中</span></p>
+            <h3>¥ 2499</h3>
+            <a href="#">立即抢购 </a>
+          </div>
+        </div>
+        <div class="product_01 product_02">
+          <div class="product_01_left">
+            <span class="new_hot">
+              <img src="images/1460244941377.png" alt="" />
+            </span>
+            <span class="product_img">
+              <img src="images/1462884243508.png" alt="" />
+            </span> 
+          </div>
+          <div class="product_01_right">
+            <h2>HUAWEI P9</h2>
+            <p>瞬间，定格视界的角度<br /><span>火爆热卖中</span></p>
+            <h3>¥ 3688</h3>
+            <a href="#">立即抢购 </a>
+          </div>
+        </div>
+      </div>
+      <div class="product_right">
+        <div class="top">
+           <h3>
+              <span class="first"><a href="#">公告</a></span>
+              <span class="second"><a href="#">评测</a></span>
+          </h3>
+          <ul>
+            <li><a href="#">荣耀V8，如有异见，不如一见！ 5月17...</a></li>
+            <li><a href="#">【中奖名单】荣耀7i移动增强版购机抽奖</a></li>
+            <li><a href="#">【实名会员专享】荣耀V8实名认证专场</a></li>
+            <li><a href="#">华为新品三剑客，震撼预售</a></li>
+            <li><a href="#">感恩母亲节，全场最高立减400元</a></li>
+          </ul>
+        </div>
+        <div class="bottom"><a href="#"><img src="images/20160506152955897.jpg" alt="" /></a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content_banner">
+      <div class="canvas_in">  
+        <img src="images/20160419200020747.jpg" alt="" />
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+  </div>
+
+  <div class="featured_products">
+    <div class="canvas_in">
+      <div class="nav">
+        <div class="nav_left">
+          <h2><a href="#">手机</a>&nbsp; <span>华为精品手机</span></h2>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><a href="#">荣耀</a></li>
+            <li><a href="#">畅玩</a></li>
+            <li><a href="#">华为 Mate/P系列</a></li>
+            <li><a href="#">G/Y系列</a></li>
+            <li><a href="#">运营商合约</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured_content">
+        <div class="ft_con_01">
+          <div class="ft_con_left">
+            <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+            <span class="ft_con_01_img">
+              <img src="images/1462885576291.png" alt="" />
+            </span>
+          </div>
+
+          <div class="ft_con_right">
+            <h2>荣耀7</h2>
+            <p>指纹识别，智能语音控制<br /><span>移动增强版原价1999直降200</span></p>
+            <h3>¥ 1799</h3>
+            <a href="#">立即抢购</a>
+          </div>
+        </div>
+        <div class="ft_con_02">
+          <span class="new_hot"><img src="images/1460246367953.png" alt="" /></span>
+          <div>
+            <img src="images/1462366569026.png" alt="" />
+            <h3><a href="#">HUAWEI P9 Plus <span>琥珀灰限量热销</span></a></h3>
+          <p>¥ 3988</p>
+          </div>      
+        </div>
+        <div class="ft_con_02 ft_con_03">
+          <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+          <div>
+            <img src="images/1462807454891.png" alt="" />
+            <h3><a href="#">荣耀畅玩4C <span>热卖爆款，体验升级</span></a></h3>
+            <p>¥ 3988</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="other_products">
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1462807454891.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1462807520629.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1461810038118.png" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1462807488137.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1457936187476.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460248152224.png" alt="" /></dt>
+          <dd>
+            <img src="images/1462366569026.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1453455044526.jpg" width="222" height="222" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1462807454891.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+<!-- Tablets -->
+  <div class="featured_products">
+    <div class="canvas_in">
+      <div class="nav">
+        <div class="nav_left">
+          <h2><a href="#">平板 & 穿戴</a>&nbsp; <span>华为精品平板</span></h2>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><a href="#">平板电脑</a></li>
+            <li><a href="#">手环</a></li>
+            <li><a href="#">手表</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured_content">
+        <div class="ft_con_01">
+          <div class="ft_con_left">
+            <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+            <span class="ft_con_01_img">
+              <img src="images/1461278083688.png" alt="" />
+            </span>
+          </div>
+
+          <div class="ft_con_right">
+            <h2>荣耀7</h2>
+            <p>指纹识别，智能语音控制<br /><span>移动增强版原价1999直降200</span></p>
+            <h3>¥ 1799</h3>
+            <a href="#">立即抢购</a>
+          </div>
+        </div>
+        <div class="ft_con_02">
+          <span class="new_hot"><img src="images/1460246367953.png" alt="" /></span>
+          <div>
+            <img src="images/1462631610283.png" alt="" />
+            <h3><a href="#">HUAWEI P9 Plus <span>琥珀灰限量热销</span></a></h3>
+          <p>¥ 3988</p>
+          </div>      
+        </div>
+        <div class="ft_con_02 ft_con_03">
+          <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+          <div>
+            <img src="images/1462883695256.png" alt="" />
+            <h3><a href="#">荣耀畅玩4C <span>热卖爆款，体验升级</span></a></h3>
+            <p>¥ 3988</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="other_products">
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1462889619365.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1462366978456.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1460019221135.png" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1459852823263.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1446881383308.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460248152224.png" alt="" /></dt>
+          <dd>
+            <img src="images/1452586655406.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1457006843394.png" width="222" height="222" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1447211984495.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Smart Home -->
+  <div class="featured_products">
+    <div class="canvas_in">
+      <div class="nav">
+        <div class="nav_left">
+          <h2><a href="#">智能家居</a>&nbsp; <span>上网必备</span></h2>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><a href="#">电力猫</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">电视盒子</a></li>
+            <li><a href="#">随行wifi</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured_content">
+        <div class="ft_con_01">
+          <div class="ft_con_left">
+            <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+            <span class="ft_con_01_img">
+              <img src="images/1429088320550.png" alt="" />
+            </span>
+          </div>
+
+          <div class="ft_con_right">
+            <h2>荣耀7</h2>
+            <p>指纹识别，智能语音控制<br /><span>移动增强版原价1999直降200</span></p>
+            <h3>¥ 1799</h3>
+            <a href="#">立即抢购</a>
+          </div>
+        </div>
+        <div class="ft_con_02">
+          <span class="new_hot"><img src="images/1460246367953.png" alt="" /></span>
+          <div>
+            <img src="images/1459907115959.png" alt="" />
+            <h3><a href="#">HUAWEI P9 Plus <span>琥珀灰限量热销</span></a></h3>
+          <p>¥ 3988</p>
+          </div>      
+        </div>
+        <div class="ft_con_02 ft_con_03">
+          <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+          <div>
+            <img src="images/1454481783764.png" alt="" />
+            <h3><a href="#">荣耀畅玩4C <span>热卖爆款，体验升级</span></a></h3>
+            <p>¥ 3988</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="other_products">
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1453165887092.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1453046467946.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1429088320550.png" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1453046369036.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+<!-- Accessories-->
+  <div class="featured_products">
+    <div class="canvas_in">
+      <div class="nav">
+        <div class="nav_left">
+          <h2><a href="#">必备配件</a>&nbsp; <span>配件与服务</span></h2>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><a href="#">保护壳</a></li>
+            <li><a href="#">保护套</a></li>
+            <li><a href="#">贴膜</a></li>
+            <li><a href="#">蓝牙耳机</a></li>
+            <li><a href="#">入耳式耳机</a></li>
+            <li><a href="#">头戴耳机</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured_content">
+        <div class="ft_con_01">
+          <div class="ft_con_left">
+            <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+            <span class="ft_con_01_img">
+              <img src="images/1462883514684.png" alt="" />
+            </span>
+          </div>
+
+          <div class="ft_con_right">
+            <h2>荣耀7</h2>
+            <p>指纹识别，智能语音控制<br /><span>移动增强版原价1999直降200</span></p>
+            <h3>¥ 1799</h3>
+            <a href="#">立即抢购</a>
+          </div>
+        </div>
+        <div class="ft_con_02">
+          <span class="new_hot"><img src="images/1460246367953.png" alt="" /></span>
+          <div>
+            <img src="images/1457231717141.png" alt="" />
+            <h3><a href="#">HUAWEI P9 Plus <span>琥珀灰限量热销</span></a></h3>
+          <p>¥ 3988</p>
+          </div>      
+        </div>
+        <div class="ft_con_02 ft_con_03">
+          <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+          <div>
+            <img src="images/1455673004262.png" alt="" />
+            <h3><a href="#">荣耀畅玩4C <span>热卖爆款，体验升级</span></a></h3>
+            <p>¥ 3988</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="other_products">
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1454136259058.png" width="222" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1457522181557.jpg" width="222" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1458985880585.png" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1456382193085.jpg" width="222" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1433835808223.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460248152224.png" alt="" /></dt>
+          <dd>
+            <img src="images/1437447628631.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1450089339226.png" width="222" height="222" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1460679267517.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1461031073038.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460248152224.png" alt="" /></dt>
+          <dd>
+            <img src="images/1450863312793.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1454404828543.png" width="222" height="222" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1454405299337.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+        <dl>
+          <dt></dt>
+          <dd>
+            <img src="images/1454405160623.png" alt="" />
+            <h3><a href="#">HUAWEI Mate 8 <span>高性能与长续航的再次突破</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460248152224.png" alt="" /></dt>
+          <dd>
+            <img src="images/1450922646920.png" alt="" />
+            <h3><a href="#">荣耀4A <span>青春优等生，火爆销售中</span></a></h3>
+            <p>¥ 599</p>            
+          </dd>
+        </dl>
+        <dl>
+          <dt><img src="images/1460242398600.png" alt="" /></dt>
+          <dd>
+            <img src="images/1451284334110.png" width="222" height="222" alt="" />
+            <h3><a href="#">荣耀7i <span>全网通/移动版直降200！</span></a></h3>
+            <p>¥ 1399</p>            
+          </dd>
+        </dl>
+        <dl class="last">
+          <dt></dt>
+          <dd>
+            <img src="images/1452568972215.png" alt="" />
+            <h3><a href="#">荣耀畅玩4X <span>千万人之选，火爆热销</span></a></h3>
+            <p>¥ 3988</p>            
+          </dd>
+        </dl>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Smart Home -->
+  <div class="featured_products">
+    <div class="canvas_in">
+      <div class="nav">
+        <div class="nav_left">
+          <h2><a href="#">每日特价</a>&nbsp; <span>精品推荐</span></h2>
+        </div>
+        <div class="nav_right">
+          <ul>
+            <li><a href="#">每日特价</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="featured_content">
+        <div class="ft_con_01">
+          <div class="ft_con_left">
+            <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+            <span class="ft_con_01_img">
+              <img src="images/1456133845618.png" alt="" />
+            </span>
+          </div>
+
+          <div class="ft_con_right">
+            <h2>荣耀7</h2>
+            <p>指纹识别，智能语音控制<br /><span>移动增强版原价1999直降200</span></p>
+            <h3>¥ 1799</h3>
+            <a href="#">立即抢购</a>
+          </div>
+        </div>
+        <div class="ft_con_02">
+          <span class="new_hot"><img src="images/1460246367953.png" alt="" /></span>
+          <div>
+            <img src="images/1458613141200.png" alt="" />
+            <h3><a href="#">HUAWEI P9 Plus <span>琥珀灰限量热销</span></a></h3>
+          <p>¥ 3988</p>
+          </div>      
+        </div>
+        <div class="ft_con_02 ft_con_03">
+          <span class="new_hot"><img src="images/1460242398600.png" alt="" /></span>
+          <div>
+            <img src="images/1458613381474.png" alt="" />
+            <h3><a href="#">荣耀畅玩4C <span>热卖爆款，体验升级</span></a></h3>
+            <p>¥ 3988</p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <div class="content_banner">
+      <div class="canvas_in">  
+        <a href="#"><img src="images/20160225154345481.jpg" alt="" /></a>
+      </div>
+  </div>
+
+  <div class="follow">
+    <div class="canvas_in">
+      <ul>
+        <li><a href="#"><img src="images/follow_hwsoft_application.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/follow_sina.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/follow_qzone.png" alt="" /></a></li>
+        <li><a href="#"><img src="images/follow_android.png" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slogan">
+    <div class="canvas_in">
+      <ul>
+        <li><span class="s1"></span>500强企业 品质保证</li>
+        <li><span class="s2"></span>7天退货 15天换货</li>
+        <li><span class="s3"></span>99元起免运费</li>
+        <li><span class="s4"></span>448家维修网点 全国联保</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer_text">
+    <div class="canvas_in">
+      <dl>
+        <dt><span></span><h3>帮助中心</h3></dt>
+        <dd><a href="#">购物指南</a></dd>
+        <dd><a href="#">配送方式</a></dd>
+        <dd><a href="#">支付方式</a></dd>
+        <dd><a href="#">常见问题</a></dd>
+      </dl>
+
+      <dl>
+        <dt><span class="s2"></span><h3>关于商城</h3></dt>
+        <dd><a href="#">公司介绍</a></dd>
+        <dd><a href="#">华为商城简介</a></dd>
+        <dd><a href="#">联系客服</a></dd>
+      </dl>
+
+      <dl>
+        <dt><span class="s3"></span><h3>售后服务</h3></dt>
+        <dd><a href="#">保修政策</a></dd>
+        <dd><a href="#">退换货政策</a></dd>
+        <dd><a href="#">退换货流程</a></dd>
+        <dd><a href="#">保修状态查询</a></dd>
+      </dl> 
+
+      <dl>
+        <dt><span class="s4"></span><h3>技术支持</h3></dt>
+        <dd><a href="#">售后网点</a></dd>
+        <dd><a href="#">预约维修</a></dd>
+        <dd><a href="#">手机寄修服务</a></dd>
+        <dd><a href="#">软件下载</a></dd>
+      </dl>
+
+      <dl>
+        <dt><span class="s5"></span><h3>关注我们</h3></dt>
+        <dd><a href="#">新浪微博</a></dd>
+        <dd><a href="#">腾讯微博</a></dd>
+        <dd><a href="#">花粉社区</a></dd>
+        <dd><a href="#">商城手机版</a></dd>
+      </dl>
+    </div>
+  </div>
+
+        
+  <div class="footer_links">
+    <div class="canvas_in">
+      <p>隐私政策 服务协议 Copyright © 2012-2016 VMALL.COM 版权所有 保留一切权利</p>
+      <p> <a class="beian" href="#">苏公网安备 32011402010009号</a> | 苏ICP备09062682号-9 | 增值电信业务经营许可证：苏B2-20130048 | 网络文化经营许可证：苏网文[2012]0401-019号</p>
+      <h2>
+        <a href="#"><img src="images/20160226162415360.png" alt="" /></a>
+        <a href="#"><img src="images/20160226162521265.png" alt="" /></a>
+        <a href="#"><img src="images/20160226162531395.png" alt="" /></a>
+      </h2>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+     

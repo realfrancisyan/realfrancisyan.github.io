@@ -1,0 +1,49 @@
+.apps ul li ul li {
+	float: left;
+}
+
+.apps ul li ul li ul li {
+	float: none;
+}
+
+.apps ul li ul li img {
+	border-radius: 20px;
+	width: 100px;
+}
+
+.apps ul li ul li ul li p {
+	margin-left: 16px;
+	color: #424242;
+	font-family: "Roboto", sans-serif;
+	margin-top: 0;
+	width: 150px;
+}
+
+.apps ul li ul li ul li p a {
+	text-decoration: none;
+	color: #424242;
+	font-family: "Roboto", sans-serif;
+}
+
+.apps ul li ul li ul li p:first-child {
+	padding-top: 6px;
+	line-height: 24px;
+	font-weight: 400;
+}
+
+.apps ul li ul li:last-child {
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+@media (max-width: 920px) {
+	.apps ul li ul li ul li p {
+		width: 160px;
+	}
+}
+
+@media (max-width: 320px) {
+	.apps ul li ul li ul li p {
+		width: 144px;
+	}
+}

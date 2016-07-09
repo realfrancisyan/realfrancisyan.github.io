@@ -1,0 +1,208 @@
+@charset "utf-8";
+/*body, html, .main_content, .img_full {
+  height: 100%;
+}*/
+
+/* nav_links */
+/*
+.nav_left, .nav_right {
+  display: block;
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 30px;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 10;
+}
+
+.nav_left {
+  left: 20px;
+}
+
+.nav_right {
+  right: 20px;
+}*/
+
+
+.page_nav {
+  position: fixed;
+  top: 50%;
+  margin-top: -77px;
+  width: 20px;
+  height: 400px;
+  font-size: 14px;
+  z-index: 10;
+  line-height: 14px;
+  text-align: center;
+  right: 20px;
+}
+
+.page_nav span {
+  display: block;
+  opacity: 0;
+}
+
+.previous {
+  overflow: hidden;
+}
+
+.nav_left, .nav_right {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #000;
+  border-radius: 30px;
+
+}
+
+.nav_left {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.nav_right {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* header */
+
+.header {
+  height: 140px;
+  background: #fff;
+}
+
+.header h1 span, .header_nav a {
+  color: #000;
+}
+
+/* main_description */
+
+.main_description {
+  background: #F7F7F7;
+  height: auto;
+  padding: 50px 0;
+}
+
+.main_description h2 {
+  font-size: 30px;
+}
+
+.main_description p {
+  font-size: 20px;
+  font-family: "Noto Sans CJK SC","Microsoft Yahei","宋体",Arial;
+  line-height: 40px;
+  width: 700px;
+  margin-top: 50px;
+}
+
+.img_full {
+  margin-top: 10px;
+  position: relative;
+}
+
+.img_full div {
+  height: 1000px;
+}
+
+.p1 div {
+  height: 820px;
+}
+
+.img_full span {
+  display: block;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -100px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+}
+
+.img_full .gold {
+  color: #7d7900;
+}
+
+.main_content {
+  overflow: hidden;
+}
+
+.main_content div:nth-of-type(1) div {
+  background: url(../posts/tweetbot/images/main.jpg) no-repeat center center;
+}
+
+.main_content div:nth-of-type(2) div {
+  background: url(../posts/tweetbot/images/gold.jpg) no-repeat center center;
+}
+
+.main_content div:nth-of-type(3) div {
+  background: url(../posts/tweetbot/images/green.jpg) no-repeat center center;
+}
+
+.main_content div:nth-of-type(4) div {
+  background: url(../posts/tweetbot/images/blue.jpg) no-repeat center center;
+}
+
+.main_content div:nth-of-type(5) div {
+  background: url(../posts/tweetbot/images/red.jpg) no-repeat center center;
+}
+
+.img_left, .img_right {
+  float: left;
+  width: 50%;
+  height: 1000px;
+  margin-top: 10px;
+}
+
+.img_left {
+  background: url(../posts/rollup_banner/images/1.jpg) no-repeat center center;
+}
+
+.img_right {
+  background: url(../posts/rollup_banner/images/2.jpg) no-repeat center center;
+  position: relative;
+}
+
+.img_right a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.img_right span {
+  position: absolute;
+  display: block;
+  width: 400px;
+  height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  top: 70px;
+  left: 50%;
+  margin-left: -200px;
+  display: none;
+}
+
+.web06 {
+  height: 500px;
+}
+
+.footer_left p.pcredit {
+  margin-top: 0;
+}
+
+/* link_animation */
+.header_nav a:before, .footer a:before {
+  background-color: #000;
+}
+
+.header_nav a:before {
+  background-color: #000;
+}

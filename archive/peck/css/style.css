@@ -1,0 +1,544 @@
+/*
+* @Author: realfrancisyan
+* @Date:   2016-11-20 14:27:10
+* @Last Modified by:   realfrancisyan
+* @Last Modified time: 2016-12-04 01:35:07
+*/
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Global */
+
+body {
+	font-family: "Avenir Next", "Microsoft Jhenghei", "Helvetica", Arial;
+	background: #F2F2F2;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.section_title {
+	font-size: 24px;
+	font-weight: 600;
+	color: #FF5275;
+	margin: 40px 0;
+}
+
+.line_break {
+	width: 100%;
+	height: 1px;
+	background: #d0d0d0;
+	margin-top: 40px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Header */
+header {
+	background: #fff;
+	height: 200px;
+}
+
+header a {
+	color: #FF5275;
+}
+
+header h1 a {
+	color: #FF5275;
+	transition: all .5s;
+}
+
+header h1 a:hover {
+	opacity: .5;
+}
+
+header .header_box {
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+header .header_box h1 {
+	float: left;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 40px;
+}
+
+header .header_box nav {
+	float: left;
+	margin-left: 20px;
+}
+
+header .header_box nav ul li {
+	float: left;
+	margin-left: 20px;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 40px;
+}
+
+header .header_box nav ul li:hover {
+	text-decoration: underline;
+}
+
+header .header_description h2 {
+	color: #FF5275;
+	font-size: 72px;
+	font-weight: 200;
+	padding-top: 20px;
+}
+
+
+/* Editors' Picks */
+
+.editors_picks ul {
+	overflow: hidden;
+}
+
+.editors_picks ul li {
+	float: left;
+	width: 49%;
+	margin-right: 2%;
+	position: relative;
+}
+
+.editors_picks ul li:last-child {
+	margin-right: 0;
+}
+
+.editors_picks ul li img {
+	width: 100%;
+	display: block;
+}
+
+.editors_picks ul li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.editors_picks ul li a div {
+	margin-top: 150px;
+	margin-left: 100px;
+}
+
+.editors_picks ul li a h3 {
+	font-size: 28px;
+	font-weight: 600;
+}
+
+.editors_picks ul li a h4 {
+	font-size: 24px;
+	margin-top: 5px;
+	font-weight: 400;
+}
+
+
+/* Things We Love */
+
+.things_we_love .box {
+	overflow: hidden;
+}
+
+.things_we_love dl {
+	float: left;
+	width: 32%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+.things_we_love dl:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.things_we_love dl img {
+	width: 100%;
+	display: block;
+}
+
+.things_we_love dd {
+	width: 100%;
+	height: 60px;
+	background: #B6B6B6;
+	padding: 4%;
+	box-sizing: border-box;
+}
+
+.things_we_love dd h4 {
+	font-size: 14px;
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.things_we_love dd h5 {
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	float: left;
+}
+
+.things_we_love dd ul {
+	float: right;
+}
+
+.things_we_love dd ul li {
+	float: left;
+	font-size: 12px;
+	line-height: 18px;
+	margin-left: 10px;
+}
+
+.load_more {
+	width: 100%;
+	height: 60px;
+	background: #FF5275;
+	text-align: center;
+	line-height: 60px;
+	margin-top: 2%;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+}
+
+
+/* Featured Artists */
+
+.featured_artists ul {
+	overflow: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+}
+
+.featured_artists ul li {
+	display: inline-block;
+	margin: 0 20px;
+	width: 160px;
+	text-align: center;
+}
+
+.featured_artists ul li a {
+	display: block;
+}
+
+.featured_artists ul li img {
+	border-radius: 50%;
+	width: 100%;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.featured_artists ul li h5 {
+	color: #333;
+	font-size: 20px;
+}
+
+/* Subscribe to Our Newsletter */
+.subscribe .wrapper {
+	overflow: hidden;
+}
+
+.subscribe .wrapper input {
+	float: left;
+	width: 32%;
+	height: 60px;
+	border: 1px solid #fff;
+	margin-right: 2%;
+	box-sizing: border-box;
+	text-indent: 20px;
+	color: #999;
+	font-size: 18px;
+	outline: none;
+}
+
+.subscribe .wrapper input:last-child {
+	margin-right: 0;
+}
+
+.subscribe button {
+	margin-top: 30px;
+	font-size: 18px;
+	color: #fff;
+	display: block;
+	width: 100%;
+	height: 60px;
+	text-align: center;
+	border: 0;
+	background: #FF5275;
+	outline: none;
+	cursor: pointer;
+}
+
+.subscribe .subscribe_message {
+	margin-top: 20px;
+	width: 100%;
+	padding: 3%;
+	box-sizing: border-box;
+	background: #FF5275;
+	display: none;
+}
+
+.subscribe .subscribe_message p {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.subscribe .subscribe_message p.hide_message:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+/* Footer */
+footer h2 {
+	font-size: 36px;
+	line-height: 120px;
+	font-weight: 600;
+	color: #FF5275;
+}
+
+footer h2 a {
+	color: #FF5275;
+}
+
+footer .footer_box {
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+footer .footer_box .company_info {
+	width: 60%;
+	float: left;
+	margin-right: 5%;
+}
+
+footer .footer_box .company_info p {
+	font-size: 20px;
+	line-height: 28px;
+	font-weight: 400;
+	color: #FF5275;
+	margin-bottom: 20px;
+}
+
+footer .footer_links {
+	width: 35%;
+	float: right;
+	line-height: 120px;
+}
+
+
+footer .footer_box ul {
+	float: right;
+}
+
+footer .footer_box ul li {
+	float: left;
+}
+
+footer .footer_box ul li a {
+	font-size: 20px;
+	color: #FF5275;
+	font-weight: 400;
+	margin-left: 20px;
+}
+
+footer .footer_box ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/* Search -- Search */
+.search form {
+	overflow: hidden;
+}
+
+.search input {
+	height: 60px;
+	outline: none;
+	border: 0;
+	font-size: 18px;
+	box-sizing: border-box;
+}
+
+.search #search_text {
+	float: left;
+	width: 74%;
+	text-indent: 3%;
+	color: #999;
+}
+
+.search #search_submit {
+	float: right;
+	width: 25%;
+	cursor: pointer;
+	color: #fff;
+	background: #50E3C2;
+}
+
+/* Search -- Show results */
+.show_results .results .result_info {
+	overflow: hidden;
+	position: relative;
+	margin-top: 40px;
+}
+
+.show_results .results .result_info .result_box {
+	float: left;
+	width: 60%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.show_results .results .result_info .result_box h2 {
+	color: #333;
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+
+.show_results .results .result_info .result_box h2 a {
+	color: #333;
+}
+
+.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
+	color: #666;
+	font-size: 24px;
+	font-weight: 300;
+}
+
+.show_results .results .result_info .result_box .result_author {
+	margin-top: 10px;
+}
+
+.show_results .results .result_info .result_box li {
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+
+.show_results .results .result_info img {
+	float: right;
+	width: 35%;
+}
+
+.show_results .load_more {
+	margin-top: 4%;
+	display: none;
+}
+
+.show_results .line_break {
+	display: none;
+}
+
+/* Search -- Twitter */ 
+.twitter .twitter-timeline {
+	background: #F2F2F2;
+}
+
+/* Search -- Google Maps */
+.google_maps .artist_location {
+	font-size: 20px;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+/* Code from http://www.labnol.org/internet/embed-responsive-google-maps/28333 */
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* End code */
+
+
+
+/* About -- Article */
+article h2 {
+	margin: 40px 0;
+	color: #FF5275;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 600;
+}
+
+article p {
+	margin-top: 30px;
+	font-size: 24px;
+	color: #333;
+	line-height: 32px;
+}
+

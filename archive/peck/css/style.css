@@ -1,8 +1,8 @@
 /*
 * @Author: realfrancisyan
 * @Date:   2016-11-20 14:27:10
-* @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-11 20:33:45
+* @Last Modified by:   Francis Yan
+* @Last Modified time: 2016-12-12 14:35:52
 */
 
 
@@ -546,7 +546,7 @@ footer .footer_box ul li a:hover {
 /* Code from http://www.labnol.org/internet/embed-responsive-google-maps/28333 */
 .google-maps {
         position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
+        padding-bottom: 75%; /* This is the aspect ratio */
         height: 0;
         overflow: hidden;
     }

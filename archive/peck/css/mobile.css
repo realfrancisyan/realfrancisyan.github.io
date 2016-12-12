@@ -2,7 +2,7 @@
 * @Author: realfrancisyan
 * @Date:   2016-12-03 22:17:12
 * @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-04 01:48:46
+* @Last Modified time: 2016-12-12 00:34:33
 */
 
 @media (max-width: 1000px) {
@@ -12,6 +12,10 @@
 
 	header .header_description h2 {
 		font-size: 64px;
+	}
+
+	header h1 a:hover {
+		opacity: 1;
 	}
 
 	.editors_picks ul li a div {
@@ -50,7 +54,7 @@
 		margin-bottom: 20px;
 	}
 
-	.subscribe button {
+	.subscribe #submit {
 		margin-top: 0;
 	}
 
@@ -182,7 +186,7 @@
 	}
 
 	.section_title {
-		font-size: 14px;
+		font-size: 16px;
 		margin: 20px 0;
 	}
 
@@ -219,15 +223,15 @@
 
 	.editors_picks ul li a div {
 		margin-top: 35%;
-		margin-left: 30%;
+		margin-left: 26%;
 	}
 
 	.editors_picks ul li a h3 {
-		font-size: 14px;
+		font-size: 22px;
 	}
 
 	.editors_picks ul li a h4 {
-		font-size: 12px;
+		font-size: 18px;
 	}
 
 	.featured_artists ul li {
@@ -248,7 +252,7 @@
 		margin-bottom: 10px;
 	}
 
-	.subscribe button {
+	.subscribe #submit {
 		font-size: 14px;
 		height: 40px;
 	}
@@ -274,13 +278,13 @@
 	}
 
 	footer .footer_box .company_info p {
-		font-size: 12px;
+		font-size: 14px;
 		line-height: 18px;
 		margin-bottom: 10px;
 	}
 
 	footer .footer_box ul li a {
-		font-size: 12px;
+		font-size: 14px;
 	}
 
 	footer .footer_links {
@@ -289,13 +293,13 @@
 	}
 
 	.show_results .results .result_info .result_box h2 {
-		font-size: 14px;
-		margin-bottom: 30px;
+		font-size: 16px;
+		margin-bottom: 20px;
 	}
 
 
 	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
-		font-size: 10px;
+		font-size: 12px;
 	}
 
 	.search input {
@@ -306,7 +310,7 @@
 	}
 
 	.google_maps .artist_location {
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	article h2 {

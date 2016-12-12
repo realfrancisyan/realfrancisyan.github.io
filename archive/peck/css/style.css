@@ -2,7 +2,7 @@
 * @Author: realfrancisyan
 * @Date:   2016-11-20 14:27:10
 * @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-04 01:35:07
+* @Last Modified time: 2016-12-11 20:33:45
 */
 
 
@@ -319,7 +319,7 @@ header .header_description h2 {
 	margin-right: 0;
 }
 
-.subscribe button {
+.subscribe #submit {
 	margin-top: 30px;
 	font-size: 18px;
 	color: #fff;
@@ -439,6 +439,43 @@ footer .footer_box ul li a:hover {
 }
 
 /* Search -- Show results */
+
+.show_shots .artist_details {
+	height: 150px;
+	overflow: hidden;
+}
+
+.show_shots .artist_details img {
+	float: left;
+	width: 150px;
+	height: 150px;
+}
+
+.show_shots .artist_details .name_bio {
+	float: right;
+	width: 80%;
+	height: 150px;
+	position: relative;
+}
+
+.show_shots .artist_details .name_bio h2 {
+	position: absolute;
+	font-size: 32px;
+	font-weight: 600;
+	color: #333;
+	top: 0;
+	left: 0;
+}
+
+.show_shots .artist_details .name_bio p {
+	position: absolute;
+	font-size: 24px;
+	line-height: 32px;
+	color: #333;
+	bottom: 0;
+	left: 0;
+}
+
 .show_results .results .result_info {
 	overflow: hidden;
 	position: relative;

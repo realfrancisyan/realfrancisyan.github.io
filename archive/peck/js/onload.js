@@ -11,7 +11,7 @@ $(function(){
 
 	// Form effects
 	// Fill three different placeholders into input forms
-	var vals = ["First Name", "Last Name", "example@example.com"]
+	var vals = ["First Name", "Last Name", "Email"]
 	$(".wrapper input").each(function(index, element){
 	  $(element).val(vals[index])
 	});
@@ -46,17 +46,18 @@ $(function(){
 		var this_val = $(this).val();
 		var this_index = $(this).index();
 		if(this_val === ""){
-			$(this).val("e.g. ueno").css("color", "#999")
+			$(this).val("e.g. ueno").css("color", "#999");
 		}
 	});
 
 	// Limits button clicking effect
-	$("#submit").one("click", function(event){
-		event.preventDefault();
-		$(this).prop("disabled", true).css({background: "#50E3C2"}).val("Subscribed!")
-		$(".subscribe_message").slideDown();
+	$("#submit").on("click", function(event){
+		if ($("#email").is(':valid')) {
+			event.preventDefault();
+			$(this).prop("disabled", true).css({background: "#50E3C2"}).val("Subscribed!")
+			$(".subscribe_message").slideDown();
+		}
 	})
-
 
 	// Hide message when user clicks
 	$(".hide_message").click(function(){
@@ -223,6 +224,7 @@ $(function(){
 
 	// show search results
 	function searchResults(this_data, index){
+		var inputValue = $("#search_text").val();
 		var data = JSON.parse(this_data.response);
 		fetchThisArtist(data);
 		
@@ -236,6 +238,10 @@ $(function(){
 			$(".show_shots").children().children(".line_break").show()
 		}
 		else{
+			if ($(".search_title").length === 0){
+				$(".show_shots").children().prepend("<h2 class='section_title search_title'>Showing results for "+ inputValue +"</h2><div class='artist_details'></div>")
+			}
+
 			for (var i = 0; i<data.length; i++){
 				$(".search_shots").append("<div class='result_info'><div class='result_box'><h2 class='result_title'><a></a></h2><h3 class='result_date'></h3><ul><li></li><li></li></ul></div><a class='img_block'><img /></a></div>");
 
@@ -300,7 +306,13 @@ $(function(){
 				// word limitation to 50 bytes
 				check_word_count($(".search_shots").children().eq(i+index).children(".result_box").children("h2").children(), 50)
 
-				loadMoreBar();
+				// if data.length is less than 12, no need to show load more bar
+				if (data.length >= 12){
+					loadMoreBar();
+				}
+				else{
+					$(".search_load_more").hide();
+				}
 			}
 			// pass user data to Behance Projects to reduce xhttp request
 			fetchBehance(data)
@@ -316,7 +328,7 @@ $(function(){
 
 		$(".artist_details").remove();
 
-		$(".show_shots").children().prepend("<h2 class='section_title'>Showing results for "+ inputValue +"</h2><div class='artist_details'></div>")
+		// $(".show_shots").children().prepend("<h2 class='section_title'>Showing results for "+ inputValue +"</h2><div class='artist_details'></div>")
 
 		fetchSearchResults.addEventListener("load", function(){
 			var data = JSON.parse(fetchSearchResults.response)
@@ -326,7 +338,7 @@ $(function(){
 
 	}
 
-		// show artist's info
+	// show artist's info
 	function fetchThisArtist(check_posts){
 		function artist_info(this_data, check_posts){
 			var data = JSON.parse(this_data.response);
@@ -401,14 +413,19 @@ $(function(){
 
 	// Fetch Behance Projects
 	function fetchBehance(artist_data){
-		console.log(artist_data[0].tags[0])
-		var relatedTag = artist_data[0].tags[0]
+
+		// Use Math.random to make sure each time a key word loads will display different posts for more information
+		var random_posts = parseInt(Math.random()*artist_data.length)
+		var random_tag = parseInt(Math.random()*artist_data[random_posts].tags.length)
+		var relatedTag = artist_data[random_posts].tags[random_tag];
 
 		var client_ID = "kDDFwIQ0b5Uo8ms3GXhGnSl8V7aJdWDf";
 
-		$.getJSON("http://www.behance.net/v2/projects?client_id="+ client_ID +"&q="+ relatedTag +"&field=web%2Bdesign&callback=?", function(result){
-			
-				$(".behance_projects .container .box").before("<h2 class='section_title'>Suggested posts from Behance</h2>")
+		// check if h2 tag exists to avoid generating duplicate requests after user clicking load more button
+		if ($(".check_behance").length == 0){
+			$.getJSON("http://www.behance.net/v2/projects?client_id="+ client_ID +"&q="+ relatedTag +"&field=web%2Bdesign&callback=?", function(result){
+
+				$(".behance_projects .container .box").before("<h2 class='section_title check_behance'>Suggested posts from Behance</h2>")
 
 				// Automatically generates content
 				for (var i=0; i<6; i++){
@@ -439,59 +456,73 @@ $(function(){
 				}
 
 				$(".behance_projects .container .box").after("<div class='line_break'></div>")
-
 			});
+		}
 	}
 
 
 	// Fetch Twitter Info
 	function fetchTwitter(artist_data){
-		// check if an artist has a twitter account
+		if ($(".twitter_title").length === 0){
+			// check if an artist has a twitter account
 			if (artist_data.links.twitter){
-
 				// create necessary code for twitter widget
 				var script = document.createElement("script");
 				script.src= "https://platform.twitter.com/widgets.js";
 				script.async;
-				$(".twitter").children().append("<h2 class='section_title'>What the artist says</h2>")
+				$(".twitter").children().append("<h2 class='section_title twitter_title'>What the artist says</h2>")
 
 				// append twitter widget according to the artist's account
 				$(".twitter").children().append("<a class='twitter-timeline' data-width='960' data-height='1000' data-link-color='#FB6986' href='"+ artist_data.links.twitter +"' data-chrome='nofooter noscrollbar transparent'>Tweets by "+ artist_data.name +"</a>")
 				$(".twitter").children().append("<div class='line_break'></div>")
 				$(".twitter").children().append(script)
 			}
+		}
+			
 	}
 
 	// Fetch Google Maps
 	function fetchGoogleMaps(artist_data){
-		// check if an artist has a location
-		if (artist_data.location){
-				$(".google_maps").children().append('<h2 class="section_title">Location</h2><h3 class="artist_location">'+ artist_data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q='+ artist_data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
+		
+		if ($(".maps_title").length === 0){
+			// check if an artist has a location
+			if (artist_data.location){
+				$(".google_maps").children().append('<h2 class="section_title maps_title">Location</h2><h3 class="artist_location">'+ artist_data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q='+ artist_data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
 			}
+		}
 	}
 
 	// submit event for when users press enter or click "submit" btn
+
+	var isSameInput = "";
 	function submit_event(){
 		var inputValue = $("#search_text").val();
+		
+		// prevent user from typing the same thing
+		if (inputValue !== isSameInput){
+			isSameInput = inputValue;	
+			// prevent user from typing nothing
 
-		// prevent user from typing nothing
-
-		if (inputValue !== "e.g. ueno" && inputValue !== ""){
+			if (inputValue !== "e.g. ueno" && inputValue !== ""){
+				event.preventDefault();
+				$(".show_shots").children().children("h2").remove();
+				$(".twitter").children().empty();
+				$(".search_shots").empty();
+				$(".search_load_more").hide()
+				$(".and_he_likes").children().children("h2").remove();
+				$(".and_he_likes").children().children(".line_break").hide();
+				$(".behance_projects .container").empty();
+				$(".behance_projects .container").append("<div class='box'></div>")
+				$(".likes_shots").empty();
+				$(".google_maps").children().empty();
+				search_click_count = 0;
+				$(".search_load_more").css({background: "#FC5477"}).html("Load more...")
+				fetchResults();
+		        fetchLikes();
+			}
+		}
+		else{
 			event.preventDefault();
-			$(".show_shots").children().children("h2").empty();
-			$(".twitter").children().empty();
-			$(".search_shots").empty();
-			$(".search_load_more").hide()
-			$(".and_he_likes").children().children("h2").remove();
-			$(".and_he_likes").children().children(".line_break").hide();
-			$(".behance_projects .container").empty();
-			$(".behance_projects .container").append("<div class='box'></div>")
-			$(".likes_shots").empty();
-			$(".google_maps").children().empty();
-			search_click_count = 0;
-			$(".search_load_more").css({background: "#FC5477"}).html("Load more...")
-			fetchResults();
-	        fetchLikes();
 		}
 
 	}

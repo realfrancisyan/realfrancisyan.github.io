@@ -1,10 +1,3 @@
-/*
-* @Author: realfrancisyan
-* @Date:   2016-11-20 14:27:26
-* @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-12 00:22:29
-*/
-
 'use strict';
 
 $(function(){
@@ -75,7 +68,6 @@ $(function(){
 		$("html, body").animate({scrollTop:0}, 500)
 	});
 
-
 	// Check if specific words overflow
 	function check_word_count(item, max_num){
 		item.each(function(){
@@ -110,8 +102,8 @@ $(function(){
 
 	// dribbble API token for retrieving data
 	var drbl_API = "1c94a8f95aca0de33b0e9d41df1450d4e4270945c37381394bae7d2ba162b27d";
-	var url_featured_left = "https://api.dribbble.com/v1/shots/2460910/" +"?access_token=" + drbl_API;
-	var url_featured_right = "https://api.dribbble.com/v1/shots/1908461/" +"?access_token=" + drbl_API;
+	var url_featured_left = "https://api.dribbble.com/v1/shots/2595211/" +"?access_token=" + drbl_API;
+	var url_featured_right = "https://api.dribbble.com/v1/shots/2871143/" +"?access_token=" + drbl_API;
 
 	// create content for the left post of Editors' Picks
 	featured_left.addEventListener("load", function(){
@@ -137,15 +129,15 @@ $(function(){
 		// Automatically generates content
 		for (var i=0; i<data.length; i++){
 			// Automatically generates posts
-			$(".box").append("<dl><dt><a><img></a></dt><dd class='post_info'><h4><a></a></h4><div class='info_box'><h5></h5><ul><li></li><li></li></ul></div></dd></dl>");
+			$(".dribbble .container .box").append("<dl><dt><a><img></a></dt><dd class='post_info'><h4><a></a></h4><div class='info_box'><h5></h5><ul><li></li><li></li></ul></div></dd></dl>");
 
 			// specifies what content should be inside the HTML tags
-			$("dt").eq(i+index).children("a").attr("href", data[i].shot.html_url).attr("target", "_blank");
-			$("dt").eq(i+index).children("a").children("img").attr("src", data[i].shot.images.hidpi).attr("alt", data[i].shot.title);
-			$("dd").eq(i+index).children("h4").html("<a href='"+ data[i].shot.html_url +"' target='_blank'"+">"+ data[i].shot.title +"</a>");
-			$("dd").eq(i+index).children("div").children("h5").html("by " + data[i].shot.user.name);
-			$("dd").eq(i+index).children("div").children("ul").children("li").eq(0).html(data[i].shot.likes_count + " likes");
-			$("dd").eq(i+index).children("div").children("ul").children("li").eq(1).html(data[i].shot.views_count + " views");
+			$(".dribbble .container dt").eq(i+index).children("a").attr("href", data[i].shot.html_url).attr("target", "_blank");
+			$(".dribbble .container dt").eq(i+index).children("a").children("img").attr("src", data[i].shot.images.hidpi).attr("alt", data[i].shot.title);
+			$(".dribbble .container dd").eq(i+index).children("h4").html("<a href='"+ data[i].shot.html_url +"' target='_blank'"+">"+ data[i].shot.title +"</a>");
+			$(".dribbble .container dd").eq(i+index).children("div").children("h5").html("by " + data[i].shot.user.name);
+			$(".dribbble .container dd").eq(i+index).children("div").children("ul").children("li").eq(0).html(data[i].shot.likes_count + " likes");
+			$(".dribbble .container dd").eq(i+index).children("div").children("ul").children("li").eq(1).html(data[i].shot.views_count + " views");
 
 			// Check if posts' titles overflow
 			check_word_count($("dd").eq(i+index).children("h4"), 30);
@@ -225,14 +217,14 @@ $(function(){
 
 	// hide and show loadmore bar 
 	function loadMoreBar(){
-		$(".show_shots").children().children().hide();
-		$(".show_shots").children().children().show();
+		$(".search_load_more").hide();
+		$(".search_load_more").show();
 	}
 
 	// show search results
 	function searchResults(this_data, index){
 		var data = JSON.parse(this_data.response);
-		fetchThisArtist(data)
+		fetchThisArtist(data);
 		
 		// check if user input is valid. If not, reveal the error
 		if (data === false || data.message){
@@ -240,7 +232,7 @@ $(function(){
 			// remove h2 title everytime a user click the search button, and generate the error message 
 			$(".show_shots").children().children("h2").remove();
 			$(".show_shots").children().children(".search_shots").after("<h2 class='section_title'>No (more) posts found. Please try again.</h2>");
-			$(".show_shots").children().children(".search_load_more").hide();
+			$(".search_load_more").hide();
 			$(".show_shots").children().children(".line_break").show()
 		}
 		else{
@@ -309,40 +301,10 @@ $(function(){
 				check_word_count($(".search_shots").children().eq(i+index).children(".result_box").children("h2").children(), 50)
 
 				loadMoreBar();
-				
 			}
+			// pass user data to Behance Projects to reduce xhttp request
+			fetchBehance(data)
 		}
-	}
-
-	// show artist's info
-	function fetchThisArtist(check_posts){
-		function artist_info(this_data, check_posts){
-			console.log(check_posts)
-			if (check_posts === false){
-				$(".show_shots").children().prepend("<h2 class='section_title'>Showing results for "+ inputValue +"</h2>")
-			}
-			else{	
-				var data = JSON.parse(this_data.response);
-				if (data.message != "Not found."){
-					$(".show_shots").children().children(".artist_details").append("<img /><div class='name_bio'><h2></h2><p></p></div>");
-					$(".artist_details").children("img").attr("src", data.avatar_url).attr("alt", data.name)
-					$(".artist_details").children("div").children("h2").html(data.name)
-					$(".artist_details").children("div").children("p").html(data.bio)
-				}else{
-					$(".artist_details").remove()
-				}
-			}
-		}
-
-		var fetchArtistsInfo = new XMLHttpRequest();
-		var inputValue = $("#search_text").val();
-		var this_user = "https://api.dribbble.com/v1/users/" + inputValue +"/?access_token=" + drbl_API
-
-		fetchArtistsInfo.addEventListener("load", function(){
-			var data = JSON.parse(fetchArtistsInfo.response);
-			artist_info(fetchArtistsInfo, check_posts)
-		});
-		requestHTTP(fetchArtistsInfo, this_user)
 	}
 
 	// executes code for searching results
@@ -364,35 +326,43 @@ $(function(){
 
 	}
 
-	// Fetch Twitter Info
-	function fetchTwitter(){
-		function fetchTwitterTimeline(){
-			var data = JSON.parse(this.response);
-
-			// check if an artist has a twitter account
-			if (data.links.twitter === undefined) {}
-			else{
-				// create necessary code for twitter widget
-				var script = document.createElement("script");
-				script.src= "https://platform.twitter.com/widgets.js";
-				script.async;
-				$(".twitter").children().append("<h2 class='section_title'>What the artist says</h2>")
-
-				// append twitter widget according to the artist's account
-				$(".twitter").children().append("<a class='twitter-timeline' data-width='960' data-height='1000' data-link-color='#FB6986' href='"+ data.links.twitter +"' data-chrome='nofooter noscrollbar transparent'>Tweets by "+ data.name +"</a>")
-				$(".twitter").children().append("<div class='line_break'></div>")
-				$(".twitter").children().append(script)
+		// show artist's info
+	function fetchThisArtist(check_posts){
+		function artist_info(this_data, check_posts){
+			var data = JSON.parse(this_data.response);
+			if (check_posts === false){
+				$(".show_shots").children().prepend("<h2 class='section_title'>Showing results for "+ inputValue +"</h2>");
+			}
+			else{	
+				if (data.message !== "Not found."){
+					$(".show_shots").children().children(".artist_details").append("<img /><div class='name_bio'><h2></h2><p></p></div>");
+					$(".artist_details").children("img").attr("src", data.avatar_url).attr("alt", data.name)
+					$(".artist_details").children("div").children("h2").html(data.name)
+					$(".artist_details").children("div").children("p").html(data.bio)
+					check_word_count($(".artist_details").children("div").children("p"), 130)
+					$(".show_shots").children().children(".line_break").show();
+					// pass user data to Twitter to reduce xhttp request
+					fetchTwitter(data);
+					// pass user data to Google Maps to reduce xhttp request 
+					fetchGoogleMaps(data);
+				}
+				else{
+					$(".artist_details").remove()
+				}
 			}
 		}
 
-		var twitterRequests = new XMLHttpRequest();
+		var fetchArtistsInfo = new XMLHttpRequest();
 		var inputValue = $("#search_text").val();
-		var url_search_twitter = "https://api.dribbble.com/v1/users/" + inputValue +"?access_token=" + drbl_API
+		var this_user = "https://api.dribbble.com/v1/users/" + inputValue +"/?access_token=" + drbl_API
 
-		twitterRequests.addEventListener("load", fetchTwitterTimeline)
-		requestHTTP(twitterRequests, url_search_twitter);
-
+		fetchArtistsInfo.addEventListener("load", function(){
+			var data = JSON.parse(fetchArtistsInfo.response);
+			artist_info(fetchArtistsInfo, check_posts)
+		});
+		requestHTTP(fetchArtistsInfo, this_user);
 	}
+
 
 	// Fetch artist's likes
 	function fetchLikes(){
@@ -429,43 +399,99 @@ $(function(){
 		requestHTTP(artistLikesRequests, url_search_likes);
 	}
 
-	// Fetch Google Maps
-	function fetchGoogleMaps(){
-		function fetchMapsInfo(){
-			var data = JSON.parse(this.response);
-			if (data.location != null){
-				$(".google_maps").children().append('<h2 class="section_title">Location</h2><h3 class="artist_location">'+ data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q='+ data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
+	// Fetch Behance Projects
+	function fetchBehance(artist_data){
+		console.log(artist_data[0].tags[0])
+		var relatedTag = artist_data[0].tags[0]
+
+		var client_ID = "kDDFwIQ0b5Uo8ms3GXhGnSl8V7aJdWDf";
+
+		$.getJSON("http://www.behance.net/v2/projects?client_id="+ client_ID +"&q="+ relatedTag +"&field=web%2Bdesign&callback=?", function(result){
+			
+				$(".behance_projects .container .box").before("<h2 class='section_title'>Suggested posts from Behance</h2>")
+
+				// Automatically generates content
+				for (var i=0; i<6; i++){
+					// Automatically generates posts
+					$(".behance_projects .container .box").append("<dl><dt><a><img></a></dt><dd class='post_info'><h4><a></a></h4><div class='info_box'><h5></h5><ul><li></li><li></li></ul></div></dd></dl>");
+
+					// specifies what content should be inside the HTML tags
+					$(".behance_projects .container dt").eq(i).children("a").attr("href", result.projects[i].url).attr("target", "_blank");
+
+					// check if specific images are missing
+					if (result.projects[i].covers[404]){
+						$(".behance_projects .container dt").eq(i).children("a").children("img").attr("src", result.projects[i].covers[404]).attr("alt", result.projects[i].name);
+					}
+					else {
+						$(".behance_projects .container dt").eq(i).children("a").children("img").attr("src", result.projects[i].covers[202]).attr("alt", result.projects[i].name);
+					}
+
+					$(".behance_projects .container dd").eq(i).children("h4").html("<a href='"+ result.projects[i].url +"' target='_blank'"+">"+ result.projects[i].name +"</a>");
+					$(".behance_projects .container dd").eq(i).children("div").children("h5").html("by " + result.projects[i].owners[0].display_name);
+					$(".behance_projects .container dd").eq(i).children("div").children("ul").children("li").eq(0).html(result.projects[i].stats.appreciations + " likes");
+					$(".behance_projects .container dd").eq(i).children("div").children("ul").children("li").eq(1).html(result.projects[i].stats.views + " views");
+
+					// Check if posts' titles overflow
+					check_word_count($("dd").eq(i).children("h4"), 30);
+
+					// Check if posts' author name overflow
+					check_word_count($("dd").eq(i).children(".info_box").children("h5"), 14);
+				}
+
+				$(".behance_projects .container .box").after("<div class='line_break'></div>")
+
+			});
+	}
+
+
+	// Fetch Twitter Info
+	function fetchTwitter(artist_data){
+		// check if an artist has a twitter account
+			if (artist_data.links.twitter){
+
+				// create necessary code for twitter widget
+				var script = document.createElement("script");
+				script.src= "https://platform.twitter.com/widgets.js";
+				script.async;
+				$(".twitter").children().append("<h2 class='section_title'>What the artist says</h2>")
+
+				// append twitter widget according to the artist's account
+				$(".twitter").children().append("<a class='twitter-timeline' data-width='960' data-height='1000' data-link-color='#FB6986' href='"+ artist_data.links.twitter +"' data-chrome='nofooter noscrollbar transparent'>Tweets by "+ artist_data.name +"</a>")
+				$(".twitter").children().append("<div class='line_break'></div>")
+				$(".twitter").children().append(script)
 			}
-		}
+	}
 
-		var mapsRequests = new XMLHttpRequest();
-		var inputValue = $("#search_text").val();
-		var url_search_maps = "https://api.dribbble.com/v1/users/" + inputValue +"/?access_token=" + drbl_API
-
-		mapsRequests.addEventListener("load", fetchMapsInfo);
-		requestHTTP(mapsRequests, url_search_maps)
+	// Fetch Google Maps
+	function fetchGoogleMaps(artist_data){
+		// check if an artist has a location
+		if (artist_data.location){
+				$(".google_maps").children().append('<h2 class="section_title">Location</h2><h3 class="artist_location">'+ artist_data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q='+ artist_data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
+			}
 	}
 
 	// submit event for when users press enter or click "submit" btn
 	function submit_event(){
 		var inputValue = $("#search_text").val();
 
+		// prevent user from typing nothing
+
 		if (inputValue !== "e.g. ueno" && inputValue !== ""){
 			event.preventDefault();
 			$(".show_shots").children().children("h2").empty();
 			$(".twitter").children().empty();
 			$(".search_shots").empty();
+			$(".search_load_more").hide()
 			$(".and_he_likes").children().children("h2").remove();
 			$(".and_he_likes").children().children(".line_break").hide();
+			$(".behance_projects .container").empty();
+			$(".behance_projects .container").append("<div class='box'></div>")
 			$(".likes_shots").empty();
 			$(".google_maps").children().empty();
 			search_click_count = 0;
 			$(".search_load_more").css({background: "#FC5477"}).html("Load more...")
 			fetchResults();
-			fetchThisArtist();
-	        fetchTwitter();
 	        fetchLikes();
-	        fetchGoogleMaps();
 		}
 
 	}
@@ -496,7 +522,7 @@ $(function(){
 
 			var newClickRequest = new XMLHttpRequest();
 
-			var url_search_artists = "https://api.dribbble.com/v1/users/"+ inputValue +"/shots?page="+ (search_click_count+1) +" " + "&per_page=12&access_token=" + drbl_API
+			var url_search_artists = "https://api.dribbble.com/v1/users/"+ inputValue +"/shots?page="+ (search_click_count+1) + "&per_page=12&access_token=" + drbl_API
 
 			newClickRequest.addEventListener("load", function(){
 				var data = JSON.parse(newClickRequest.response);

@@ -2,7 +2,7 @@
 * @Author: realfrancisyan
 * @Date:   2016-12-03 22:17:12
 * @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-12 00:34:33
+* @Last Modified time: 2016-12-12 15:18:36
 */
 
 @media (max-width: 1000px) {
@@ -83,8 +83,32 @@
 		margin-right: 20px;
 	}
 
+	.show_shots .artist_details {
+		height: 120px;
+	}
+
+	.show_shots .artist_details img{
+		height: 120px;
+		width: 120px;
+	}
+
 	.show_results .search_load_more {
 		margin-top: 40px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		float: right;
+		width: 75%;
+		height: 120px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 24px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 20px;
+		line-height: 28px;
 	}
 }
 
@@ -174,6 +198,28 @@
 
 	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
 		font-size: 14px;
+	}
+
+	.show_shots .artist_details {
+		height: 100px;
+	}
+
+	.show_shots .artist_details img{
+		height: 100px;
+		width: 100px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		height: 100px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 20px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 14px;
+		line-height: 20px;
 	}
 }
 
@@ -325,6 +371,29 @@
 		line-height: 24px;
 	}
 
+	.show_shots .artist_details {
+		height: 80px;
+	}
+
+	.show_shots .artist_details img{
+		height: 80px;
+		width: 80px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		width: 75%;
+		height: 80px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 16px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
 }
 
 
@@ -349,6 +418,31 @@
 
 	.search #search_submit {
 		width: 44%;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.show_shots .artist_details img {
+		float: left;
+	}
+
+	.show_shots .artist_details .name_bio {
+		float: right;
+		width: 60%;
+		position: static;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		position: static;
+		font-size: 24px;
+		line-height: 80px;
+		top: auto;
+		left: auto;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		display: none;
 	}
 }
 

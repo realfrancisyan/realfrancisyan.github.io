@@ -2,7 +2,7 @@
 * @Author: realfrancisyan
 * @Date:   2016-11-20 14:27:10
 * @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-13 17:19:25
+* @Last Modified time: 2016-12-13 22:13:03
 */
 
 
@@ -577,3 +577,471 @@ article p {
 	line-height: 32px;
 }
 
+@media (max-width: 1000px) {
+	.container {
+		width: 80%;
+	}
+
+	header .header_description h2 {
+		font-size: 64px;
+	}
+
+	header h1 a:hover {
+		opacity: 1;
+	}
+
+	.editors_picks ul li a div {
+		margin-top: 30%;
+		margin-left: 15%;
+	}
+
+	.editors_picks ul li a h3 {
+		font-size: 24px;
+	}
+
+	.editors_picks ul li a h4 {
+		font-size: 20px;
+	}
+
+	.things_we_love dl {
+		width: 49%;
+		margin-right: 2%;
+		margin-bottom: 2%;
+	}
+
+	.things_we_love dl:nth-child(3n) {
+		margin-right: 2%;
+	}
+
+	.things_we_love dl:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.subscribe .wrapper input {
+		float: none;
+		width: 100%;
+		height: 60px;
+		margin-right: 0;
+		box-sizing: border-box;
+		margin-bottom: 20px;
+	}
+
+	.subscribe #submit {
+		margin-top: 0;
+	}
+
+	footer .footer_box .company_info {
+		width: 100%;
+		float: none;
+		margin-right: 0;
+		overflow: hidden;
+	}
+
+	footer .footer_links {
+		overflow: hidden;
+		width: 100%;
+		float: none;
+		line-height: 100px;
+		margin-top: 20px;
+		border-top: 1px solid #d0d0d0;
+	}
+
+	footer .footer_box ul {
+		float: left;
+	}
+
+	footer .footer_box ul li a {
+		margin-left: 0;
+		margin-right: 20px;
+	}
+
+	.show_shots .artist_details {
+		height: 120px;
+	}
+
+	.show_shots .artist_details img{
+		height: 120px;
+		width: 120px;
+	}
+
+	.show_results .search_load_more {
+		margin-top: 40px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		float: right;
+		width: 75%;
+		height: 120px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 24px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
+
+@media (max-width: 800px) {
+	header {
+		height: 180px;
+	}
+
+	header .header_description h2 {
+		font-size: 56px;
+	}
+
+	.editors_picks ul li {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		position: relative;
+	}
+
+	.editors_picks ul li:first-child {
+		margin-bottom: 3%;
+	}
+
+	.editors_picks ul li a div {
+		margin-top: 30%;
+		margin-left: 30%;
+	}
+
+	.editors_picks ul li a h3 {
+		font-size: 28px;
+	}
+
+	.editors_picks ul li a h4 {
+		font-size: 24px;
+	}
+
+	.things_we_love dl {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 3%;
+	}
+
+	.things_we_love dl:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.things_we_love dl:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.things_we_love dd {
+		padding: 2.5%;
+	}
+
+	.search #search_text {
+		width: 64%;
+	}
+
+	.search #search_submit {
+		width: 34%;
+	}
+
+	.show_results .results .result_info .result_box h2 {
+		font-size: 24px;
+	}
+
+	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
+		font-size: 18px;
+	}
+}
+
+
+@media (max-width: 700px) {
+
+	header .header_description h2 {
+		font-size: 48px;
+	}	
+
+	.editors_picks ul li a div {
+		margin-top: 32%;
+		margin-left: 26%;
+	}
+
+	.show_results .results .result_info .result_box h2 {
+		font-size: 20px;
+	}
+
+	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
+		font-size: 14px;
+	}
+
+	.show_shots .artist_details {
+		height: 100px;
+	}
+
+	.show_shots .artist_details img{
+		height: 100px;
+		width: 100px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		height: 100px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 20px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+}
+
+@media (max-width: 600px) {
+	.line_break {
+		width: 100%;
+		height: 1px;
+		background: #d0d0d0;
+		margin-top: 20px;
+	}
+
+	.section_title {
+		font-size: 16px;
+		margin: 20px 0;
+	}
+
+	header {
+		height: 150px;
+	}
+
+	header .header_box h1 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	header .header_box nav {
+		margin-left: 10px;
+	}
+
+	header .header_box nav ul li {
+		margin-left: 10px;
+		font-size: 14px;
+		line-height: 30px;
+	}
+
+	header .header_description h2 {
+		font-size: 32px;
+	}
+
+
+	.load_more {
+		height: 40px;
+		line-height: 40px;
+		margin-top: 2%;
+		font-size: 14px;
+	}
+
+	.editors_picks ul li a div {
+		margin-top: 35%;
+		margin-left: 26%;
+	}
+
+	.editors_picks ul li a h3 {
+		font-size: 22px;
+	}
+
+	.editors_picks ul li a h4 {
+		font-size: 18px;
+	}
+
+	.featured_artists ul li {
+		width: 100px;
+	}
+
+	.featured_artists ul li h5 {
+		color: #333;
+		font-size: 14px;
+	}
+
+
+	.subscribe .wrapper input {
+		height: 40px;
+		margin-right: 2%;
+		text-indent: 20px;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.subscribe #submit {
+		font-size: 14px;
+		height: 40px;
+	}
+
+	.subscribe .subscribe_message {
+		margin-top: 10px;
+		padding: 3%;
+	}
+	.subscribe .subscribe_message p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	footer h2 {
+		font-size: 20px;
+		line-height: 60px;
+		font-weight: 600;
+		color: #FF5275;
+	}
+
+	footer .footer_box {
+		margin-bottom: 20px;
+	}
+
+	footer .footer_box .company_info p {
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+
+	footer .footer_box ul li a {
+		font-size: 14px;
+	}
+
+	footer .footer_links {
+		line-height: 40px;
+		margin-top: 10px;
+	}
+
+	.show_results .results .result_info .result_box h2 {
+		font-size: 16px;
+		margin-bottom: 20px;
+	}
+
+
+	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
+		font-size: 12px;
+	}
+
+	.search input {
+		height: 40px;
+		outline: none;
+		border: 0;
+		font-size: 14px;
+	}
+
+	.google_maps .artist_location {
+		font-size: 16px;
+	}
+
+	article h2 {
+		margin: 20px 0;
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	article p {
+		margin-top: 20px;
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.show_shots .artist_details {
+		height: 80px;
+	}
+
+	.show_shots .artist_details img{
+		height: 80px;
+		width: 80px;
+	}
+
+	.show_shots .artist_details .name_bio {
+		width: 75%;
+		height: 80px;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		font-size: 16px;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		font-size: 12px;
+		line-height: 20px;
+	}
+
+}
+
+
+@media (max-width: 500px) {
+
+	.container {
+		width: 90%;
+	}
+
+	.things_we_love dd {
+		padding: 3.5%;
+	}
+
+
+	.search input {
+		font-size: 12px;
+	}
+
+	.search #search_text {
+		width: 54%;
+	}
+
+	.search #search_submit {
+		width: 44%;
+	}
+}
+
+@media (max-width: 400px) {
+
+	.show_shots .artist_details img {
+		float: left;
+	}
+
+	.show_shots .artist_details .name_bio {
+		float: right;
+		width: 60%;
+		position: static;
+	}
+
+	.show_shots .artist_details .name_bio h2 {
+		position: static;
+		font-size: 24px;
+		line-height: 80px;
+		top: auto;
+		left: auto;
+	}
+
+	.show_shots .artist_details .name_bio p {
+		display: none;
+	}
+}
+
+@media (max-width: 320px) {
+
+	.container {
+		width: 95%;
+	}
+
+	header {
+		height: 130px;
+	}	
+
+	header .header_box h1 {
+		line-height: 20px;
+	}
+
+	header .header_box nav ul li {
+		line-height: 20px;
+	}
+
+	header .header_description h2 {
+		font-size: 28px;
+	}
+
+	.show_results .results .result_info .result_box h2 {
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+}

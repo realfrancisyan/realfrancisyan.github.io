@@ -89,7 +89,7 @@ $(function(){
 	// Retrieve API Info for Editors' Picks Section
 	function editors_picks(this_data, index, img_url, title, author, post_url){
 		var data = JSON.parse(this_data.response);
-		$(".toggle_info").children("ul").children("li").eq(index).children("img").attr("src", img_url);
+		$(".toggle_info").children("ul").children("li").eq(index).children("img").attr("src", img_url).attr("alt", title);
 		$(".pick_info").eq(index).attr("href", post_url).attr("target", "_blank");
 		$(".pick_info_box").eq(index).children("h3").html(title);
 		$(".pick_info_box").eq(index).children("h4").html("by " + author);
@@ -166,7 +166,7 @@ $(function(){
 	$(".load_more").click(function(){
 
 		// if a user clicks over 50 times, it will stop showing posts and tell the user it is the end.
-		if(click_count > 50){
+		if(click_count > 30){
 			$(this).css({"background":"#50E3C2"}).html("All loaded! This is the end.");
 		}else{
 
@@ -328,8 +328,6 @@ $(function(){
 
 		$(".artist_details").remove();
 
-		// $(".show_shots").children().prepend("<h2 class='section_title'>Showing results for "+ inputValue +"</h2><div class='artist_details'></div>")
-
 		fetchSearchResults.addEventListener("load", function(){
 			var data = JSON.parse(fetchSearchResults.response)
 			searchResults(fetchSearchResults, 0)
@@ -486,8 +484,11 @@ $(function(){
 		
 		if ($(".maps_title").length === 0){
 			// check if an artist has a location
+
+			var google_API = "AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q"
+
 			if (artist_data.location){
-				$(".google_maps").children().append('<h2 class="section_title maps_title">Location</h2><h3 class="artist_location">'+ artist_data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsVe7f-1dPpVT68V8YnSc-zw6LHJHZwU0&q='+ artist_data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
+				$(".google_maps").children().append('<h2 class="section_title maps_title">Location</h2><h3 class="artist_location">'+ artist_data.location +'</h3><div class="google-maps"><iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key='+ google_API +'='+ artist_data.location +'" allowfullscreen></iframe></div><div class="line_break"></div>')
 			}
 		}
 	}

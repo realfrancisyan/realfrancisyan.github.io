@@ -37,7 +37,7 @@ $(function(){
 	$("#search_text").focus(function(){
 		var this_val = $(this).val();
 		var this_index = $(this).index();
-		if(this_val === "e.g. ueno"){
+		if(this_val === "e.g. focuslab"){
 			$(this).val("").css("color", "#333")
 		}
 	});
@@ -46,7 +46,7 @@ $(function(){
 		var this_val = $(this).val();
 		var this_index = $(this).index();
 		if(this_val === ""){
-			$(this).val("e.g. ueno").css("color", "#999");
+			$(this).val("e.g. focuslab").css("color", "#999");
 		}
 	});
 
@@ -227,6 +227,7 @@ $(function(){
 		var inputValue = $("#search_text").val();
 		var data = JSON.parse(this_data.response);
 		fetchThisArtist(data);
+		console.log(data)
 		
 		// check if user input is valid. If not, reveal the error
 		if (data === false || data.message){
@@ -504,7 +505,7 @@ $(function(){
 			isSameInput = inputValue;	
 			// prevent user from typing nothing
 
-			if (inputValue !== "e.g. ueno" && inputValue !== ""){
+			if (inputValue !== "e.g. focuslab" && inputValue !== ""){
 				event.preventDefault();
 				$(".show_shots").children().children("h2").remove();
 				$(".twitter").children().empty();

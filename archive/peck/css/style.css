@@ -2,7 +2,7 @@
 * @Author: realfrancisyan
 * @Date:   2016-11-20 14:27:10
 * @Last Modified by:   realfrancisyan
-* @Last Modified time: 2016-12-13 22:13:03
+* @Last Modified time: 2016-12-14 22:02:18
 */
 
 
@@ -411,6 +411,11 @@ footer .footer_box ul li a:hover {
 
 
 /* Search -- Search */
+.search p {
+	color: #FF5275;
+	line-height: 22px;
+}
+
 .search form {
 	overflow: hidden;
 }
@@ -918,6 +923,10 @@ article p {
 
 	.show_results .results .result_info .result_box h3, .show_results .results .result_info .result_box li {
 		font-size: 12px;
+	}
+
+	.search p {
+		display: none;
 	}
 
 	.search input {

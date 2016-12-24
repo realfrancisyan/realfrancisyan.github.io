@@ -1,7 +1,6 @@
 'use strict';
 
 $(function(){
-
 	// Fade in/out effects for editors' picks
 	$(".toggle_info").children("ul").children("li").hover(function(){
 		$(this).children("a").stop().fadeIn(200);
@@ -130,7 +129,7 @@ $(function(){
 		// Automatically generates content
 		for (var i=0; i<data.length; i++){
 			// Automatically generates posts
-			$(".dribbble .container .box").append("<dl><dt><a><img></a></dt><dd class='post_info'><h4><a></a></h4><div class='info_box'><h5></h5><ul><li></li><li></li></ul></div></dd></dl>");
+			$(".dribbble .container .box").append("<dl class='wow bounceInUp'><dt><a><img></a></dt><dd class='post_info'><h4><a></a></h4><div class='info_box'><h5></h5><ul><li></li><li></li></ul></div></dd></dl>");
 
 			// specifies what content should be inside the HTML tags
 			$(".dribbble .container dt").eq(i+index).children("a").attr("href", data[i].shot.html_url).attr("target", "_blank");

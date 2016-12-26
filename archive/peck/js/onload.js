@@ -226,7 +226,6 @@ $(function(){
 		var inputValue = $("#search_text").val();
 		var data = JSON.parse(this_data.response);
 		fetchThisArtist(data);
-		console.log(data)
 		
 		// check if user input is valid. If not, reveal the error
 		if (data === false || data.message){

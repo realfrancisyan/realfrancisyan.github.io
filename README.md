@@ -11,7 +11,7 @@ Setting up the project is dead simple by following the commands below:
 ```
 yarn install
 
-yarn start 
+yarn start
 ```
 
 To deploy, run:
@@ -19,3 +19,10 @@ To deploy, run:
 ```
 yarn build
 ```
+
+## Miscellaneous
+
+1. [lodash.bindall](https://www.npmjs.com/package/lodash.bindall)
+2. [Typechecking With PropTypes](https://reactjs.org/docs/typechecking-with-proptypes.html)
+3. [BEM](http://getbem.com/naming/)
+4. [Presentational Components vs Container Components](https://www.reactnative.guide/9-redux/9.2-presentational-vs-containers.html)

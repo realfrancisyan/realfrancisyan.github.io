@@ -1,0 +1,50 @@
+@import '../../styles/mixins.scss';
+
+.index {
+  width: 80%;
+  margin: 40px auto;
+
+  @media only screen and (min-width: 1000px) {
+    width: 40%;
+    margin-top: 100px;
+    margin: 10% 0 0 20%;
+  }
+
+  h2 {
+    width: 60%;
+    font-family: 'Rubik', serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  p {
+    @include optimalLineHeight(20px);
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.index__icons {
+  margin-top: 20px;
+  
+  a {
+    margin-right: 10px;
+  }
+
+  svg {
+    color: gray;
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -4,11 +4,11 @@
     <ul>
       <li><a href="{{ '/' | relative_url }}">{{ amsf_site_name }}</a></li>
 
-      {% if site.credits %}
+      <!-- {% if site.credits %}
         <li>
           <a href="https://sparanoid.com/lab/amsf/" title="Almace Scaffolding with theme {{ site.data.curtana.meta.name }}">AMSF</a>
         </li>
-      {% endif %}
+      {% endif %} -->
 
       {% for item in site.data.footer %}
         {%- include amsf/relative_url url=item.url -%}

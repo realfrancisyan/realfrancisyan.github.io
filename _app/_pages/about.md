@@ -2,20 +2,17 @@
 layout: page
 title: About
 permalink: /about/
-desc: 示例頁面・サンプルページ・Example Page
+desc: 關於我・私について・About Me
 ---
 
-This is an example About page.
+Hey, I am Jiajun Yan, a junior Web Developer currently based in Guangzhou, China with strong interests in React, Vue and JavaScript performance.
 
-Sparanoid is a design studio operated by Tunghsiao Liu. You can ping me on [Twitter](https://twitter.com/tunghsiao) or send correspondence to [t@sparanoid.com](mailto:t@sparanoid.com).
+Graduated from [Cardiff University](https://en.wikipedia.org/wiki/Cardiff_University), Wales with a Master’s degree in Computing (Distinction), where I found myself truly passionate about Web Technologies, travel and making friends.
 
-## Colophon
+I am active on social media and also in love with writing blog posts and taking notes. Feel free to ping me on any of the following platforms below.
 
-[AMSF](https://sparanoid.com/lab/amsf/) ([Source](https://github.com/sparanoid/sparanoid.com)) -
-[GitHub](https://github.com/) -
-[CloudFront](https://aws.amazon.com/cloudfront/) -
-[Textmate](https://macromates.com/)
 
-All posts are &copy; Sparanoid, Inc., all rights reserved.
 
-*[AMSF]: Almace Scaffolding
+[Medium](https://medium.com/@realfrancisyan) -
+[GitHub](https://github.com/realfrancisyan) -
+[Instagram](https://www.instagram.com/jiajun.yan.travel)

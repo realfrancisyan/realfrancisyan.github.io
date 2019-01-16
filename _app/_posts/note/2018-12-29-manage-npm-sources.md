@@ -2,7 +2,7 @@
 layout: post
 title: 管理 NPM 镜像地址
 category: note
-tags: npm
+tags: js
 ---
 
 由于 NPM 默认镜像地址在国内经常出现不稳定的情况，因而用户经常需要切换到淘宝到镜像地址。

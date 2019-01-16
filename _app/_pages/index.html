@@ -29,6 +29,11 @@ thumb_force_logo: true
       site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
+    <h2>Work</h2>
+    {% for post in site.tags.work %} {%- include themes/{{
+      site.amsf_theme
+    }}/includes/page-item.html -%} {% endfor %}
+
     <h2>Git</h2>
     {% for post in site.tags.git %} {%- include themes/{{
       site.amsf_theme

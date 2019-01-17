@@ -38,5 +38,10 @@ thumb_force_logo: true
     {% for post in site.tags.git %} {%- include themes/{{
       site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
+
+    <h2>Handbook</h2>
+    {% for post in site.tags.handbook %} {%- include themes/{{
+      site.amsf_theme
+    }}/includes/page-item.html -%} {% endfor %}
   </div>
 </article>

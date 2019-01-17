@@ -19,7 +19,8 @@ tags: js
 
 ---
 
-## 1. let 和 const
+# 1. let 和 const
+>
 
 两者都为块级作用域。
 
@@ -30,7 +31,8 @@ const EXAMPLE = 'This is an example.'; // 声明常量时，尽量全大写
 EXAMPLE = 'Example is altered.'; // 报错
 {% endhighlight %}
 
-## 2. 箭头函数
+# 2. 箭头函数
+>
 
 箭头函数最直观的三个特点：
 
@@ -69,7 +71,8 @@ function Person() {
 var p = new Person();
 {% endhighlight %}
 
-## 3. 模版字符串
+# 3. 模版字符串
+>
 
 相比 ES5，ES 6 中的模版字符串消除了很多繁琐的拼接。使用 ` `` ` 即可完成。如果需要传入变量，使用 `${}` 即可。
 
@@ -78,7 +81,8 @@ const day = 'Sunday';
 console.log(`Today is ${day}`); // Today is Sunday
 {% endhighlight %}
 
-## 4. Class 类
+# 4. Class 类
+>
 
 `class` 语法为原型链的语法糖表现形式。
 在 React 项目中，我们会经常看到这样的表达式：
@@ -105,7 +109,8 @@ class App extends Components {
 
 以上就 `class` 在 ES 6 的体现。
 
-## 5. 参数默认值
+# 5. 参数默认值
+>
 
 {% highlight js linenos %}
 function printText(text = 'default') {
@@ -117,7 +122,8 @@ printText(); // default
 {% endhighlight %}
 
 
-## 6. 数组的展开运算
+# 6. 数组的展开运算
+>
 
 在传入的数组前添加三个点 `...`：
 
@@ -129,7 +135,8 @@ const arr = [1, 2, 3];
 foo(...arr); // 1, 2, 3
 {% endhighlight %}
 
-## 7. 模块化
+# 7. 模块化
+>
 
 使用 `import` 和 `export` 引入导出函数：
 
@@ -148,7 +155,8 @@ console.log(port);
 {% endhighlight %}
 
 
-## 8. Promise
+# 8. Promise
+>
 
 简单来说，`Promise` 可解决回调地狱和实现异步函数顺序执行。
 

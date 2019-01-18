@@ -27,7 +27,7 @@ tags: handbook
 
 5. 避免使用 `table`，`table` 要等其中的内容完全下载之后才会显示出来，显示比 `div + css` 布局慢。
 
-[前端工程师面试题(性能优化)](https://juejin.im/entry/5b30b64c51882574d32496de)
+参考：[前端工程师面试题(性能优化)](https://juejin.im/entry/5b30b64c51882574d32496de)
 
 # 2. 跨域
 >

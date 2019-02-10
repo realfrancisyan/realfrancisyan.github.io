@@ -19,5 +19,5 @@ grunt serve
 To deploy, run:
 
 ```
-grunt && grunt deploy:rsync --env=prod
+grunt
 ```

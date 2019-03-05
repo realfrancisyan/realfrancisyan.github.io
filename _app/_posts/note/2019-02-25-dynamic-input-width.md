@@ -26,7 +26,12 @@ tags: mp
   <view class="input">
     <view class="currency">$</view>
     <view class="amount" bindtap="invokeInput">{{amount}}</view>
-    <input bindinput="onInputChange" value="{{amount}}" type="digit" focus="{{focus}}" hidden="{{true}}" />
+    <input 
+      bindinput="onInputChange" 
+      value="{{amount}}" 
+      type="digit" 
+      focus="{{focus}}"
+      hidden="{{true}}" />
   </view>
 </view>
 ```

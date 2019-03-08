@@ -58,5 +58,11 @@ thumb_force_logo: true
     {% for post in site.tags.handbook %} {%- include themes/{{
       site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
+
+    <h2>其他</h2>
+    {% for post in site.tags.miscellaneous %} {%- include themes/{{
+      site.amsf_theme
+    }}/includes/page-item.html -%} {% endfor %}
+
   </div>
 </article>

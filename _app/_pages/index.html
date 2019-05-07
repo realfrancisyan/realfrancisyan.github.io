@@ -29,6 +29,11 @@ thumb_force_logo: true
       site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
+    <h2>NodeJS</h2>
+    {% for post in site.tags.nodejs %} {%- include themes/{{
+      site.amsf_theme
+    }}/includes/page-item.html -%} {% endfor %}
+
     <h2>小程序</h2>
     {% for post in site.tags.mp %} {%- include themes/{{
       site.amsf_theme

@@ -13,7 +13,7 @@ module.exports = (grunt) ->
     replace: "grunt-text-replace"
 
   # Track tasks load time
-  require("time-grunt") grunt
+  require("@lodder/time-grunt") grunt
 
   # Get deploy target, see `_deploy.yml` for more info
   deploy_env = grunt.option("env") or "default"
@@ -30,6 +30,7 @@ module.exports = (grunt) ->
       dist: "<%= config.cfg.destination %>"
       base: "<%= config.cfg.baseurl %>"
       base_dev: "<%= config.cfg_dev.baseurl %>"
+      flatten_base: "<%= config.cfg.flatten_base %>"
       assets: "<%= config.cfg.assets %>"
       banner: "<!-- <%= config.pkg.name %> v<%= config.pkg.version %> | © <%= config.pkg.author %> | <%= config.pkg.license %> -->\n"
 
@@ -94,9 +95,8 @@ module.exports = (grunt) ->
         options:
           interrupt: true
 
-    uglify:
+    terser:
       options:
-        report: "gzip"
         compress:
           drop_console: true
 
@@ -407,6 +407,9 @@ module.exports = (grunt) ->
       amsf__release:
         command: "git checkout release && git pull && git merge master --no-edit && git push && git checkout master && git push"
 
+      move_flatten_base:
+        command: "mv <%= config.dist %><%= config.base %>/* <%= config.dist %>/"
+
     concurrent:
       options:
         logConcurrentOutput: true
@@ -694,10 +697,16 @@ module.exports = (grunt) ->
         "amsf-update"
       ]
 
+  grunt.registerTask "flatten_check", "Build site with jekyll", ->
+    if grunt.config.get(['config']).flatten_base
+      grunt.task.run [
+        "shell:move_flatten_base"
+      ]
+
   grunt.registerTask "build", "Build site with jekyll", [
     "clean:main"
     "coffeelint"
-    "uglify:dist"
+    "terser:dist"
     "sass:dist"
     "postcss:dist"
     "jekyll:dist"
@@ -708,9 +717,10 @@ module.exports = (grunt) ->
     "cacheBust"
     "html_trim"
     "service_worker"
-    "uglify:sw"
+    "terser:sw"
     "sri_hash:dist"
     "doctype"
+    "flatten_check"
     "cleanempty"
   ]
 

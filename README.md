@@ -1,23 +1,28 @@
-Official Github repository of [jiajunyan.com](http://www.jiajunyan.com)
+# Almace Scaffolding
 
-# realfrancisyan.github.io
+[![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
+[![Build Status](https://travis-ci.org/sparanoid/almace-scaffolding.svg)](https://travis-ci.org/sparanoid/almace-scaffolding)
+[![devDependency Status](https://david-dm.org/sparanoid/almace-scaffolding/dev-status.svg)](https://david-dm.org/sparanoid/almace-scaffolding#info=devDependencies)
 
-This is the official Github repository of [jiajunyan.com](http://www.jiajunyan.com).
+`AMSF`, a.k.a. **Almace Scaffolding**, a super-fast Jekyll framework fighting against the website obesity. It supports LiveReload, Sass, HTML minification, inlined stylesheets and more.
 
-## Setting Up
+-----
 
-Setting up the project is dead simple by following the commands below:
+## [Getting Started](https://sparanoid.com/lab/amsf/getting-started.html)
 
-```
-bundle install && yarn install
+## Donate
 
-grunt init
+Wanna buy me a cup of coffee? [Great](https://sparanoid.com/donate/).
 
-grunt serve
-```
+## Author
 
-To deploy, run:
+**Tunghsiao Liu**
 
-```
-grunt
-```
+- Twitter: @[tunghsiao](https://twitter.com/tunghsiao)
+- GitHub: @[sparanoid](https://github.com/sparanoid)
+
+## Licenses
+
+All files and directories are licensed under the [MIT](https://opensource.org/licenses/mit-license.php) unless explicitly stated.
+
+© Sparanoid, Inc.

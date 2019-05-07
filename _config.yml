@@ -51,7 +51,7 @@ plugins:
   - jekyll-last-modified-at
 
 #
-# Almace Scaffolding settings
+# Jiajun Yan settings
 #
 
 # Development mode
@@ -65,7 +65,7 @@ dev:            false
 
 # Site name
 #
-# Default:      Almace Scaffolding
+# Default:      Jiajun Yan
 name:           Jiajun Yan
 
 # Site short name
@@ -74,7 +74,7 @@ name:           Jiajun Yan
 # You can also just use your `name` for `name_short` if it is short enough
 #
 # For example:
-# - name:       Almace Scaffolding
+# - name:       Jiajun Yan
 # - name_short: AMSF
 #
 # or:
@@ -89,7 +89,7 @@ name_short:     AMSF
 # Will be used in the document meta and Atom feed subtitle
 #
 # Default:      Super-fast Jekyll framework
-description:    Web Developer
+description:    Super-fast Jekyll framework
 
 # Base URL
 #
@@ -99,7 +99,17 @@ description:    Web Developer
 # `/my-project`, without trailing slash.
 #
 # Default:      ""
-baseurl:        /
+baseurl:        /lab/amsf
+
+# Flatten base
+#
+# This is useful when you generate your static site for GitHub Pages. By default
+# the generated pages will have full hierarchy with `baseurl` you defined. This
+# behavior will causes wrong URLs when using GitHub Pages under `docs/`. So
+# enable this option if you're using GitHub Pages.
+#
+# Default:      false
+flatten_base:   false
 
 # CSS path used in templates
 #
@@ -161,8 +171,8 @@ service_worker:
 
 # Google Analytics tracking code
 google_analytics:
-  enabled:      true
-  id:           UA-117155465-1
+  enabled:      false
+  id:           UA-xxxxxxx
   url:          https://www.google-analytics.com/analytics.js
 
 # Site Twitter account handle

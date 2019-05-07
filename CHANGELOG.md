@@ -1,3 +1,73 @@
+<a name="2.0.14"></a>
+## [2.0.14](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.13...v2.0.14) (2019-03-31)
+
+
+### Features
+
+* **css:** further switch to css variables ([b757caf](https://github.com/sparanoid/almace-scaffolding/commit/b757caf))
+* **css:** update randomized color ([3bafdfc](https://github.com/sparanoid/almace-scaffolding/commit/3bafdfc))
+
+
+
+<a name="2.0.13"></a>
+## [2.0.13](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.12...v2.0.13) (2019-03-16)
+
+
+### Bug Fixes
+
+* **google_analytics:** missing url variable ([4e9f528](https://github.com/sparanoid/almace-scaffolding/commit/4e9f528))
+
+
+### Features
+
+* **js:** update lightense images ([dfd14cd](https://github.com/sparanoid/almace-scaffolding/commit/dfd14cd))
+
+
+
+<a name="2.0.12"></a>
+## [2.0.12](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.11...v2.0.12) (2019-02-19)
+
+
+### Features
+
+* **css:** simpler fontstack ([48f9446](https://github.com/sparanoid/almace-scaffolding/commit/48f9446))
+* **docs:** update “Customizing Styles” ([8579b04](https://github.com/sparanoid/almace-scaffolding/commit/8579b04))
+* **package:** avoid deprecated package ([61b410f](https://github.com/sparanoid/almace-scaffolding/commit/61b410f))
+
+
+
+<a name="2.0.11"></a>
+## [2.0.11](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.10...v2.0.11) (2019-02-14)
+
+
+### Features
+
+* **grunt:** use terser for es6+ uglifier ([0037e2d](https://github.com/sparanoid/almace-scaffolding/commit/0037e2d))
+
+
+
+<a name="2.0.10"></a>
+## [2.0.10](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.9...v2.0.10) (2019-02-06)
+
+
+### Bug Fixes
+
+* **grunt:** wrong task condition for flatten option ([2740b78](https://github.com/sparanoid/almace-scaffolding/commit/2740b78))
+
+
+
+<a name="2.0.9"></a>
+## [2.0.9](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.8...v2.0.9) (2019-02-06)
+
+
+### Features
+
+* **config:** add new option `flatten_base` for easier setup fpr GitHub Pages (for projects) ([8f41221](https://github.com/sparanoid/almace-scaffolding/commit/8f41221))
+* **css:** add `halt` support ([bb2fe6c](https://github.com/sparanoid/almace-scaffolding/commit/bb2fe6c))
+* switch from npm to yarn ([6020fbf](https://github.com/sparanoid/almace-scaffolding/commit/6020fbf))
+
+
+
 <a name="2.0.8"></a>
 ## [2.0.8](https://github.com/sparanoid/almace-scaffolding/compare/v2.0.7...v2.0.8) (2018-12-01)
 

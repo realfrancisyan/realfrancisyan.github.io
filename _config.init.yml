@@ -88,8 +88,7 @@ name_short:     AMSF
 #
 # Will be used in the document meta and Atom feed subtitle
 #
-# Default:      Super-fast Jekyll framework
-description:    Super-fast Jekyll framework
+description:    Front-end Developer
 
 # Base URL
 #

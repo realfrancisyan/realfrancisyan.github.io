@@ -26,13 +26,41 @@ sudo apt-get install -y mongodb-org
 
 `MongoDB` 默认是无法远程连接的，需要编辑 `/etc/mongod.conf` 中的 `127.0.0.1` 改为 `0.0.0.0` 启用。
 
+# 3. 启用登录验证
+
+>
+
+编辑 `/etc/mongod.conf`，并加上一下一行：
+
 ```terminal
 vi /etc/mongod.conf
 ```
 
-修改后，重新启动：
-
-```terminal
-mongod -f /etc/mongod.conf
+```xml
+security:
+  authorization: "enabled"
 ```
 
+# 4. 防止报错
+
+>
+
+修改以上文件后，立即输入命令启动，并不会启用服务。需要设定权限：
+
+```terminal
+# storage.dbPath
+chown -R mongodb:mongodb /var/lib/mongodb
+
+# systemLog.path
+sudo chown -R mongodb:mongodb /var/log/mongodb
+```
+
+# 5. 启用服务
+
+>
+
+```terminal
+service mongod start
+```
+
+弄完以上，如果没有教程，真叫人累。不知道为什么 2019 年了这些软件还要这么麻烦耗开发者大量的时间去安装。

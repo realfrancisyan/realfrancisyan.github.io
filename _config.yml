@@ -99,7 +99,7 @@ description:    Front-end Developer
 # `/my-project`, without trailing slash.
 #
 # Default:      ""
-baseurl:        /lab/amsf
+baseurl:        /
 
 # Flatten base
 #

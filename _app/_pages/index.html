@@ -54,6 +54,11 @@ thumb_force_logo: true
       site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
+    <h2>Python</h2>
+    {% for post in site.tags.python %} {%- include themes/{{
+      site.amsf_theme
+    }}/includes/page-item.html -%} {% endfor %}
+
     <h2>Work Related</h2>
     {% for post in site.tags.work %} {%- include themes/{{
       site.amsf_theme

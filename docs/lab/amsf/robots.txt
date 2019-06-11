@@ -1,0 +1,3 @@
+Sitemap: https://sparanoid.com/lab/amsf/sitemap.xml
+
+User-agent: *

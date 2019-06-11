@@ -23,7 +23,7 @@ port:           4321
 #
 # Jekyll build settings
 #
-future:         false
+future:         true
 
 #
 # Markdown settings
@@ -51,7 +51,7 @@ plugins:
   - jekyll-last-modified-at
 
 #
-# Jiajun Yan settings
+# Almace Scaffolding settings
 #
 
 # Development mode
@@ -65,7 +65,7 @@ dev:            false
 
 # Site name
 #
-# Default:      Jiajun Yan
+# Default:      Almace Scaffolding
 name:           Jiajun Yan
 
 # Site short name
@@ -74,7 +74,7 @@ name:           Jiajun Yan
 # You can also just use your `name` for `name_short` if it is short enough
 #
 # For example:
-# - name:       Jiajun Yan
+# - name:       Almace Scaffolding
 # - name_short: AMSF
 #
 # or:
@@ -88,6 +88,7 @@ name_short:     AMSF
 #
 # Will be used in the document meta and Atom feed subtitle
 #
+# Default:      Super-fast Jekyll framework
 description:    Front-end Developer
 
 # Base URL
@@ -98,7 +99,7 @@ description:    Front-end Developer
 # `/my-project`, without trailing slash.
 #
 # Default:      ""
-baseurl:        /
+baseurl:        /lab/amsf
 
 # Flatten base
 #

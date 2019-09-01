@@ -1,0 +1,10 @@
+.container {
+ width: 100%;
+}
+
+.container h2 {
+ font-weight: 700;
+ font-size: 22px;
+ padding: 40px 0 40px 30px;
+ border-bottom: 2px solid var(--border-color);
+}

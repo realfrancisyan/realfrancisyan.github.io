@@ -1,0 +1,29 @@
+.container {
+ width: 250px;
+ border-left: 2px solid var(--border-color);
+ height: 100vh;
+ padding-left: 30px;
+}
+
+.component {
+ padding-top: 40px;
+}
+
+.component h3 {
+ font-weight: 700;
+ font-size: 18px;
+ padding-bottom: 15px;
+}
+
+.pingMe {
+ display: flex;
+ align-items: center;
+}
+
+.pingMe li {
+ margin-right: 15px;
+}
+
+.component img {
+ width: 24px;
+}

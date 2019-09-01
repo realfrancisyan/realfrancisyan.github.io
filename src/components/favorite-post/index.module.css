@@ -1,0 +1,109 @@
+@media screen and (min-width: 300px) {
+ a {
+  color: #000;
+  text-decoration: none;
+ }
+ .container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+ }
+ .container h2 {
+  font-size: 36px;
+  padding: 40px 0;
+  width: 400px;
+ }
+ .appInfo {
+  border-top: 1px solid #e5e5e5;
+  padding: 20px 0;
+ }
+ .appInfo:last-child {
+  border-bottom: 1px solid #e5e5e5;
+ }
+ .appHeader {
+  display: flex;
+ }
+ .appHeader .appIcon {
+  width: 100px;
+  border-radius: 22.5%;
+  margin-right: 20px;
+  height: 100%;
+ }
+ .appDesc {
+  display: flex;
+  flex-direction: column;
+ }
+ .appDesc h3 {
+  font-weight: 600;
+  font-size: 18px;
+ }
+ .appDesc h4 {
+  display: flex;
+  align-items: center;
+  color: rgb(150, 150, 150);
+  margin-top: 2px;
+ }
+ .appDesc h4 span {
+  margin-right: 6px;
+ }
+ .appDesc h4 a {
+  color: rgb(150, 150, 150);
+ }
+ .appDesc h4 i {
+  margin-top: 6px;
+  cursor: pointer;
+ }
+ .appDesc p {
+  color: rgb(150, 150, 150);
+ }
+ .desc {
+  padding: 10px 0;
+ }
+ .desc .descLine {
+  margin-top: 10px;
+  cursor: pointer;
+ }
+ .screenshots {
+  display: flex;
+  flex-direction: column;
+ }
+ .screenshots h4 {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+ }
+ .screenshots h4 i {
+  margin-top: 3px;
+ }
+ .imgArr {
+  margin-top: 10px;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+ }
+ .imgArr img {
+  display: inline-block;
+  width: 240px;
+  margin-right: 10px;
+  height: auto;
+ }
+}
+
+@media screen and (min-width: 768px) {
+ .container {
+  padding: 0;
+  margin: 0 auto;
+  width: 80%;
+ }
+
+ .appInfo {
+  width: 70%;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .container {
+  width: 1000px;
+ }
+}

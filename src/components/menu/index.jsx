@@ -5,11 +5,10 @@ class MenuComponent extends Component {
   render() {
     return (
       <div className={styles.container}>
-        <h2>Blog · 博客</h2>
+        <h2>{this.props.menu.title} · {this.props.menu.desc}</h2>
       </div>
     );
   }
 }
 
-export default MenuComponent;
-
+export default MenuComponent

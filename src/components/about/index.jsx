@@ -5,11 +5,15 @@ import SidebarComponent from '../sidebar'
 
 const AboutComponent = props => {
   // const { state } = props;
+  const menu = {
+    title: 'About',
+    desc: '关于'
+  }
 
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <MenuComponent></MenuComponent>
+        <MenuComponent menu={menu}></MenuComponent>
         <div className={styles.desc}>
           <p>Hey, I am Jiajun Yan, a Web Developer currently based in Guangzhou, China with strong interests in React, Vue and JavaScript performance.</p>
           <p>Graduated from <a href="https://www.cardiff.ac.uk/" target="_blank" rel="noopener noreferrer">Cardiff University</a>, Wales with a Master’s degree in Computing (Distinction), where I found myself truly passionate about Web Technologies, travel and making friends.</p>

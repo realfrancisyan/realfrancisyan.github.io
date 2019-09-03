@@ -3,6 +3,7 @@ import styles from './index.module.css';
 import { Route, Link } from 'react-router-dom';
 import About from '../about'
 import Favorites from '../../containers/favorites';
+import FavPost from '../../containers/favPost';
 
 const IndexComponent = props => {
   const { state } = props;
@@ -31,7 +32,8 @@ const IndexComponent = props => {
       </aside>
       <article>
         <Route path="/about" component={About}></Route>
-        <Route path="/favorites" component={Favorites}></Route>
+        <Route exact path="/favorites" component={Favorites}></Route>
+        <Route path="/favorites/post" component={FavPost}></Route>
       </article>
     </section>
   );

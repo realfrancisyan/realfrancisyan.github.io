@@ -1,0 +1,37 @@
+
+@media screen and (min-width: 1200px) {
+ .container {
+  width: 100%;
+  display: flex;
+ }
+
+ .content {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+
+ .desc {
+  padding: 40px 30px 0;
+  font-size: 22px;
+
+ }
+
+ .desc p {
+  margin-top: 20px;
+ }
+
+ .desc a:hover {
+  text-decoration: underline;
+ }
+
+ .desc p a {
+  font-weight: 700;
+ }
+
+ .desc h3 {
+  margin-top: 20px;
+  font-weight: 700;
+ }
+}

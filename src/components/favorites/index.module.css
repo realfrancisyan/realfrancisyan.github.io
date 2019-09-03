@@ -19,6 +19,10 @@
   flex-direction: column;
  }
 
+ .post:first-child {
+  padding-top: 40px;
+ }
+
  .post a:hover {
   text-decoration: underline;
  }

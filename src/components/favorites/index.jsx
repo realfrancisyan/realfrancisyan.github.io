@@ -20,7 +20,7 @@ const FavoritesComponent = props => {
           {state.categoryList.map((item, index) => {
             return (
               <li className={styles.post} key={index}>
-                <Link to="/">{item.title}</Link>
+                <Link to={{pathname: `/favorites/post?type=${item.type}`}}>{item.title}</Link>
                 <span className={styles.date}>{moment(item.createdAt).format('MMMM Do, YYYY')} · {item.count} items</span>
               </li>
             )

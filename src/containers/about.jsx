@@ -7,7 +7,6 @@ class About extends Component {
     super();
 
     this.state = {
-      categoryList: []
     };
 
     bindAll(this, [

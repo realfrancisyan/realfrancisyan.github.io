@@ -13,10 +13,10 @@ class Index extends Component {
 
     this.state = {
       links: [
-        { name: 'Blog', icon: BlogIcon, path: '/' },
-        { name: 'Favorites', icon: FavoritesIcon, path: '/' },
-        { name: 'Fitness', icon: FitnessIcon, path: '/' },
-        { name: 'About', icon: AboutIcon, path: '/' },
+        { name: 'Blog', icon: BlogIcon, path: '/blog' },
+        { name: 'Favorites', icon: FavoritesIcon, path: '/favorites' },
+        { name: 'Fitness', icon: FitnessIcon, path: '/fitness' },
+        { name: 'About', icon: AboutIcon, path: '/about' },
       ]
     };
 

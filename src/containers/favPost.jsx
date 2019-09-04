@@ -1,31 +1,46 @@
 import React, { Component } from 'react';
 import bindAll from 'lodash.bindall';
 import FavPostComponent from '../components/favPost';
-import * as qs from 'query-string';
+import {getList} from '../api/favorites'
+import constants from '../common/constants'
 
 class FavPost extends Component {
   constructor() {
     super();
 
     this.state = {
-      postType: null
+      postType: null,
+      postList: []
     };
 
     bindAll(this, [
-    ]);
+    ])
   }
 
-  handleParseQueryString() {
-    const parsed = qs.parse(this.props.location.search)
-    return parsed
+  handleGetPosts() {
+    const postType = this.props.match.params.type
+
+    const onSuccess = res => {
+      if (res.result === constants.STATUS.SUCCESS) {
+        console.log(res)
+        this.setState({
+          postType,
+          postList: res.data
+        })
+      }
+    }
+
+    getList({
+      type: postType
+    })
+      .then(onSuccess)
+      .catch(err => {
+        console.error('request get posts failed - ', err)
+      })
   }
 
   componentWillMount() {
-    const qs = this.handleParseQueryString()
-
-    this.setState({
-      postType: qs.type
-    })
+    this.handleGetPosts()
   }
 
   render() {

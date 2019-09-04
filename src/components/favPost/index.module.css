@@ -34,4 +34,13 @@
   margin-top: 20px;
   font-weight: 700;
  }
+
+ .posts {
+  padding: 40px 30px;
+ }
+
+ .posts h2 {
+  font-weight: 700;
+  font-size: 40px;
+ }
 }

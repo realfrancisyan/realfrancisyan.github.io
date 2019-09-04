@@ -20,8 +20,6 @@ class SidebarComponent extends Component {
       ]
     }
 
-
-
     bindAll(this, [
       'onHover'
     ]);

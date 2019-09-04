@@ -1,7 +1,6 @@
 import styles from './index.module.css';
 import React, { Component } from 'react';
 import BackIcon from './images/icon--back.png'
-import { Route } from 'react-router';
 import bindAll from 'lodash.bindall';
 import { withRouter } from 'react-router-dom'
 

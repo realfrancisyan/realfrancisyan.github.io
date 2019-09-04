@@ -27,13 +27,12 @@ const IndexComponent = props => {
               </li>
             )
           })}
-
         </ul>
       </aside>
       <article>
         <Route path="/about" component={About}></Route>
+        <Route path="/favorites/post/:type" component={FavPost}></Route>
         <Route exact path="/favorites" component={Favorites}></Route>
-        <Route path="/favorites/post" component={FavPost}></Route>
       </article>
     </section>
   );

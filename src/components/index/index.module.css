@@ -1,8 +1,10 @@
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) { */
  .container {
   width: 1200px;
   margin: 0 auto;
   display: flex;
+  position: relative;
+  height: 100vh;
  }
 
  aside {
@@ -10,7 +12,7 @@
   flex-direction: column;
   width: 250px;
   height: 100vh;
-  border-right: 2px solid var(--border-color);
+  position: fixed;
  }
 
  h1 {
@@ -46,4 +48,13 @@
   font-size: 22px;
   margin-left: 20px;
  }
-}
+
+ article {
+  position: absolute;
+  top: 0;
+  left: 250px;
+  display: flex;
+  justify-content: space-between;
+  border-left: 2px solid var(--border-color);
+ }
+/* } */

@@ -3,6 +3,14 @@
   --border-color: #e5e5e5;
 }
 
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +19,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--font-color)
+  color: var(--font-color);
 }
 
 code {

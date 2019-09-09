@@ -1,9 +1,9 @@
-import React from 'react';
-import styles from './index.module.css';
-import { Route, Link } from 'react-router-dom';
-import About from '../about'
-import Favorites from '../../containers/favorites';
-import FavPost from '../../containers/favPost';
+import React from "react";
+import styles from "./index.module.css";
+import { Route, Link } from "react-router-dom";
+import About from "../about";
+import Favorites from "../../containers/favorites";
+import FavPost from "../../containers/favPost";
 
 const IndexComponent = props => {
   const { state } = props;
@@ -25,7 +25,7 @@ const IndexComponent = props => {
                   </div>
                 </Link>
               </li>
-            )
+            );
           })}
         </ul>
       </aside>

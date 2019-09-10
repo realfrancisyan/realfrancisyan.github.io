@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import bindAll from "lodash.bindall";
-import FavoritesComponent from "../components/favorites";
-import { getCategories } from "../api/favorites";
-import constants from "../common/constants";
+import React, { Component } from 'react'
+import bindAll from 'lodash.bindall'
+import FavoritesComponent from '../components/favorites'
+import { getCategories } from '../api/favorites'
+import constants from '../common/constants'
 
 class Favorites extends Component {
   constructor() {
-    super();
+    super()
 
     this.state = {
       categoryList: []
-    };
+    }
 
-    bindAll(this, ["handleGetCategories"]);
+    bindAll(this, ['handleGetCategories'])
   }
 
   // get post titles
@@ -22,21 +22,21 @@ class Favorites extends Component {
         if (res.result === constants.STATUS.SUCCESS) {
           this.setState({
             categoryList: res.data
-          });
+          })
         }
       })
       .catch(err => {
-        console.error("request get categories failed - ", err);
-      });
+        console.error('request get categories failed - ', err)
+      })
   }
 
   componentWillMount() {
-    this.handleGetCategories();
+    this.handleGetCategories()
   }
 
   render() {
-    return <FavoritesComponent state={this.state} />;
+    return <FavoritesComponent state={this.state} />
   }
 }
 
-export default Favorites;
+export default Favorites

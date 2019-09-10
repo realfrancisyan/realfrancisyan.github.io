@@ -7,6 +7,7 @@
 
 .content {
   width: 700px;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -23,8 +24,25 @@
   padding-top: 40px;
 }
 
-.post a:hover {
-  text-decoration: underline;
+.post h2 {
+  width: 80%;
+  font-weight: 700;
+}
+
+.post .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post .top .tag {
+  font-weight: 600;
+  font-size: 16px;
+  color: #8f8f8f;
+}
+
+.post:hover .top .tag {
+  display: block;
 }
 
 .date {

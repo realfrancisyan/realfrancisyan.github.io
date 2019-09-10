@@ -1,18 +1,18 @@
-import React from "react";
-import styles from "./index.module.css";
-import MenuComponent from "../menu";
-import SidebarComponent from "../sidebar";
-import LinkIcon from "./images/icon--link.png";
-import moment from "moment";
+import React from 'react'
+import styles from './index.module.css'
+import MenuComponent from '../menu'
+import SidebarComponent from '../sidebar'
+import LinkIcon from './images/icon--link.png'
+import moment from 'moment'
 
 const FavPostComponent = props => {
-  const { state, handleExpandDesc, handleImageLoaded } = props;
+  const { state, handleExpandDesc, handleImageLoaded } = props
   const menu = {
-    title: "Favorites",
-    desc: "收藏",
+    title: 'Favorites',
+    desc: '收藏',
     showBack: true,
-    path: "/favorites"
-  };
+    path: '/favorites'
+  }
 
   return (
     <section className={styles.container}>
@@ -32,9 +32,9 @@ const FavPostComponent = props => {
                         )}
                         <img
                           src={post.appIcon}
-                          alt="app icon"
+                          alt='app icon'
                           className={styles.appIcon}
-                          style={state.imgIsLoaded ? {} : { display: "none" }}
+                          style={state.imgIsLoaded ? {} : { display: 'none' }}
                           onLoad={handleImageLoaded}
                         />
                         <div className={styles.topRight}>
@@ -43,18 +43,18 @@ const FavPostComponent = props => {
                             {+state.postType === 0 ? (
                               <span>{post.formattedPrice}</span>
                             ) : (
-                              ""
+                              ''
                             )}
                             <a
                               href={post.appLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                              target='_blank'
+                              rel='noopener noreferrer'
                             >
-                              <img src={LinkIcon} alt="link" />
+                              <img src={LinkIcon} alt='link' />
                             </a>
                           </p>
                           <p className={styles.date}>
-                            {moment(post.createdAt).format("MMMM Do, YYYY")}
+                            {moment(post.createdAt).format('MMMM Do, YYYY')}
                           </p>
                         </div>
                       </div>
@@ -64,14 +64,14 @@ const FavPostComponent = props => {
                           className={styles.desc}
                           onClick={() => handleExpandDesc(post)}
                         >
-                          {post.body.split("\n").map((i, key) => {
+                          {post.body.split('\n').map((i, key) => {
                             return key < (post.expandDesc ? 1000 : 3) ? (
                               <div className={styles.descLine} key={key}>
                                 {i}
                               </div>
                             ) : (
-                              ""
-                            );
+                              ''
+                            )
                           })}
                         </div>
                       ) : null}
@@ -83,16 +83,16 @@ const FavPostComponent = props => {
                               return (
                                 <img
                                   src={screenshot}
-                                  alt="screenshot"
+                                  alt='screenshot'
                                   key={ssIdx}
                                 />
-                              );
+                              )
                             })}
                           </div>
                         ) : null
                       ) : null}
                     </div>
-                  );
+                  )
                 })}
               </div>
             </div>
@@ -101,7 +101,7 @@ const FavPostComponent = props => {
       </div>
       <SidebarComponent></SidebarComponent>
     </section>
-  );
-};
+  )
+}
 
-export default FavPostComponent;
+export default FavPostComponent

@@ -1,0 +1,89 @@
+/* @media screen and (min-width: 1200px) { */
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.content {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post {
+  padding: 30px;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.post:first-child {
+  padding-top: 40px;
+}
+
+.post a {
+  width: 80%;
+}
+
+.post:hover a {
+  text-decoration: underline;
+}
+
+.post .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post .top .tag {
+  font-weight: 600;
+  font-size: 16px;
+  color: #8f8f8f;
+  display: none;
+}
+
+.post:hover .top .tag {
+  display: block;
+}
+
+.date {
+  font-weight: 600;
+  font-size: 16px;
+  color: #8f8f8f;
+  margin-top: 5px;
+}
+
+.tagWrapper {
+  margin-top: 20px;
+}
+
+.tagWrapper li {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #8f8f8f;
+  cursor: pointer;
+}
+
+.tagWrapper li:hover {
+  color: #202020;
+}
+
+.tagWrapper li.isSelected {
+  color: #202020;
+}
+
+.component {
+  padding-top: 40px;
+}
+
+.component h3 {
+  font-weight: 700;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+/* } */

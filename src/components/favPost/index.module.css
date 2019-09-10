@@ -1,119 +1,120 @@
 /* @media screen and (min-width: 1200px) { */
 
 .container {
- width: 100%;
- display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .content {
- width: 700px;
- position: relative;
- display: flex;
- flex-direction: column;
+  width: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .desc {
- padding: 40px 30px 0;
- font-size: 22px;
- cursor: pointer;
+  padding: 40px 30px 0;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 .desc p {
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 .desc a:hover {
- text-decoration: underline;
+  text-decoration: underline;
 }
 
 .desc p a {
- font-weight: 700;
+  font-weight: 700;
 }
 
 .desc h3 {
- margin-top: 20px;
- font-weight: 700;
+  margin-top: 20px;
+  font-weight: 700;
 }
 
 .postWrapper {
- padding: 40px 30px;
+  padding: 40px 30px;
 }
 
 .postWrapper h2 {
- font-weight: 700;
- font-size: 40px;
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .posts {
- margin-top: 60px;
+  margin-top: 60px;
 }
 
 .post {
- padding-bottom: 30px;
- border-bottom: 2px solid var(--border-color);
- margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid var(--border-color);
+  margin-bottom: 30px;
 }
 
 .post:last-child {
- border-bottom: 0;
+  border-bottom: 0;
 }
 
 .post .top {
- display: flex;
+  display: flex;
 }
 
 .post .appIcon {
- width: 100px;
- border-radius: 22.5%;
- margin-right: 20px;
+  width: 100px;
+  border-radius: 22.5%;
+  margin-right: 20px;
 }
 
 .post .topRight {
- font-size: 16px;
- font-weight: 600;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .post .topRight h3 {
- font-weight: 700;
+  font-weight: 700;
 }
 
-.post .appLink, .post .date {
- padding-top: 8px;
- color: #8f8f8f;
- display: flex;
- align-items: center;
+.post .appLink,
+.post .date {
+  padding-top: 8px;
+  color: #8f8f8f;
+  display: flex;
+  align-items: center;
 }
 
 .post .appLink span {
- margin-right: 5px;
+  margin-right: 5px;
 }
 
 .post .appLink img {
- width: 23px;
+  width: 23px;
 }
 
 .post .desc {
- font-size: 16px;
- margin: 20px 0;
- padding: 0;
+  font-size: 16px;
+  margin: 20px 0;
+  padding: 0;
 }
 
 .post .descLine {
- line-height: 24px;
- margin-bottom: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
 .post .screenshots {
- width: 100%;
- overflow-x: auto;
- white-space: nowrap;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .post .screenshots img {
- display: inline-block;
- width: 240px;
- margin-right: 10px;
- height: auto;
+  display: inline-block;
+  width: 240px;
+  margin-right: 10px;
+  height: auto;
 }
 
 /* } */

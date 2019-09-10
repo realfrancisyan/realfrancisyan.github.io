@@ -1,16 +1,16 @@
-import React from "react";
-import styles from "./index.module.css";
-import MenuComponent from "../menu";
-import SidebarComponent from "../sidebar";
-import { Link } from "react-router-dom";
-import moment from "moment";
+import React from 'react'
+import styles from './index.module.css'
+import MenuComponent from '../menu'
+import SidebarComponent from '../sidebar'
+import { Link } from 'react-router-dom'
+import moment from 'moment'
 
 const FavoritesComponent = props => {
-  const { state } = props;
+  const { state } = props
   const menu = {
-    title: "Favorites",
-    desc: "收藏"
-  };
+    title: 'Favorites',
+    desc: '收藏'
+  }
 
   return (
     <section className={styles.container}>
@@ -24,17 +24,17 @@ const FavoritesComponent = props => {
                   {item.title}
                 </Link>
                 <span className={styles.date}>
-                  {moment(item.createdAt).format("MMMM Do, YYYY")} ·{" "}
+                  {moment(item.createdAt).format('MMMM Do, YYYY')} ·{' '}
                   {item.count} items
                 </span>
               </li>
-            );
+            )
           })}
         </ul>
       </div>
       <SidebarComponent></SidebarComponent>
     </section>
-  );
-};
+  )
+}
 
-export default FavoritesComponent;
+export default FavoritesComponent

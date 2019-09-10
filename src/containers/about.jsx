@@ -1,19 +1,19 @@
-import React, { Component } from "react";
-import bindAll from "lodash.bindall";
-import AboutComponent from "../components/about";
+import React, { Component } from 'react'
+import bindAll from 'lodash.bindall'
+import AboutComponent from '../components/about'
 
 class About extends Component {
   constructor() {
-    super();
+    super()
 
-    this.state = {};
+    this.state = {}
 
-    bindAll(this, []);
+    bindAll(this, [])
   }
 
   render() {
-    return <AboutComponent state={this.state} />;
+    return <AboutComponent state={this.state} />
   }
 }
 
-export default About;
+export default About

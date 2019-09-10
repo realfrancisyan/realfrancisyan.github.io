@@ -1,14 +1,14 @@
-import React from "react";
-import styles from "./index.module.css";
-import MenuComponent from "../menu";
-import SidebarComponent from "../sidebar";
+import React from 'react'
+import styles from './index.module.css'
+import MenuComponent from '../menu'
+import SidebarComponent from '../sidebar'
 
 const AboutComponent = props => {
   // const { state } = props;
   const menu = {
-    title: "About",
-    desc: "关于"
-  };
+    title: 'About',
+    desc: '关于'
+  }
 
   return (
     <section className={styles.container}>
@@ -21,11 +21,11 @@ const AboutComponent = props => {
             performance.
           </p>
           <p>
-            Graduated from{" "}
+            Graduated from{' '}
             <a
-              href="https://www.cardiff.ac.uk/"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.cardiff.ac.uk/'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Cardiff University
             </a>
@@ -41,25 +41,25 @@ const AboutComponent = props => {
 
           <h3>
             <a
-              href="https://instagram.com/jiajun.yan.travel"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://instagram.com/jiajun.yan.travel'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Instagram
             </a>
             <span> - </span>
             <a
-              href="https://github.com/realfrancisyan"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://github.com/realfrancisyan'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               Github
             </a>
             <span> - </span>
             <a
-              href="https://linkedin.com/in/realfrancisyan"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://linkedin.com/in/realfrancisyan'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               LinkedIn
             </a>
@@ -68,7 +68,7 @@ const AboutComponent = props => {
       </div>
       <SidebarComponent></SidebarComponent>
     </section>
-  );
-};
+  )
+}
 
-export default AboutComponent;
+export default AboutComponent

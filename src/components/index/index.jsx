@@ -6,6 +6,7 @@ import Favorites from '../../containers/favorites'
 import FavPost from '../../containers/favPost'
 import Blog from '../../containers/blog'
 import BlogPost from '../../containers/blogPost'
+import Fitness from '../../containers/fitness'
 
 const IndexComponent = props => {
   const { state } = props
@@ -37,6 +38,7 @@ const IndexComponent = props => {
         <Route path='/favorites/post/:type' component={FavPost}></Route>
         <Route exact path='/blog' component={Blog}></Route>
         <Route path='/blog/post/:id' component={BlogPost}></Route>
+        <Route path='/fitness' component={Fitness}></Route>
       </article>
     </section>
   )

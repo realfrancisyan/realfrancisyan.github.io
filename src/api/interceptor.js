@@ -4,14 +4,15 @@ import constants from '../common/constants'
 // 拦截 request ，设置全局请求为 ajax 请求
 axios.interceptors.request.use(config => {
   config.withCredentials = true
-  const token = localStorage.getItem('aura-token')
-  config.headers['aura-token'] = token || ''
 
   config.headers['Access-Control-Allow-Origin'] = '*'
   config.headers['Content-Type'] = 'application/json'
   config.headers['X-Requested-With'] = 'XMLHttpRequest'
 
-  return config;
+  const token = localStorage.getItem('stravaToken')
+  config.headers['Authorization'] = token ? `Bearer ${token}` : ''
+
+  return config
 });
 
 // 拦截响应 response，并做一些错误处理

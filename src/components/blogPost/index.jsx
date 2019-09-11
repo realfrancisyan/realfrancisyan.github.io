@@ -4,6 +4,7 @@ import MenuComponent from '../menu'
 import SidebarComponent from '../sidebar'
 import moment from 'moment'
 import ReactMarkdown from 'react-markdown'
+import CodeBlock from '../../containers/codeBlock'
 
 const BlogPostComponent = props => {
   const { state } = props
@@ -30,7 +31,10 @@ const BlogPostComponent = props => {
           ) : null}
         </div>
         <div className={styles.postBody}>
-          <ReactMarkdown source={state.post.body} />
+          <ReactMarkdown
+            source={state.post.body}
+            renderers={{ code: CodeBlock }}
+          />
         </div>
       </div>
       <SidebarComponent></SidebarComponent>

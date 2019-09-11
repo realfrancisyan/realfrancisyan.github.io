@@ -36,6 +36,12 @@ const BlogPostComponent = props => {
             renderers={{ code: CodeBlock }}
           />
         </div>
+
+        {state.post.updatedAt ? (
+          <span className={styles.updatedAt}>
+            Updated on: {moment(state.post.updatedAt).format('MMMM Do, YYYY')}
+          </span>
+        ) : null}
       </div>
       <SidebarComponent></SidebarComponent>
     </section>

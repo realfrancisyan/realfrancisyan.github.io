@@ -71,12 +71,12 @@
 
 .postBody ol {
   font-size: 22px;
-  counter-reset: order-list;
+  counter-reset: ordered-list;
 }
 
 .postBody ol ul {
   font-size: 22px;
-  counter-reset: unorder-list;
+  counter-reset: unordered-list;
   padding-left: 20px;
 }
 
@@ -85,15 +85,15 @@
 }
 
 .postBody ol li:before {
-  content: counter(order-list) ". ";
-  counter-increment: order-list;
+  content: counter(ordered-list) ". ";
+  counter-increment: ordered-list;
   color: #8f8f8f;
   font-size: 24px;
 }
 
 .postBody ol ul li:before {
-  content: counter(unorder-list) ". ";
-  counter-increment: unorder-list;
+  content: counter(unordered-list) ". ";
+  counter-increment: unordered-list;
   color: #8f8f8f;
   font-size: 24px;
 }
@@ -102,6 +102,10 @@
   display: inline-block;
   font-weight: 600;
   font-size: 24px;
+}
+
+.postBody li code {
+  padding-top: 30px;
 }
 
 .postBody h1 {
@@ -150,6 +154,25 @@
 .postBody pre {
   font-size: 18px !important;
   line-height: 28px !important;
+}
+
+.postBody hr {
+  padding: 0;
+  margin: 20px 0;
+  background: white;
+  border-top: 2px solid var(--border-color);
+}
+
+.postBody p a {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.updatedAt {
+  font-weight: 600;
+  color: #8f8f8f;
+  font-size: 16px;
+  padding: 20px 30px 40px;
 }
 
 /* } */

@@ -10,7 +10,9 @@ class Fitness extends Component {
   constructor() {
     super()
 
-    this.state = {}
+    this.state = {
+      records: []
+    }
 
     bindAll(this, [])
   }
@@ -20,6 +22,9 @@ class Fitness extends Component {
       getStravaData()
         .then(res => {
           console.log(res)
+          this.setState({
+            records: res
+          })
           resolve()
         })
         .catch(err => {

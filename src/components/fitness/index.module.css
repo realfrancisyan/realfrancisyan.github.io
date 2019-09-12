@@ -11,4 +11,45 @@
   flex-direction: column;
 }
 
+.records {
+  padding: 40px 30px;
+}
+
+.record {
+  padding: 30px 0 20px;
+  border-bottom: 2px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.record .date {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.record .type {
+  font-weight: 600;
+  font-size: 16px;
+  color: #8f8f8f;
+  margin-top: 10px;
+}
+
+.record .stats {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.stat {
+  font-weight: 700;
+  font-size: 20px;
+  color: #8f8f8f;
+  width: 50%;
+  line-height: 40px;
+}
+
+.stat span {
+  color: #202020;
+}
+
 /* } */

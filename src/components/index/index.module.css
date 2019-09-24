@@ -40,6 +40,10 @@ h1 {
   padding-left: 20px;
 }
 
+.link.isSelected {
+  background: #f4f4f4;
+}
+
 .link img {
   width: 26px;
 }

@@ -23,6 +23,16 @@ class Index extends Component {
     bindAll(this, [])
   }
 
+  static getDerivedStateFromProps(props, state) {
+    const links = state.links
+    links.forEach(link => {
+      link.isSelected = link.path === props.location.pathname
+    })
+    return {
+      links
+    }
+  }
+
   render() {
     return <IndexComponent state={this.state} />
   }

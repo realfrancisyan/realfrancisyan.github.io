@@ -22,7 +22,12 @@ const IndexComponent = props => {
             return (
               <li key={index}>
                 <Link to={item.path}>
-                  <div className={styles.link}>
+                  <div
+                    className={[
+                      styles.link,
+                      item.isSelected ? styles.isSelected : ''
+                    ].join(' ')}
+                  >
                     <img src={item.icon} alt='icon'></img>
                     <span>{item.name}</span>
                   </div>

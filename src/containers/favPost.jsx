@@ -90,7 +90,7 @@ class FavPost extends Component {
     })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.handleGetPosts()
   }
 

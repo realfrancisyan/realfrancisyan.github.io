@@ -76,7 +76,7 @@ class Fitness extends Component {
     })
   }
 
-  async componentWillMount() {
+  async componentDidMount() {
     await this.handleGetToken()
     await this.handleGetStravaData()
   }

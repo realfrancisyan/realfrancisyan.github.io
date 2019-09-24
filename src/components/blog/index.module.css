@@ -24,6 +24,10 @@
   padding-top: 40px;
 }
 
+.post:last-child {
+  padding-bottom: 40px;
+}
+
 .post a {
   width: 80%;
 }

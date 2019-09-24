@@ -30,7 +30,7 @@ class Favorites extends Component {
       })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.handleGetCategories()
   }
 

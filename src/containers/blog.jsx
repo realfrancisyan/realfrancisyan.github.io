@@ -96,7 +96,7 @@ class Blog extends Component {
       })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.handleListPosts()
     this.handleListTags()
   }

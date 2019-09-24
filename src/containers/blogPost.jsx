@@ -33,7 +33,7 @@ class BlogPost extends Component {
       })
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.handleListPost()
   }
 

@@ -26,6 +26,10 @@
   padding: 0 0 20px;
 }
 
+.record:last-child {
+  border-bottom: 0;
+}
+
 .record .date {
   font-size: 22px;
   font-weight: 700;

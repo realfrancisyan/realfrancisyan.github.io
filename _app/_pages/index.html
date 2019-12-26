@@ -25,59 +25,47 @@ thumb_force_logo: true
 
   <div class="page-content">
     <h2>JavaScript</h2>
-    {% for post in site.tags.js %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.js %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>NodeJS</h2>
-    {% for post in site.tags.nodejs %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.nodejs %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>小程序</h2>
-    {% for post in site.tags.mp %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.mp %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>React</h2>
-    {% for post in site.tags.react %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.react %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>Vue</h2>
-    {% for post in site.tags.vue %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.vue %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>MongoDB</h2>
-    {% for post in site.tags.mongodb %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.mongodb %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>Python</h2>
-    {% for post in site.tags.python %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.python %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>Work Related</h2>
-    {% for post in site.tags.work %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.work %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>Git</h2>
-    {% for post in site.tags.git %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.git %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>Handbook</h2>
-    {% for post in site.tags.handbook %} {%- include themes/{{
-      site.amsf_theme
+    {% for post in site.tags.handbook %} {%- include themes/{{ site.amsf_theme
     }}/includes/page-item.html -%} {% endfor %}
 
     <h2>其他</h2>
     {% for post in site.tags.miscellaneous %} {%- include themes/{{
-      site.amsf_theme
-    }}/includes/page-item.html -%} {% endfor %}
-
+    site.amsf_theme }}/includes/page-item.html -%} {% endfor %}
   </div>
 </article>

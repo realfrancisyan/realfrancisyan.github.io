@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Jiajun Yan</title><subtitle>Front-end Developer</subtitle><updated>2019-06-10T19:51:30-07:00</updated><id>https://sparanoid.com/</id><generator uri="https://sparanoid.com/lab/amsf/" version="2.0.14">Almace Scaffolding</generator><link rel="alternate" type="text/html" hreflang="en" href="https://sparanoid.com/" /><link rel="self" type="application/atom+xml" href="https://sparanoid.com/feed.xml" /><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><entry><title>使用 PEM 登录 SSH</title><id>https://sparanoid.com/ssh-pem-login.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/ssh-pem-login.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>我的前端周报</title><subtitle>Front-end Developer</subtitle><updated>2019-12-19T00:47:22-08:00</updated><id>https://sparanoid.com/</id><generator uri="https://sparanoid.com/lab/amsf/" version="2.0.14">Almace Scaffolding</generator><link rel="alternate" type="text/html" hreflang="en" href="https://sparanoid.com/" /><link rel="self" type="application/atom+xml" href="https://sparanoid.com/feed.xml" /><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><entry><title>使用 PEM 登录 SSH</title><id>https://sparanoid.com/ssh-pem-login.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/ssh-pem-login.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;div class=&quot;language-terminal highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;go&quot;&gt;ssh -i key.pem root@IP
 
@@ -12,7 +12,7 @@ sudo chmod 600 key.pem
           
         
       
-        </content><summary>```terminalssh -i key.pem root@IP</summary></entry><entry><title>Python 一键安装所有依赖包</title><id>https://sparanoid.com/python-install-all-packages.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/python-install-all-packages.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>```terminalssh -i key.pem root@IP</summary></entry><entry><title>Python 一键安装所有依赖包</title><id>https://sparanoid.com/python-install-all-packages.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/python-install-all-packages.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在开发 &lt;code class=&quot;highlighter-rouge&quot;&gt;Python&lt;/code&gt; 后端时，往往需要将所有依赖打包，以便以后安装。&lt;/p&gt;
 
@@ -32,7 +32,7 @@ pip3 install -i https://pypi.python.org/simple -r requirements.txt
           
         
       
-        </content><summary>在开发 Python 后端时，往往需要将所有依赖打包，以便以后安装。</summary></entry><entry><title>JS 数组按日期分组</title><id>https://sparanoid.com/js-array-sort-by-date.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/js-array-sort-by-date.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在开发 Python 后端时，往往需要将所有依赖打包，以便以后安装。</summary></entry><entry><title>JS 数组按日期分组</title><id>https://sparanoid.com/js-array-sort-by-date.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/js-array-sort-by-date.html" /><published>2019-06-10T00:00:00-07:00</published><updated>2019-06-10T19:49:01-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;最近在业余时间做了一个新闻 App，在实现时遇到了一个将后台返回的数据按日期分组的需求，效果如下：&lt;/p&gt;
 
@@ -79,7 +79,7 @@ pip3 install -i https://pypi.python.org/simple -r requirements.txt
           
         
       
-        </content><summary>最近在业余时间做了一个新闻 App，在实现时遇到了一个将后台返回的数据按日期分组的需求，效果如下：</summary></entry><entry><title>MongoDB 基础用法</title><id>https://sparanoid.com/mongodb-basic-usage.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mongodb-basic-usage.html" /><published>2019-05-20T00:00:00-07:00</published><updated>2019-05-20T02:17:13-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>最近在业余时间做了一个新闻 App，在实现时遇到了一个将后台返回的数据按日期分组的需求，效果如下：</summary></entry><entry><title>MongoDB 基础用法</title><id>https://sparanoid.com/mongodb-basic-usage.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mongodb-basic-usage.html" /><published>2019-05-20T00:00:00-07:00</published><updated>2019-05-20T02:17:13-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;最近在学习 &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;，现将所学总结一下。&lt;/p&gt;
 
@@ -198,7 +198,7 @@ mongo
           
         
       
-        </content><summary>最近在学习 MongoDB，现将所学总结一下。</summary></entry><entry><title>Ubuntu 下安装 MongoDB 并远程连接</title><id>https://sparanoid.com/install-mongodb-on-ubuntu.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/install-mongodb-on-ubuntu.html" /><published>2019-05-20T00:00:00-07:00</published><updated>2019-06-09T19:11:31-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>最近在学习 MongoDB，现将所学总结一下。</summary></entry><entry><title>Ubuntu 下安装 MongoDB 并远程连接</title><id>https://sparanoid.com/install-mongodb-on-ubuntu.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/install-mongodb-on-ubuntu.html" /><published>2019-05-20T00:00:00-07:00</published><updated>2019-06-09T19:11:31-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;最近在学习 &lt;code class=&quot;highlighter-rouge&quot;&gt;MongoDB&lt;/code&gt;，发现于服务器上安装后默认是无法远程连接的，经过一番研究，总结如下：&lt;/p&gt;
 
@@ -269,7 +269,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>最近在学习 MongoDB，发现于服务器上安装后默认是无法远程连接的，经过一番研究，总结如下：</summary></entry><entry><title>2019 学习计划</title><id>https://sparanoid.com/plans.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/plans.html" /><published>2019-05-08T00:00:00-07:00</published><updated>2019-05-20T02:17:13-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>最近在学习 MongoDB，发现于服务器上安装后默认是无法远程连接的，经过一番研究，总结如下：</summary></entry><entry><title>2019 学习计划</title><id>https://sparanoid.com/plans.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/plans.html" /><published>2019-05-08T00:00:00-07:00</published><updated>2019-05-20T02:17:13-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;学无止境。自从转行进入了前端成了一名正式的程序员后，发现前端需要学的东西实在太多，而且很难跟上变化，东西很多很好，但并不是要将每样东西都学习一遍，而是要将最核心、最流行的框架和语言学好，这才是最重要的。&lt;/p&gt;
 
@@ -367,7 +367,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>学无止境。自从转行进入了前端成了一名正式的程序员后，发现前端需要学的东西实在太多，而且很难跟上变化，东西很多很好，但并不是要将每样东西都学习一遍，而是要将最核心、最流行的框架和语言学好，这才是最重要的。</summary></entry><entry><title>NodeJS 学习总结</title><id>https://sparanoid.com/node-js-sum-up.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/node-js-sum-up.html" /><published>2019-05-07T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>学无止境。自从转行进入了前端成了一名正式的程序员后，发现前端需要学的东西实在太多，而且很难跟上变化，东西很多很好，但并不是要将每样东西都学习一遍，而是要将最核心、最流行的框架和语言学好，这才是最重要的。</summary></entry><entry><title>NodeJS 学习总结</title><id>https://sparanoid.com/node-js-sum-up.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/node-js-sum-up.html" /><published>2019-05-07T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;最近花了两天时间粗略学习了 &lt;code class=&quot;highlighter-rouge&quot;&gt;Node JS&lt;/code&gt;，以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。&lt;/p&gt;
 
@@ -513,7 +513,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>最近花了两天时间粗略学习了 Node JS，以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。</summary></entry><entry><title>Express 学习总结</title><id>https://sparanoid.com/express-sum-up.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/express-sum-up.html" /><published>2019-05-07T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>最近花了两天时间粗略学习了 Node JS，以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。</summary></entry><entry><title>Express 学习总结</title><id>https://sparanoid.com/express-sum-up.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/express-sum-up.html" /><published>2019-05-07T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。&lt;/p&gt;
 
@@ -624,7 +624,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。</summary></entry><entry><title>添加 slot 后出现 offsetLeft 错误解决</title><id>https://sparanoid.com/slot-offset-left-error.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/slot-offset-left-error.html" /><published>2019-04-04T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>以下我将为我个人认为在目前项目中较为重要的部分罗列，本总结会不断更新。</summary></entry><entry><title>添加 slot 后出现 offsetLeft 错误解决</title><id>https://sparanoid.com/slot-offset-left-error.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/slot-offset-left-error.html" /><published>2019-04-04T00:00:00-07:00</published><updated>2019-05-07T02:32:58-07:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;小程序有很多很隐蔽的 bug，例如：&lt;/p&gt;
 
@@ -646,7 +646,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>小程序有很多很隐蔽的 bug，例如：</summary></entry><entry><title>解决 VSCode CPU 占用率过高的问题</title><id>https://sparanoid.com/vscode-high-cpu-usage.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/vscode-high-cpu-usage.html" /><published>2019-03-08T00:00:00-08:00</published><updated>2019-03-08T01:20:46-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>小程序有很多很隐蔽的 bug，例如：</summary></entry><entry><title>解决 VSCode CPU 占用率过高的问题</title><id>https://sparanoid.com/vscode-high-cpu-usage.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/vscode-high-cpu-usage.html" /><published>2019-03-08T00:00:00-08:00</published><updated>2019-03-08T01:20:46-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;VSCode&lt;/code&gt; 容易导致 CPU 占用率过高，令电脑温度升高，因而系统性能降低，一些插件无法使用。&lt;/p&gt;
 
@@ -661,7 +661,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>VSCode 容易导致 CPU 占用率过高，令电脑温度升高，因而系统性能降低，一些插件无法使用。</summary></entry><entry><title>删除远程错误上传 commit</title><id>https://sparanoid.com/reset-commit.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/reset-commit.html" /><published>2019-03-05T00:00:00-08:00</published><updated>2019-03-05T02:15:27-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>VSCode 容易导致 CPU 占用率过高，令电脑温度升高，因而系统性能降低，一些插件无法使用。</summary></entry><entry><title>删除远程错误上传 commit</title><id>https://sparanoid.com/reset-commit.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/reset-commit.html" /><published>2019-03-05T00:00:00-08:00</published><updated>2019-03-05T02:15:27-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;在工作中，很难避免错误上传 commit，造成不必要的麻烦。&lt;/p&gt;
@@ -699,7 +699,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>  在工作中，很难避免错误上传 commit，造成不必要的麻烦。</summary></entry><entry><title>利用 Charles 建立假文件</title><id>https://sparanoid.com/charles-fake-data.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/charles-fake-data.html" /><published>2019-03-05T00:00:00-08:00</published><updated>2019-03-05T02:35:31-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  在工作中，很难避免错误上传 commit，造成不必要的麻烦。</summary></entry><entry><title>利用 Charles 建立假文件</title><id>https://sparanoid.com/charles-fake-data.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/charles-fake-data.html" /><published>2019-03-05T00:00:00-08:00</published><updated>2019-03-05T02:35:31-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在开发中，需要改变线上配置文件。但因为该文件十分重要，需要保证代码通过后，才可替换。&lt;/p&gt;
 
@@ -729,7 +729,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>在开发中，需要改变线上配置文件。但因为该文件十分重要，需要保证代码通过后，才可替换。</summary></entry><entry><title>小程序学习踩坑汇总</title><id>https://sparanoid.com/wechat-mini-program-bugs.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/wechat-mini-program-bugs.html" /><published>2019-02-26T00:00:00-08:00</published><updated>2019-02-26T07:01:35-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在开发中，需要改变线上配置文件。但因为该文件十分重要，需要保证代码通过后，才可替换。</summary></entry><entry><title>小程序学习踩坑汇总</title><id>https://sparanoid.com/wechat-mini-program-bugs.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/wechat-mini-program-bugs.html" /><published>2019-02-26T00:00:00-08:00</published><updated>2019-02-26T07:01:35-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。&lt;/p&gt;
 
@@ -756,7 +756,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。</summary></entry><entry><title>从现有分支建立新分支</title><id>https://sparanoid.com/git-new-branch-from-branch.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-new-branch-from-branch.html" /><published>2019-02-26T00:00:00-08:00</published><updated>2019-02-26T07:01:35-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。</summary></entry><entry><title>从现有分支建立新分支</title><id>https://sparanoid.com/git-new-branch-from-branch.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-new-branch-from-branch.html" /><published>2019-02-26T00:00:00-08:00</published><updated>2019-02-26T07:01:35-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在工作中，公司要求每开始一个功能或者修复 bugs 时必须从 dev 中新建一个分支，再工作。
 现记录一下，防止忘记。&lt;/p&gt;
@@ -778,7 +778,7 @@ sudo apt-get install -y mongodb-org
           
         
       
-        </content><summary>在工作中，公司要求每开始一个功能或者修复 bugs 时必须从 dev 中新建一个分支，再工作。现记录一下，防止忘记。</summary></entry><entry><title>动态改变 input 宽度</title><id>https://sparanoid.com/dynamic-input-width.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/dynamic-input-width.html" /><published>2019-02-25T00:00:00-08:00</published><updated>2019-03-05T02:15:27-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在工作中，公司要求每开始一个功能或者修复 bugs 时必须从 dev 中新建一个分支，再工作。现记录一下，防止忘记。</summary></entry><entry><title>动态改变 input 宽度</title><id>https://sparanoid.com/dynamic-input-width.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/dynamic-input-width.html" /><published>2019-02-25T00:00:00-08:00</published><updated>2019-03-05T02:15:27-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在工作中遇到这样一种情况，需要 &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt; 右对齐显示并输入金额。但 &lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt; 有其默认的宽度，且不能随文字的输入动态改变。&lt;/p&gt;
 
@@ -857,7 +857,7 @@ https://developers.weixin.qq.com/s/YzPZlrmn7K6I&lt;/a&gt;&lt;/p&gt;
           
         
       
-        </content><summary>在工作中遇到这样一种情况，需要 input 右对齐显示并输入金额。但 input 有其默认的宽度，且不能随文字的输入动态改变。</summary></entry><entry><title>mpvue 使用注意事项</title><id>https://sparanoid.com/mpvue-summary.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mpvue-summary.html" /><published>2019-02-17T00:00:00-08:00</published><updated>2019-02-17T05:58:13-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在工作中遇到这样一种情况，需要 input 右对齐显示并输入金额。但 input 有其默认的宽度，且不能随文字的输入动态改变。</summary></entry><entry><title>mpvue 使用注意事项</title><id>https://sparanoid.com/mpvue-summary.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mpvue-summary.html" /><published>2019-02-17T00:00:00-08:00</published><updated>2019-02-17T05:58:13-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;&lt;a href=&quot;http://mpvue.com/&quot;&gt;mpvue&lt;/a&gt; 是基于 &lt;code class=&quot;highlighter-rouge&quot;&gt;vue.js&lt;/code&gt; 的小程序框架。经过最近几天的使用，相比原生的框架，其的确好处很多，适合有 &lt;code class=&quot;highlighter-rouge&quot;&gt;vue.js&lt;/code&gt; 的开发者，值得推荐。&lt;/p&gt;
 
@@ -882,7 +882,7 @@ https://developers.weixin.qq.com/s/YzPZlrmn7K6I&lt;/a&gt;&lt;/p&gt;
           
         
       
-        </content><summary>mpvue 是基于 vue.js 的小程序框架。经过最近几天的使用，相比原生的框架，其的确好处很多，适合有 vue.js 的开发者，值得推荐。</summary></entry><entry><title>小程序学习踩坑汇总（云开发篇）</title><id>https://sparanoid.com/wechat-mini-program-bugs-cloud-functions.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/wechat-mini-program-bugs-cloud-functions.html" /><published>2019-02-10T00:00:00-08:00</published><updated>2019-02-10T02:18:01-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>mpvue 是基于 vue.js 的小程序框架。经过最近几天的使用，相比原生的框架，其的确好处很多，适合有 vue.js 的开发者，值得推荐。</summary></entry><entry><title>小程序学习踩坑汇总（云开发篇）</title><id>https://sparanoid.com/wechat-mini-program-bugs-cloud-functions.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/wechat-mini-program-bugs-cloud-functions.html" /><published>2019-02-10T00:00:00-08:00</published><updated>2019-02-10T02:18:01-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。&lt;/p&gt;
 
@@ -921,7 +921,7 @@ https://developers.weixin.qq.com/s/YzPZlrmn7K6I&lt;/a&gt;&lt;/p&gt;
           
         
       
-        </content><summary>小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。</summary></entry><entry><title>理解 Redux</title><id>https://sparanoid.com/understanding-redux.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/understanding-redux.html" /><published>2019-01-18T00:00:00-08:00</published><updated>2019-01-18T03:33:50-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>小程序好处繁多，但坑也不少，现一边学习一边汇总云开发所遇到的 bugs。</summary></entry><entry><title>理解 Redux</title><id>https://sparanoid.com/understanding-redux.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/understanding-redux.html" /><published>2019-01-18T00:00:00-08:00</published><updated>2019-01-18T03:33:50-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Redux&lt;/code&gt; 是一状态管理工具，主要应用于以下场景：&lt;/p&gt;
 
@@ -1061,7 +1061,7 @@ https://developers.weixin.qq.com/s/YzPZlrmn7K6I&lt;/a&gt;&lt;/p&gt;
           
         
       
-        </content><summary>Redux 是一状态管理工具，主要应用于以下场景：</summary></entry><entry><title>理解使用 React-Redux</title><id>https://sparanoid.com/understanding-react-redux.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/understanding-react-redux.html" /><published>2019-01-18T00:00:00-08:00</published><updated>2019-01-18T03:33:39-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>Redux 是一状态管理工具，主要应用于以下场景：</summary></entry><entry><title>理解使用 React-Redux</title><id>https://sparanoid.com/understanding-react-redux.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/understanding-react-redux.html" /><published>2019-01-18T00:00:00-08:00</published><updated>2019-01-18T03:33:39-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;要理解 React-Redux，需要理解下面三个东西：&lt;/p&gt;
 
@@ -1128,7 +1128,7 @@ mapDispatchToProps&lt;/p&gt;
           
         
       
-        </content><summary>要理解 React-Redux，需要理解下面三个东西：</summary></entry><entry><title>ES 6 新特性</title><id>https://sparanoid.com/es6-features.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/es6-features.html" /><published>2019-01-16T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>要理解 React-Redux，需要理解下面三个东西：</summary></entry><entry><title>ES 6 新特性</title><id>https://sparanoid.com/es6-features.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/es6-features.html" /><published>2019-01-16T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;在复习 ES6 的时候，发现有几个新特性经常在工作中用到，今天便再次整理一下。&lt;/p&gt;
@@ -1437,7 +1437,7 @@ mapDispatchToProps&lt;/p&gt;
           
         
       
-        </content><summary>  在复习 ES6 的时候，发现有几个新特性经常在工作中用到，今天便再次整理一下。</summary></entry><entry><title>Git 项目迁移</title><id>https://sparanoid.com/git-clone-repository.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-clone-repository.html" /><published>2019-01-08T00:00:00-08:00</published><updated>2019-01-15T07:19:15-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  在复习 ES6 的时候，发现有几个新特性经常在工作中用到，今天便再次整理一下。</summary></entry><entry><title>Git 项目迁移</title><id>https://sparanoid.com/git-clone-repository.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-clone-repository.html" /><published>2019-01-08T00:00:00-08:00</published><updated>2019-01-15T07:19:15-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;有时候公司需要将现有的 Git 项目迁移到新的仓库，需要保留历史提交记录等。&lt;/p&gt;
 
@@ -1464,7 +1464,7 @@ rm -rf old-repository.git
           
         
       
-        </content><summary>有时候公司需要将现有的 Git 项目迁移到新的仓库，需要保留历史提交记录等。</summary></entry><entry><title>前端知识总结（一）</title><id>https://sparanoid.com/web-development-handbook-1.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/web-development-handbook-1.html" /><published>2019-01-03T00:00:00-08:00</published><updated>2019-01-18T06:50:16-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>有时候公司需要将现有的 Git 项目迁移到新的仓库，需要保留历史提交记录等。</summary></entry><entry><title>前端知识总结（一）</title><id>https://sparanoid.com/web-development-handbook-1.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/web-development-handbook-1.html" /><published>2019-01-03T00:00:00-08:00</published><updated>2019-01-18T06:50:16-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;我总结了一些我认为比较重要的，笔试面试中会出现的知识要点，并非将所有前端知识覆盖。&lt;/p&gt;
@@ -1546,7 +1546,7 @@ rm -rf old-repository.git
           
         
       
-        </content><summary>  我总结了一些我认为比较重要的，笔试面试中会出现的知识要点，并非将所有前端知识覆盖。</summary></entry><entry><title>管理 NPM 镜像地址</title><id>https://sparanoid.com/manage-npm-sources.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/manage-npm-sources.html" /><published>2018-12-29T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  我总结了一些我认为比较重要的，笔试面试中会出现的知识要点，并非将所有前端知识覆盖。</summary></entry><entry><title>管理 NPM 镜像地址</title><id>https://sparanoid.com/manage-npm-sources.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/manage-npm-sources.html" /><published>2018-12-29T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;由于 NPM 默认镜像地址在国内经常出现不稳定的情况，因而用户经常需要切换到淘宝到镜像地址。&lt;/p&gt;
 
@@ -1589,7 +1589,7 @@ rm -rf old-repository.git
           
         
       
-        </content><summary>由于 NPM 默认镜像地址在国内经常出现不稳定的情况，因而用户经常需要切换到淘宝到镜像地址。</summary></entry><entry><title>使用 JSON-server 创建假数据</title><id>https://sparanoid.com/json-server.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/json-server.html" /><published>2018-12-12T00:00:00-08:00</published><updated>2019-01-17T07:25:39-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>由于 NPM 默认镜像地址在国内经常出现不稳定的情况，因而用户经常需要切换到淘宝到镜像地址。</summary></entry><entry><title>使用 JSON-server 创建假数据</title><id>https://sparanoid.com/json-server.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/json-server.html" /><published>2018-12-12T00:00:00-08:00</published><updated>2019-01-17T07:25:39-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;工作中前后端分离开发，当后台还没写好对应的 API 时，前端工程师必须自己模拟数据进行调试，避免时间浪费。&lt;/p&gt;
@@ -1683,7 +1683,7 @@ npm run json:server
           
         
       
-        </content><summary>  工作中前后端分离开发，当后台还没写好对应的 API 时，前端工程师必须自己模拟数据进行调试，避免时间浪费。</summary></entry><entry><title>类型检测</title><id>https://sparanoid.com/typechecking-with-proptypes.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/typechecking-with-proptypes.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  工作中前后端分离开发，当后台还没写好对应的 API 时，前端工程师必须自己模拟数据进行调试，避免时间浪费。</summary></entry><entry><title>类型检测</title><id>https://sparanoid.com/typechecking-with-proptypes.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/typechecking-with-proptypes.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;随着应用规模的提升，你可以通过类型检测捕捉更多的 bugs，确保接收到的参数是有效的。&lt;/p&gt;
 
@@ -1714,7 +1714,7 @@ npm run json:server
           &lt;p&gt;&lt;a href=&quot;https://reactjs.org/docs/typechecking-with-proptypes.html&quot;&gt;&lt;small&gt;◉ Direct Link to Original Site&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
         
       
-        </content><summary>随着应用规模的提升，你可以通过类型检测捕捉更多的 bugs，确保接收到的参数是有效的。</summary></entry><entry><title>UI 和逻辑分离</title><id>https://sparanoid.com/presentational-vs-containers.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/presentational-vs-containers.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>随着应用规模的提升，你可以通过类型检测捕捉更多的 bugs，确保接收到的参数是有效的。</summary></entry><entry><title>UI 和逻辑分离</title><id>https://sparanoid.com/presentational-vs-containers.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/presentational-vs-containers.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;为了更好管理和灵活应用代码，我们应将 UI 和业务逻辑分离。除了这是官方推荐写法外，还有以下好处：&lt;/p&gt;
 
@@ -1739,7 +1739,7 @@ npm run json:server
           &lt;p&gt;&lt;a href=&quot;https://www.reactnative.guide/9-redux/9.2-presentational-vs-containers.html&quot;&gt;&lt;small&gt;◉ Direct Link to Original Site&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
         
       
-        </content><summary>为了更好管理和灵活应用代码，我们应将 UI 和业务逻辑分离。除了这是官方推荐写法外，还有以下好处：</summary></entry><entry><title>箭头函数 vs bind(this)</title><id>https://sparanoid.com/arrow-functions-vs-bind-this.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/arrow-functions-vs-bind-this.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>为了更好管理和灵活应用代码，我们应将 UI 和业务逻辑分离。除了这是官方推荐写法外，还有以下好处：</summary></entry><entry><title>箭头函数 vs bind(this)</title><id>https://sparanoid.com/arrow-functions-vs-bind-this.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/arrow-functions-vs-bind-this.html" /><published>2018-11-23T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在定义函数时，可使用 exampleFunction = () =&amp;gt; {…} 或者在 constructor 中将函数绑定 this。两者并没有过大的区别，但 Facebook 官方推荐使用 bind(this) 的写法，为了更好的效能。因而，在项目中统一使用 bind(this)。&lt;/p&gt;
 
@@ -1754,7 +1754,7 @@ npm run json:server
           
         
       
-        </content><summary>在定义函数时，可使用 exampleFunction = () =&amp;gt; {…} 或者在 constructor 中将函数绑定 this。两者并没有过大的区别，但 Facebook 官方推荐使用 bind(this) 的写法，为了更好的效能。因而，在项目中统一使用 bind(this)。</summary></entry><entry><title>React 生命周期函数</title><id>https://sparanoid.com/react-lifecycle-hooks.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/react-lifecycle-hooks.html" /><published>2018-10-17T00:00:00-07:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在定义函数时，可使用 exampleFunction = () =&amp;gt; {…} 或者在 constructor 中将函数绑定 this。两者并没有过大的区别，但 Facebook 官方推荐使用 bind(this) 的写法，为了更好的效能。因而，在项目中统一使用 bind(this)。</summary></entry><entry><title>React 生命周期函数</title><id>https://sparanoid.com/react-lifecycle-hooks.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/react-lifecycle-hooks.html" /><published>2018-10-17T00:00:00-07:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;理解 React 生命周期函数在项目开发很有必要。&lt;/p&gt;
@@ -1780,7 +1780,7 @@ npm run json:server
           
         
       
-        </content><summary>  理解 React 生命周期函数在项目开发很有必要。</summary></entry><entry><title>A Simple React Router v4 Tutorial</title><id>https://sparanoid.com/a-simple-react-router-v4-tutorial.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/a-simple-react-router-v4-tutorial.html" /><published>2018-10-10T00:00:00-07:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  理解 React 生命周期函数在项目开发很有必要。</summary></entry><entry><title>A Simple React Router v4 Tutorial</title><id>https://sparanoid.com/a-simple-react-router-v4-tutorial.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/a-simple-react-router-v4-tutorial.html" /><published>2018-10-10T00:00:00-07:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;React Router 简明教程。&lt;/p&gt;
 
@@ -1802,7 +1802,7 @@ npm run json:server
           &lt;p&gt;&lt;a href=&quot;https://blog.pshrmn.com/entry/simple-react-router-v4-tutorial/&quot;&gt;&lt;small&gt;◉ Direct Link to Original Site&lt;/small&gt;&lt;/a&gt;&lt;/p&gt;
         
       
-        </content><summary>React Router 简明教程。</summary></entry><entry><title>HTML5 和 CSS3 新特性</title><id>https://sparanoid.com/html5-css3-features.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/html5-css3-features.html" /><published>2018-08-11T00:00:00-07:00</published><updated>2019-01-17T07:25:39-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>React Router 简明教程。</summary></entry><entry><title>HTML5 和 CSS3 新特性</title><id>https://sparanoid.com/html5-css3-features.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/html5-css3-features.html" /><published>2018-08-11T00:00:00-07:00</published><updated>2019-01-17T07:25:39-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;HTML5 和 CSS3 的新特性经常在工作中用到，也会在笔试面试中提到。为避免遗忘，现整理总结一下。&lt;/p&gt;
@@ -1851,7 +1851,7 @@ npm run json:server
           
         
       
-        </content><summary>  HTML5 和 CSS3 的新特性经常在工作中用到，也会在笔试面试中提到。为避免遗忘，现整理总结一下。</summary></entry><entry><title>Promise 对象</title><id>https://sparanoid.com/promise.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/promise.html" /><published>2018-07-24T00:00:00-07:00</published><updated>2019-01-17T07:25:31-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  HTML5 和 CSS3 的新特性经常在工作中用到，也会在笔试面试中提到。为避免遗忘，现整理总结一下。</summary></entry><entry><title>Promise 对象</title><id>https://sparanoid.com/promise.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/promise.html" /><published>2018-07-24T00:00:00-07:00</published><updated>2019-01-17T07:25:31-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;Promise 在笔试时经常被提及，却在工作中很少用到，但因为其重要性，还是需要复习整理一下。&lt;/p&gt;
@@ -1970,7 +1970,7 @@ npm run json:server
           
         
       
-        </content><summary>  Promise 在笔试时经常被提及，却在工作中很少用到，但因为其重要性，还是需要复习整理一下。</summary></entry><entry><title>Upgrading Guide from v1 to v2</title><id>https://sparanoid.com/upgrading-from-v1-to-v2.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/upgrading-from-v1-to-v2.html" /><published>2018-07-23T00:00:00-07:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  Promise 在笔试时经常被提及，却在工作中很少用到，但因为其重要性，还是需要复习整理一下。</summary></entry><entry><title>Upgrading Guide from v1 to v2</title><id>https://sparanoid.com/upgrading-from-v1-to-v2.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/upgrading-from-v1-to-v2.html" /><published>2018-07-23T00:00:00-07:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;Almace Scaffolding now migrates from Less to Sass, this may make your existing projects non-upgradable, it need quite a lot of work for you to do the migration if you use a custom theme that it’s powered by Less preprocessor. You have to compare your existing projects to &lt;a href=&quot;https://github.com/sparanoid/almace-scaffolding/pull/85&quot;&gt;this Pull Request&lt;/a&gt; side to side to make sure every change you made are sync’ed correctly.&lt;/p&gt;
 
@@ -1996,7 +1996,7 @@ npm run json:server
           
         
       
-        </content><summary>Almace Scaffolding now migrates from Less to Sass, this may make your existing projects non-upgradable, it need quite a lot of work for you to do the migration if you use a custom theme that it’s powered by Less preprocessor. You have to compare your existing projects to this Pull Request side to side to make sure every change you made are sync’ed correctly.</summary></entry><entry><title>利用 Charles 进行手机端抓包</title><id>https://sparanoid.com/charles-web-debugging-tool.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/charles-web-debugging-tool.html" /><published>2018-07-20T00:00:00-07:00</published><updated>2019-01-16T07:17:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>Almace Scaffolding now migrates from Less to Sass, this may make your existing projects non-upgradable, it need quite a lot of work for you to do the migration if you use a custom theme that it’s powered by Less preprocessor. You have to compare your existing projects to this Pull Request side to side to make sure every change you made are sync’ed correctly.</summary></entry><entry><title>利用 Charles 进行手机端抓包</title><id>https://sparanoid.com/charles-web-debugging-tool.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/charles-web-debugging-tool.html" /><published>2018-07-20T00:00:00-07:00</published><updated>2019-01-16T07:17:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在开发小程序时，因为手机不像 PC 端可以直接通过浏览器进行 debug 排查，因而需要用到 Charles 进行 debug。&lt;/p&gt;
 
@@ -2043,7 +2043,7 @@ npm run json:server
           
         
       
-        </content><summary>在开发小程序时，因为手机不像 PC 端可以直接通过浏览器进行 debug 排查，因而需要用到 Charles 进行 debug。</summary></entry><entry><title>为项目分支添加标签</title><id>https://sparanoid.com/git-tags.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-tags.html" /><published>2018-06-17T00:00:00-07:00</published><updated>2019-01-16T04:46:29-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在开发小程序时，因为手机不像 PC 端可以直接通过浏览器进行 debug 排查，因而需要用到 Charles 进行 debug。</summary></entry><entry><title>为项目分支添加标签</title><id>https://sparanoid.com/git-tags.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/git-tags.html" /><published>2018-06-17T00:00:00-07:00</published><updated>2019-01-16T04:46:29-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;在工作之前，一直很好奇 GitHub 上的版本号到底是怎样创建的。&lt;/p&gt;
 
@@ -2078,7 +2078,7 @@ npm run json:server
           
         
       
-        </content><summary>在工作之前，一直很好奇 GitHub 上的版本号到底是怎样创建的。</summary></entry><entry><title>call, apply, bind</title><id>https://sparanoid.com/call-bind-apply.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/call-bind-apply.html" /><published>2018-04-23T00:00:00-07:00</published><updated>2019-01-16T02:03:48-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>在工作之前，一直很好奇 GitHub 上的版本号到底是怎样创建的。</summary></entry><entry><title>call, apply, bind</title><id>https://sparanoid.com/call-bind-apply.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/call-bind-apply.html" /><published>2018-04-23T00:00:00-07:00</published><updated>2019-01-16T02:03:48-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;call, apply, bind 在笔试时经常被提及到，主要用于指定 &lt;code class=&quot;highlighter-rouge&quot;&gt;this&lt;/code&gt; 的指向。&lt;/p&gt;
 
@@ -2126,7 +2126,7 @@ npm run json:server
           
         
       
-        </content><summary>call, apply, bind 在笔试时经常被提及到，主要用于指定 this 的指向。</summary></entry><entry><title>原型链与继承</title><id>https://sparanoid.com/the-prototype-and-inheritance.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/the-prototype-and-inheritance.html" /><published>2018-04-02T00:00:00-07:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>call, apply, bind 在笔试时经常被提及到，主要用于指定 this 的指向。</summary></entry><entry><title>原型链与继承</title><id>https://sparanoid.com/the-prototype-and-inheritance.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/the-prototype-and-inheritance.html" /><published>2018-04-02T00:00:00-07:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;原型链与继承是 JS 的重要部分，经常在面试中提及。虽然工作中甚少接触，但为免忘记，再次总结一下。&lt;/p&gt;
@@ -2322,7 +2322,7 @@ alertName&lt;/p&gt;
           
         
       
-        </content><summary>  原型链与继承是 JS 的重要部分，经常在面试中提及。虽然工作中甚少接触，但为免忘记，再次总结一下。</summary></entry><entry><title>MVC 和 MVVM 的区别</title><id>https://sparanoid.com/mvc-vs-mvvm.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mvc-vs-mvvm.html" /><published>2018-03-02T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  原型链与继承是 JS 的重要部分，经常在面试中提及。虽然工作中甚少接触，但为免忘记，再次总结一下。</summary></entry><entry><title>MVC 和 MVVM 的区别</title><id>https://sparanoid.com/mvc-vs-mvvm.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/mvc-vs-mvvm.html" /><published>2018-03-02T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;MVC 和 MVVM 经常被谈到他们之间的区别。今天来整理总结一下。&lt;/p&gt;
@@ -2376,7 +2376,7 @@ Controller 控制器（逻辑层）&lt;/p&gt;
           
         
       
-        </content><summary>  MVC 和 MVVM 经常被谈到他们之间的区别。今天来整理总结一下。</summary></entry><entry><title>Vue 生命周期函数</title><id>https://sparanoid.com/vue-lifecycle-hooks.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/vue-lifecycle-hooks.html" /><published>2018-02-09T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  MVC 和 MVVM 经常被谈到他们之间的区别。今天来整理总结一下。</summary></entry><entry><title>Vue 生命周期函数</title><id>https://sparanoid.com/vue-lifecycle-hooks.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/vue-lifecycle-hooks.html" /><published>2018-02-09T00:00:00-08:00</published><updated>2019-01-17T19:58:38-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;blockquote&gt;
   &lt;p&gt;理解 Vue 生命周期函数在项目开发很有必要。&lt;/p&gt;
@@ -2415,7 +2415,7 @@ Controller 控制器（逻辑层）&lt;/p&gt;
           
         
       
-        </content><summary>  理解 Vue 生命周期函数在项目开发很有必要。</summary></entry><entry><title>作用域与闭包</title><id>https://sparanoid.com/closure.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/closure.html" /><published>2018-01-16T00:00:00-08:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>  理解 Vue 生命周期函数在项目开发很有必要。</summary></entry><entry><title>作用域与闭包</title><id>https://sparanoid.com/closure.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/closure.html" /><published>2018-01-16T00:00:00-08:00</published><updated>2019-01-19T01:02:09-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;说起闭包，会涉及到以下知识点：&lt;/p&gt;
 
@@ -2684,7 +2684,7 @@ Controller 控制器（逻辑层）&lt;/p&gt;
           
         
       
-        </content><summary>说起闭包，会涉及到以下知识点：</summary></entry><entry><title>Upgrading Guide: v1.1.0</title><id>https://sparanoid.com/upgrading-guide-v1.1.0.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/upgrading-guide-v1.1.0.html" /><published>2017-01-07T00:00:00-08:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>说起闭包，会涉及到以下知识点：</summary></entry><entry><title>Upgrading Guide: v1.1.0</title><id>https://sparanoid.com/upgrading-guide-v1.1.0.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/upgrading-guide-v1.1.0.html" /><published>2017-01-07T00:00:00-08:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;There’re some significant changes in update v1.1.0, action required after you upgrade Almace Scaffolding.&lt;/p&gt;
 
@@ -2709,7 +2709,7 @@ Controller 控制器（逻辑层）&lt;/p&gt;
           
         
       
-        </content><summary>There’re some significant changes in update v1.1.0, action required after you upgrade Almace Scaffolding.</summary></entry><entry><title>Jekyll Theme Compatibility</title><id>https://sparanoid.com/jekyll-theme-compatibility.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/jekyll-theme-compatibility.html" /><published>2016-11-07T00:00:00-08:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>There’re some significant changes in update v1.1.0, action required after you upgrade Almace Scaffolding.</summary></entry><entry><title>Jekyll Theme Compatibility</title><id>https://sparanoid.com/jekyll-theme-compatibility.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/jekyll-theme-compatibility.html" /><published>2016-11-07T00:00:00-08:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;With recent release of Jekyll, it gets the built-in ability to support &lt;a href=&quot;https://jekyllrb.com/docs/themes/&quot;&gt;themes&lt;/a&gt;, since we’ve already added theme support in 2015, the original config variables &lt;code class=&quot;highlighter-rouge&quot;&gt;theme&lt;/code&gt; would be conflicted with the built-in one.&lt;/p&gt;
 
@@ -2725,7 +2725,7 @@ Controller 控制器（逻辑层）&lt;/p&gt;
           
         
       
-        </content><summary>With recent release of Jekyll, it gets the built-in ability to support themes, since we’ve already added theme support in 2015, the original config variables theme would be conflicted with the built-in one.</summary></entry><entry><title>Multiple Themes Support</title><id>https://sparanoid.com/multiple-themes-support.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/multiple-themes-support.html" /><published>2015-08-18T00:00:00-07:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>Jiajun Yan</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
+        </content><summary>With recent release of Jekyll, it gets the built-in ability to support themes, since we’ve already added theme support in 2015, the original config variables theme would be conflicted with the built-in one.</summary></entry><entry><title>Multiple Themes Support</title><id>https://sparanoid.com/multiple-themes-support.html</id><link rel="alternate" type="text/html" href="https://sparanoid.com/multiple-themes-support.html" /><published>2015-08-18T00:00:00-07:00</published><updated>2019-01-14T08:18:04-08:00</updated><author><name>我的前端周报</name><uri>https://sparanoid.com/</uri><email>t@sparanoid.com</email></author><content type="html" xml:base="https://sparanoid.com/">
           
             &lt;p&gt;From version 0.0.31, you can now use multiple themes in Almace Scaffolding. See &lt;a href=&quot;/themes.html&quot;&gt;Themes&lt;/a&gt; for more information.&lt;/p&gt;
 

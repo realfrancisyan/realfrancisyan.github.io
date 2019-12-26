@@ -5,7 +5,7 @@ permalink: /about/
 desc: 
 ---
 
-Hey, I am Jiajun Yan, a junior Web Developer currently based in Guangzhou, China with strong interests in React, Vue and JavaScript performance.
+Hey, I am 我的前端周报, a junior Web Developer currently based in Guangzhou, China with strong interests in React, Vue and JavaScript performance.
 
 Graduated from [Cardiff University](https://en.wikipedia.org/wiki/Cardiff_University), Wales with a Master’s degree in Computing (Distinction), where I found myself truly passionate about Web Technologies, travel and making friends.
 

@@ -1,10 +1,147 @@
-<!doctype html><html lang="en"><head><title>MongoDB 基础用法 - Jiajun Yan</title> <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"> <meta name="description" content="最近在学习 MongoDB，现将所学总结一下。 启动 mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend // or with authentication mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend --auth mongo 创建管理员用户 use admin db.createUser( { user: &quot;jiajun&quot;, pwd: &quot;qweasdz..."> <meta name="theme-color" content="#ff00b4"> <link rel="alternate" href="/feed.xml" type="application/atom+xml"> <link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="data:image/svg+xml;utf8,%3Csvg%20width%3D'240'%20height%3D'240'%20viewBox%3D'0%200%20240%20240'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Ctitle%3EAlmace%20Scaffolding%3C%2Ftitle%3E%3Cpath%20d%3D'M62.563%20189.292C42.669%20172.783%2030%20147.872%2030%20120c0-49.706%2040.294-90%2090-90s90%2040.294%2090%2090c0%2038.573-24.266%2071.478-58.365%2084.283L168.568%2097h-24.752l-17.804%20112.802A91.344%2091.344%200%200%201%20120%20210c-12.356%200-24.13-2.49-34.85-6.996L95.568%20137H70.816l-8.253%2052.292z'%20fill%3D'%23FF00B4'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E" sizes="any" type="image/svg+xml"><link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4"> <link rel="manifest" href="/manifest.json"> <style>:root{--fontstack-prefix:-apple-system,BlinkMacSystemFont,;--fontstack-sans-serif:"Helvetica Neue",Arial,sans-serif;--fontstack-serif:Georgia,serif;--fontstack-monospace:Menlo,Consolas,monospace;--fontstack-default:var(--fontstack-prefix) var(--fontstack-sans-serif);--font-size:1.6vw;--font-features:"halt","ss01","ss02";--line-height:calc(20 / 14);--heading-letter-spacing:-.04em;--breakpoint-lg:1600px;--breakpoint-md:1080px;--breakpoint-sm:640px;--breakpoint-xs:400px;--space-lg:24vw;--space-md:8vw;--space-sm:4vw;--space-xs:1.2vw;--border-lg:4px;--border-md:2px;--border-sm:1px;--link-color:#03a87c;--background-color:#fff;--text-color:#000;--code-color:#3914b3;--nav-padding:.75vmax;--nav-item-space:1.4vmax}*,::after,::before{padding:0;margin:0;box-sizing:border-box}html{font-size:100%;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;text-rendering:optimizelegibility;image-rendering:optimizequality;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--background-color)}body{--space-body:var(--space-lg);padding-top:0;padding-bottom:0;padding-left:var(--space-body);padding-right:var(--space-body);margin:0 auto 0;font-family:var(--fontstack-default);font-size:var(--font-size);-webkit-font-feature-settings:var(--font-features);font-feature-settings:var(--font-features);line-height:var(--line-height);hanging-punctuation:first allow-end;color:var(--text-color);background:var(--background-color);transition:all .2s ease}@media (max-width:1080px){body{--space-body:var(--space-md);font-size:calc(var(--font-size) * 1.4)}}@media (max-width:640px){body{--space-body:var(--space-sm);font-size:calc(var(--font-size) * 2.4)}}@media (max-width:400px){body{font-size:calc(var(--font-size) * 3.2)}}a{color:var(--text-color);text-decoration:none;transition:color .5s ease,border-color .5s ease,background .5s ease,opacity 1.5s ease}a:focus,a:hover{transition:color .1s ease,border-color .1s ease,background .1s ease,opacity .1s ease;text-decoration:underline;-webkit-text-decoration-skip:ink;text-decoration-skip:ink}::-webkit-input-placeholder{color:var(--text-color);opacity:.2}::-moz-placeholder{color:var(--text-color);opacity:.2}:-ms-input-placeholder{color:var(--text-color);opacity:.2}::-ms-input-placeholder{color:var(--text-color);opacity:.2}:focus::-webkit-input-placeholder{color:var(--link-color)}:focus::-moz-placeholder{color:var(--link-color)}:focus:-ms-input-placeholder{color:var(--link-color)}:focus::-ms-input-placeholder{color:var(--link-color)}.navigation{padding-top:var(--nav-padding);padding-bottom:var(--nav-padding);margin-right:calc(var(--nav-item-space) * -1);margin-left:calc(var(--nav-item-space) * -1);font-size:90%;font-weight:700}.navigation li{display:inline-block;line-height:2}.navigation li a{padding:.5em var(--nav-item-space)}.navigation li a:focus,.navigation li a:hover{color:var(--link-color);text-decoration:none}.content{margin-bottom:16vmin}.content::after,.content::before{display:table;content:""}.content::after{clear:both}.content article>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child>:last-child>:last-child{margin-bottom:0!important}.content .post-content>:first-child{margin-top:0}.content .post-content>:first-child>:first-child{margin-top:0}.content a:has(>code){-webkit-text-decoration-color:var(--code-color);text-decoration-color:var(--code-color)}.content p{margin-bottom:1.6rem;line-height:calc(var(--line-height) * 1.2)}.content header{--header-height:100vh;--space-header:var(--space-lg);display:flex;min-height:calc(var(--header-height) - (var(--nav-padding) * 4) - (var(--nav-item-space) * 4) - (1ex * .9 * 2));padding-top:10vmin;padding-bottom:10vmin;margin-bottom:16vmin;flex-direction:column;justify-content:center;background:rgba(0,0,0,.02);padding-left:var(--space-header);padding-right:var(--space-header);margin-left:calc(var(--space-header) * -1);margin-right:calc(var(--space-header) * -1)}@media (max-width:1080px){.content header{--header-height:70vh;--space-header:var(--space-md);padding-top:16vmin;padding-bottom:16vmin}}@media (max-width:640px){.content header{--space-header:var(--space-sm)}}.content header h1{font-size:360%;font-weight:700;letter-spacing:var(--heading-letter-spacing);margin-left:-2px;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.1}@media (max-width:640px){.content header h1{font-size:280%}}.content header small{display:block;margin-top:2vmin}.content blockquote{position:relative;margin-bottom:2.8rem;margin-left:calc(var(--space-xs) * -1);font-size:90%}@media (max-width:640px){.content blockquote{margin-left:0}}.content code,.content pre{font-family:var(--fontstack-monospace);color:var(--code-color)}.content pre{background:rgba(0,136,255,.04)}.content code{font-size:92%;overflow-wrap:break-word}.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-xs);padding-top:var(--space-xs);padding-bottom:var(--space-xs);padding-left:var(--space-code);padding-right:var(--space-code);margin-left:calc(var(--space-code) * -1);margin-right:calc(var(--space-code) * -1);margin-bottom:1.8rem;overflow-x:auto;font-size:80%;line-height:calc(var(--line-height) * 1.2);-webkit-overflow-scrolling:touch}@media (max-width:1080px){.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-md)}}@media (max-width:640px){.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-sm)}}.content .highlight>pre code,.content .highlighter-rouge pre.highlight code,.content pre code{overflow-wrap:normal}.footer{padding:0 0 16vmin;margin-right:calc(var(--nav-item-space) * -1);margin-left:calc(var(--nav-item-space) * -1);font-size:80%;text-transform:lowercase}.footer ul li{display:inline-block;line-height:1.8}.footer ul li a{padding:.5em var(--nav-item-space)}@media print{*,::after,::before{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}body{padding:10mm!important;margin:0!important;font-size:calc(var(--font-size) * 1.35)}a,a:visited{text-decoration:none}.content header{min-height:0;padding-bottom:0}.content .post-content{max-width:100%!important}blockquote,pre{page-break-inside:avoid}p{orphans:3;widows:3}.footer,.navigation{display:none}}:root{--rdmz-hue:253.962264151;--rdmz-sat:79.8994974874%;--rdmz-light:39.0196078431%}.highlight>pre,.highlighter-rouge pre.highlight{background:hsla(var(--rdmz-hue),var(--rdmz-sat),var(--rdmz-light),.03)}.highlight .c1,.highlighter-rouge .c1{font-style:italic}.highlight .nf,.highlighter-rouge .nf{font-weight:700}.highlight .o,.highlighter-rouge .o{font-weight:700}.highlight .k,.highlighter-rouge .k{font-weight:700}.highlight .kc,.highlighter-rouge .kc{font-weight:700}.highlight code,.highlight pre,.highlighter-rouge code,.highlighter-rouge pre{color:hsl(var(--rdmz-hue),var(--rdmz-sat),var(--rdmz-light))}.highlight .n,.highlighter-rouge .n{color:hsl(calc(var(--rdmz-hue) + 16.1194029851),var(--rdmz-sat),var(--rdmz-light))}.highlight .na,.highlighter-rouge .na{color:hsl(calc(var(--rdmz-hue) + 21.4925373134),var(--rdmz-sat),var(--rdmz-light))}.highlight .nf,.highlighter-rouge .nf{color:hsl(calc(var(--rdmz-hue) + 64.4776119403),var(--rdmz-sat),var(--rdmz-light))}.highlight .nx,.highlighter-rouge .nx{color:hsl(calc(var(--rdmz-hue) + 80.5970149254),var(--rdmz-sat),var(--rdmz-light))}.highlight .go,.highlighter-rouge .go{color:hsl(calc(var(--rdmz-hue) + 145.074626866),var(--rdmz-sat),var(--rdmz-light))}.highlight .k,.highlighter-rouge .k{color:hsl(calc(var(--rdmz-hue) + 177.313432836),var(--rdmz-sat),var(--rdmz-light))}.highlight .kc,.highlighter-rouge .kc{color:hsl(calc(var(--rdmz-hue) + 182.686567164),var(--rdmz-sat),var(--rdmz-light))}.highlight .s,.highlighter-rouge .s{color:hsl(calc(var(--rdmz-hue) + 236.417910448),var(--rdmz-sat),var(--rdmz-light))}.highlight .s2,.highlighter-rouge .s2{color:hsl(calc(var(--rdmz-hue) + 257.910447761),var(--rdmz-sat),var(--rdmz-light))}.highlight .s1,.highlighter-rouge .s1{color:hsl(calc(var(--rdmz-hue) + 290.149253731),var(--rdmz-sat),var(--rdmz-light))}.highlight .mi,.highlighter-rouge .mi{color:hsl(calc(var(--rdmz-hue) + 317.014925373),var(--rdmz-sat),var(--rdmz-light))}.highlight .o,.highlighter-rouge .o{color:hsl(calc(var(--rdmz-hue) + 343.880597015),var(--rdmz-sat),var(--rdmz-light))}.highlight .p,.highlighter-rouge .p{color:hsl(calc(var(--rdmz-hue) + 354.626865672),var(--rdmz-sat),var(--rdmz-light))}.highlight .c1,.highlighter-rouge .c1{color:hsla(calc(var(--rdmz-hue) + 26.8656716418),calc(var(--rdmz-sat) * .7),var(--rdmz-light),.6)}</style> <link rel="canonical" href="https://sparanoid.com/mongodb-basic-usage.html"> <meta property="og:type" content="article"> <meta property="og:site_name" content="Jiajun Yan"> <meta property="og:title" content="MongoDB 基础用法"> <meta property="og:url" content="https://sparanoid.com/mongodb-basic-usage.html"> <meta property="og:description" content="最近在学习 MongoDB，现将所学总结一下。 启动 mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend // or with authentication mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend --auth mongo 创建管理员用户 use admin db.createUser( { user: &quot;jiajun&quot;, pwd: &quot;qweasdz..."> <meta property="og:image" content="https://sparanoid.com/logo.png"> <meta name="twitter:card" content="summary_large_image"> <meta name="twitter:site" content="@sparanoid"> <meta name="twitter:creator" content="@tunghsiao"> <meta property="article:published_time" content="2019-05-20T00:00:00-07:00"> <meta property="article:modified_time" content="2019-05-20T00:00:00-07:00"> <meta name="twitter:label1" value="Words"> <meta name="twitter:data1" value="742 words"> <meta name="twitter:label2" value="Reading time"> <meta name="twitter:data2" value="3 mins"> </head><body><nav class="navigation"> <ul> <li> <a href="/">Jiajun Yan</a> </li> <li> <a href="/about/">About</a> </li> </ul> </nav> <main class="content" role="main"> <article lang="en"> <header> <h1 title="MongoDB 基础用法" data-title="MongoDB 基础用法"> MongoDB 基础用法<span class="dot dot--post"> </span> </h1> <small> By <span rel="author">Jiajun Yan</span> on <time datetime="2019-05-20T00:00:00-07:00">May 20, 2019</time> </small> </header> <div class="post-content"> <p>最近在学习 <code class="highlighter-rouge">MongoDB</code>，现将所学总结一下。</p> <h1 id="启动">启动</h1> <blockquote> </blockquote> <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend
+<!doctype html><html lang="en"><!--
+  Apply head only for dev environment, this is required for jekyll to
+  insert livereload scripts
+--><head><title>MongoDB 基础用法 - 我的前端周报</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- Define a description for better SEO result -->
+<meta name="description" content="最近在学习 MongoDB，现将所学总结一下。 启动 mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend // or with authentication mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend --auth mongo 创建管理员用户 use admin db.createUser( { user: &quot;jiajun&quot;, pwd: &quot;qweasdz...">
+
+<!-- Cheome Web App theme color -->
+<meta name="theme-color" content="#ff00b4">
+
+<!-- Feed URL -->
+<link rel="alternate" href="/feed.xml" type="application/atom+xml">
+
+<!-- Site icons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="icon" href="/favicon.png" type="image/png"><link rel="icon" href="data:image/svg+xml;utf8,%3Csvg%20width%3D'240'%20height%3D'240'%20viewBox%3D'0%200%20240%20240'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%3E%3Ctitle%3EAlmace%20Scaffolding%3C%2Ftitle%3E%3Cpath%20d%3D'M62.563%20189.292C42.669%20172.783%2030%20147.872%2030%20120c0-49.706%2040.294-90%2090-90s90%2040.294%2090%2090c0%2038.573-24.266%2071.478-58.365%2084.283L168.568%2097h-24.752l-17.804%20112.802A91.344%2091.344%200%200%201%20120%20210c-12.356%200-24.13-2.49-34.85-6.996L95.568%20137H70.816l-8.253%2052.292z'%20fill%3D'%23FF00B4'%20fill-rule%3D'evenodd'%2F%3E%3C%2Fsvg%3E" sizes="any" type="image/svg+xml"><link rel="mask-icon" href="/mask-icon.svg" color="#ff00b4">
+
+<!-- Chrome Web App manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Main CSS -->
+<style>:root{--fontstack-prefix:-apple-system,BlinkMacSystemFont,;--fontstack-sans-serif:"Helvetica Neue",Arial,sans-serif;--fontstack-serif:Georgia,serif;--fontstack-monospace:Menlo,Consolas,monospace;--fontstack-default:var(--fontstack-prefix) var(--fontstack-sans-serif);--font-size:1.6vw;--font-features:"halt","ss01","ss02";--line-height:calc(20 / 14);--heading-letter-spacing:-.04em;--breakpoint-lg:1600px;--breakpoint-md:1080px;--breakpoint-sm:640px;--breakpoint-xs:400px;--space-lg:24vw;--space-md:8vw;--space-sm:4vw;--space-xs:1.2vw;--border-lg:4px;--border-md:2px;--border-sm:1px;--link-color:#03a87c;--background-color:#fff;--text-color:#000;--code-color:#3914b3;--nav-padding:.75vmax;--nav-item-space:1.4vmax}*,::after,::before{padding:0;margin:0;box-sizing:border-box}html{font-size:100%;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none;text-rendering:optimizelegibility;image-rendering:optimizequality;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;background:var(--background-color)}body{--space-body:var(--space-lg);padding-top:0;padding-bottom:0;padding-left:var(--space-body);padding-right:var(--space-body);margin:0 auto 0;font-family:var(--fontstack-default);font-size:var(--font-size);-webkit-font-feature-settings:var(--font-features);font-feature-settings:var(--font-features);line-height:var(--line-height);hanging-punctuation:first allow-end;color:var(--text-color);background:var(--background-color);transition:all .2s ease}@media (max-width:1080px){body{--space-body:var(--space-md);font-size:calc(var(--font-size) * 1.4)}}@media (max-width:640px){body{--space-body:var(--space-sm);font-size:calc(var(--font-size) * 2.4)}}@media (max-width:400px){body{font-size:calc(var(--font-size) * 3.2)}}a{color:var(--text-color);text-decoration:none;transition:color .5s ease,border-color .5s ease,background .5s ease,opacity 1.5s ease}a:focus,a:hover{transition:color .1s ease,border-color .1s ease,background .1s ease,opacity .1s ease;text-decoration:underline;-webkit-text-decoration-skip:ink;text-decoration-skip:ink}::-webkit-input-placeholder{color:var(--text-color);opacity:.2}::-moz-placeholder{color:var(--text-color);opacity:.2}:-ms-input-placeholder{color:var(--text-color);opacity:.2}::-ms-input-placeholder{color:var(--text-color);opacity:.2}:focus::-webkit-input-placeholder{color:var(--link-color)}:focus::-moz-placeholder{color:var(--link-color)}:focus:-ms-input-placeholder{color:var(--link-color)}:focus::-ms-input-placeholder{color:var(--link-color)}.navigation{padding-top:var(--nav-padding);padding-bottom:var(--nav-padding);margin-right:calc(var(--nav-item-space) * -1);margin-left:calc(var(--nav-item-space) * -1);font-size:90%;font-weight:700}.navigation li{display:inline-block;line-height:2}.navigation li a{padding:.5em var(--nav-item-space)}.navigation li a:focus,.navigation li a:hover{color:var(--link-color);text-decoration:none}.content{margin-bottom:16vmin}.content::after,.content::before{display:table;content:""}.content::after{clear:both}.content article>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child>:last-child{margin-bottom:0!important}.content article>:last-child>:last-child>:last-child>:last-child{margin-bottom:0!important}.content .post-content>:first-child{margin-top:0}.content .post-content>:first-child>:first-child{margin-top:0}.content a:has(>code){-webkit-text-decoration-color:var(--code-color);text-decoration-color:var(--code-color)}.content p{margin-bottom:1.6rem;line-height:calc(var(--line-height) * 1.2)}.content header{--header-height:100vh;--space-header:var(--space-lg);display:flex;min-height:calc(var(--header-height) - (var(--nav-padding) * 4) - (var(--nav-item-space) * 4) - (1ex * .9 * 2));padding-top:10vmin;padding-bottom:10vmin;margin-bottom:16vmin;flex-direction:column;justify-content:center;background:rgba(0,0,0,.02);padding-left:var(--space-header);padding-right:var(--space-header);margin-left:calc(var(--space-header) * -1);margin-right:calc(var(--space-header) * -1)}@media (max-width:1080px){.content header{--header-height:70vh;--space-header:var(--space-md);padding-top:16vmin;padding-bottom:16vmin}}@media (max-width:640px){.content header{--space-header:var(--space-sm)}}.content header h1{font-size:360%;font-weight:700;letter-spacing:var(--heading-letter-spacing);margin-left:-2px;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.1}@media (max-width:640px){.content header h1{font-size:280%}}.content header small{display:block;margin-top:2vmin}.content blockquote{position:relative;margin-bottom:2.8rem;margin-left:calc(var(--space-xs) * -1);font-size:90%}@media (max-width:640px){.content blockquote{margin-left:0}}.content code,.content pre{font-family:var(--fontstack-monospace);color:var(--code-color)}.content pre{background:rgba(0,136,255,.04)}.content code{font-size:92%;overflow-wrap:break-word}.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-xs);padding-top:var(--space-xs);padding-bottom:var(--space-xs);padding-left:var(--space-code);padding-right:var(--space-code);margin-left:calc(var(--space-code) * -1);margin-right:calc(var(--space-code) * -1);margin-bottom:1.8rem;overflow-x:auto;font-size:80%;line-height:calc(var(--line-height) * 1.2);-webkit-overflow-scrolling:touch}@media (max-width:1080px){.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-md)}}@media (max-width:640px){.content .highlight>pre,.content .highlighter-rouge pre.highlight,.content pre{--space-code:var(--space-sm)}}.content .highlight>pre code,.content .highlighter-rouge pre.highlight code,.content pre code{overflow-wrap:normal}.footer{padding:0 0 16vmin;margin-right:calc(var(--nav-item-space) * -1);margin-left:calc(var(--nav-item-space) * -1);font-size:80%;text-transform:lowercase}@media print{*,::after,::before{background:0 0!important;color:#000!important;box-shadow:none!important;text-shadow:none!important}body{padding:10mm!important;margin:0!important;font-size:calc(var(--font-size) * 1.35)}a,a:visited{text-decoration:none}.content header{min-height:0;padding-bottom:0}.content .post-content{max-width:100%!important}blockquote,pre{page-break-inside:avoid}p{orphans:3;widows:3}.footer,.navigation{display:none}}:root{--rdmz-hue:253.962264151;--rdmz-sat:79.8994974874%;--rdmz-light:39.0196078431%}.highlight>pre,.highlighter-rouge pre.highlight{background:hsla(var(--rdmz-hue),var(--rdmz-sat),var(--rdmz-light),.03)}.highlight .c1,.highlighter-rouge .c1{font-style:italic}.highlight .nf,.highlighter-rouge .nf{font-weight:700}.highlight .o,.highlighter-rouge .o{font-weight:700}.highlight .k,.highlighter-rouge .k{font-weight:700}.highlight .kc,.highlighter-rouge .kc{font-weight:700}.highlight code,.highlight pre,.highlighter-rouge code,.highlighter-rouge pre{color:hsl(var(--rdmz-hue),var(--rdmz-sat),var(--rdmz-light))}.highlight .n,.highlighter-rouge .n{color:hsl(calc(var(--rdmz-hue) + 16.1194029851),var(--rdmz-sat),var(--rdmz-light))}.highlight .na,.highlighter-rouge .na{color:hsl(calc(var(--rdmz-hue) + 21.4925373134),var(--rdmz-sat),var(--rdmz-light))}.highlight .nf,.highlighter-rouge .nf{color:hsl(calc(var(--rdmz-hue) + 64.4776119403),var(--rdmz-sat),var(--rdmz-light))}.highlight .nx,.highlighter-rouge .nx{color:hsl(calc(var(--rdmz-hue) + 80.5970149254),var(--rdmz-sat),var(--rdmz-light))}.highlight .go,.highlighter-rouge .go{color:hsl(calc(var(--rdmz-hue) + 145.074626866),var(--rdmz-sat),var(--rdmz-light))}.highlight .k,.highlighter-rouge .k{color:hsl(calc(var(--rdmz-hue) + 177.313432836),var(--rdmz-sat),var(--rdmz-light))}.highlight .kc,.highlighter-rouge .kc{color:hsl(calc(var(--rdmz-hue) + 182.686567164),var(--rdmz-sat),var(--rdmz-light))}.highlight .s,.highlighter-rouge .s{color:hsl(calc(var(--rdmz-hue) + 236.417910448),var(--rdmz-sat),var(--rdmz-light))}.highlight .s2,.highlighter-rouge .s2{color:hsl(calc(var(--rdmz-hue) + 257.910447761),var(--rdmz-sat),var(--rdmz-light))}.highlight .s1,.highlighter-rouge .s1{color:hsl(calc(var(--rdmz-hue) + 290.149253731),var(--rdmz-sat),var(--rdmz-light))}.highlight .mi,.highlighter-rouge .mi{color:hsl(calc(var(--rdmz-hue) + 317.014925373),var(--rdmz-sat),var(--rdmz-light))}.highlight .o,.highlighter-rouge .o{color:hsl(calc(var(--rdmz-hue) + 343.880597015),var(--rdmz-sat),var(--rdmz-light))}.highlight .p,.highlighter-rouge .p{color:hsl(calc(var(--rdmz-hue) + 354.626865672),var(--rdmz-sat),var(--rdmz-light))}.highlight .c1,.highlighter-rouge .c1{color:hsla(calc(var(--rdmz-hue) + 26.8656716418),calc(var(--rdmz-sat) * .7),var(--rdmz-light),.6)} 
+  :root {
+    
+
+    
+
+    
+
+    
+  }
+
+  body {
+    
+  }
+
+  
+  
+    
+</style>
+
+<!-- Canonical links, avoid duplicate content problems -->
+<link rel="canonical" href="https://sparanoid.com/mongodb-basic-usage.html">
+
+<!-- DNS prefetching for static files -->
+
+
+<!-- Head hooks -->
+
+
+
+<!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="我的前端周报">
+<meta property="og:title" content="MongoDB 基础用法">
+<meta property="og:url" content="https://sparanoid.com/mongodb-basic-usage.html">
+<meta property="og:description" content="最近在学习 MongoDB，现将所学总结一下。 启动 mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend // or with authentication mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend --auth mongo 创建管理员用户 use admin db.createUser( { user: &quot;jiajun&quot;, pwd: &quot;qweasdz...">
+<meta property="og:image" content="https://sparanoid.com/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta name="twitter:site" content="@sparanoid">
+
+
+
+  <meta name="twitter:creator" content="@tunghsiao">
+
+
+
+  <meta property="article:published_time" content="2019-05-20T00:00:00-07:00">
+  <meta property="article:modified_time" content="2019-05-20T00:00:00-07:00">
+  <meta name="twitter:label1" value="Words">
+  <meta name="twitter:data1" value="742 words">
+  <meta name="twitter:label2" value="Reading time">
+  <meta name="twitter:data2" value="3 mins">
+
+<!-- Post specified styles -->
+
+<!-- Main navigation with current page / category highlighted -->
+</head><body><nav class="navigation">
+  <ul>
+    <li>
+        <a href="/">我的前端周报</a>
+      </li>
+    <li>
+        <a href="/about/">About</a>
+      </li>
+    
+  </ul>
+</nav>
+<!-- Main content wrap -->
+<main class="content " role="main">
+  <!-- Post-wide custom CSS -->
+
+
+<!-- Article wrapper, limit width -->
+<article lang="en">
+
+  <!-- Post title -->
+  <header style="     ">
+
+    <h1 class="" title="MongoDB 基础用法" data-title="MongoDB 基础用法">
+      MongoDB 基础用法<span class="dot dot--post"> </span>
+    </h1>
+
+    
+      <small>
+        By <span rel="author">我的前端周报</span>
+        on <time datetime="2019-05-20T00:00:00-07:00">May 20, 2019</time>
+      </small>
+    
+
+    
+
+  </header>
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>最近在学习 <code class="highlighter-rouge">MongoDB</code>，现将所学总结一下。</p>
+
+<h1 id="启动">启动</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend
 
 // or with authentication
 mongod --directoryperdb --dbpath data/db -logpath log/mongo.log --logappend --auth
 
 mongo
-</span></code></pre></div></div> <h1 id="创建管理员用户">创建管理员用户</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">use</span> <span class="nx">admin</span>
+</span></code></pre></div></div>
+
+<h1 id="创建管理员用户">创建管理员用户</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">use</span> <span class="nx">admin</span>
 <span class="nx">db</span><span class="p">.</span><span class="nx">createUser</span><span class="p">(</span>
   <span class="p">{</span>
     <span class="na">user</span><span class="p">:</span> <span class="s2">"jiajun"</span><span class="p">,</span>
@@ -18,7 +155,15 @@ mongo
 
 <span class="c1">// 登录</span>
 <span class="nx">mongo</span> <span class="nx">admin</span> <span class="o">-</span><span class="nx">u</span> <span class="nx">jiajun</span> <span class="o">-</span><span class="nx">p</span> <span class="nx">qweasdzxc123</span> 
-</code></pre></div></div> <h1 id="创建表查找表">创建表，查找表</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">createCollection</span><span class="p">(</span><span class="s2">"customers"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h1 id="创建表查找表">创建表，查找表</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">createCollection</span><span class="p">(</span><span class="s2">"customers"</span><span class="p">)</span>
 <span class="mi">2</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">insert</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span> <span class="na">last_name</span><span class="p">:</span> <span class="s2">"Doe"</span><span class="p">})</span>
 <span class="mi">3</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">pretty</span><span class="p">()</span> <span class="c1">// show all content of a collection</span>
 <span class="mi">4</span><span class="p">.</span> <span class="nx">Show</span> <span class="nx">collections</span>
@@ -30,19 +175,108 @@ mongo
 <span class="mi">10</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"Mary"</span><span class="p">},</span> <span class="p">{</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"Mary"</span><span class="p">,</span> <span class="na">last_name</span><span class="p">:</span> <span class="s2">"Samson"</span><span class="p">},</span> <span class="p">{</span><span class="na">upsert</span><span class="p">:</span><span class="kc">true</span><span class="p">})</span> <span class="c1">// update an element, if it doesnt exist, insert it</span>
 <span class="mi">11</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">update</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"Steven"</span><span class="p">},</span> <span class="p">{</span><span class="na">$rename</span><span class="p">:</span> <span class="p">{</span><span class="s2">"gener"</span><span class="p">:</span> <span class="s2">"sex"</span><span class="p">}})</span> <span class="c1">// rename a field</span>
 <span class="mi">12</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">remove</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"Steven"</span><span class="p">},</span> <span class="p">{</span><span class="na">justOne</span><span class="p">:</span> <span class="kc">true</span><span class="p">})</span> <span class="c1">// remove an element, delete the first element found, not all of them</span>
-</code></pre></div></div> <h1 id="find">find()</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">}).</span><span class="nx">pretty</span><span class="p">()</span> <span class="c1">// find an element with first_name "John"</span>
+</code></pre></div></div>
+
+<h1 id="find">find()</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">}).</span><span class="nx">pretty</span><span class="p">()</span> <span class="c1">// find an element with first_name "John"</span>
 <span class="mi">2</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">$or</span><span class="p">:[{</span><span class="na">first_name</span><span class="p">:</span><span class="s2">"John"</span><span class="p">},</span> <span class="p">{</span><span class="na">first_name</span><span class="p">:</span> <span class="s2">"Mary"</span><span class="p">}]}).</span><span class="nx">pretty</span><span class="p">()</span> <span class="c1">// find multiple elements</span>
 <span class="mi">3</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">age</span><span class="p">:</span> <span class="p">{</span><span class="na">$lte</span><span class="p">:</span> <span class="mi">40</span><span class="p">}})</span> <span class="c1">// find element's age less than and equal to 40</span>
 <span class="mi">4</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="s2">"address.city"</span> <span class="p">:</span> <span class="s2">"Boston"</span><span class="p">})</span> <span class="c1">// find matches with a field of a field</span>
-</code></pre></div></div> <h1 id="sorting">Sorting</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">sort</span><span class="p">({</span><span class="na">last_name</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span> <span class="c1">// 1: ascending, -1: descending</span>
-</code></pre></div></div> <h1 id="count">Count</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">count</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h1 id="sorting">Sorting</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">sort</span><span class="p">({</span><span class="na">last_name</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span> <span class="c1">// 1: ascending, -1: descending</span>
+</code></pre></div></div>
+
+<h1 id="count">Count</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">().</span><span class="nx">count</span><span class="p">()</span>
 <span class="mi">2</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">gender</span><span class="p">:</span> <span class="s1">'male'</span><span class="p">}).</span><span class="nx">count</span><span class="p">()</span>
-</code></pre></div></div> <h1 id="limit">Limit</h1> <blockquote> </blockquote> <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">gender</span><span class="p">:</span> <span class="s1">'male'</span><span class="p">}).</span><span class="nx">limit</span><span class="p">()</span> <span class="c1">// first four elements</span>
-</code></pre></div></div> <h1 id="pymongo-连接">pymongo 连接</h1> <blockquote> </blockquote> <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">create_app</span><span class="p">():</span>
+</code></pre></div></div>
+
+<h1 id="limit">Limit</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">1</span><span class="p">.</span> <span class="nx">db</span><span class="p">.</span><span class="nx">customers</span><span class="p">.</span><span class="nx">find</span><span class="p">({</span><span class="na">gender</span><span class="p">:</span> <span class="s1">'male'</span><span class="p">}).</span><span class="nx">limit</span><span class="p">()</span> <span class="c1">// first four elements</span>
+</code></pre></div></div>
+
+<h1 id="pymongo-连接">pymongo 连接</h1>
+
+<blockquote>
+
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">create_app</span><span class="p">():</span>
     <span class="n">app</span> <span class="o">=</span> <span class="n">Flask</span><span class="p">(</span><span class="n">__name__</span><span class="p">)</span>
     <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MONGO_DBNAME'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'docs'</span>
     <span class="n">app</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s">'MONGO_URI'</span><span class="p">]</span> <span class="o">=</span> <span class="s">'mongodb://jiajun:qweasdzxc123@localhost:27017/docs?authSource=admin'</span>
     <span class="n">mongo</span> <span class="o">=</span> <span class="n">PyMongo</span><span class="p">(</span><span class="n">app</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">app</span>
-</code></pre></div></div> </div> </article> </main> <footer class="footer"> <ul> <li><a href="/">Jiajun Yan</a></li> </ul> </footer> <script></script> <script></script> <script>"serviceWorker"in navigator&&"sparanoid.com"===window.location.hostname&&navigator.serviceWorker.register("/service-worker.js").then(function(e){console.log("ServiceWorker registration successful with scope: ",e.scope)}).catch(function(e){console.log("ServiceWorker registration failed: ",e)})</script></body></html>
+</code></pre></div></div>
+
+
+    
+    
+
+    
+  </div>
+
+</article>
+
+</main>
+<!-- Footer section -->
+
+  <footer class="footer">
+
+
+    <a href="http://www.beian.miit.gov.cn" target="_blank" style="display: block; text-align: center; margin-top: 20px; text-transform: uppercase;">粤ICP备19153485号-1</a>
+  </footer>
+
+
+<!-- Theme scripts -->
+<script></script>
+
+<!-- User scripts -->
+<script></script>
+
+<!-- Lightense Images -->
+
+
+<!-- Service Worker  -->
+<script>
+      if ('serviceWorker' in navigator && window.location.hostname === 'sparanoid.com') {
+        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }).catch(function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      }
+    </script>
+
+<!-- Google Analytics -->
+
+
+<!-- Foot hooks -->
+
+
+<!-- Finale -->
+
+</body></html>

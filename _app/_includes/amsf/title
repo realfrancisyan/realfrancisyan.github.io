@@ -39,7 +39,7 @@
     {%- if page.title -%}
       {{ page_title }} - {{ site_name }}
     {%- else -%}
-      {{ site_name }} - {{ site_description }}
+      {{ site_name }}
     {%- endif -%}
   {%- else -%}
     {{ page_title }} - {{ site_name }}
